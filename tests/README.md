@@ -10,8 +10,11 @@ choices behind it in [#5](https://github.com/abraidotti/2.4b6-fixed/issues/5).
   driver's output.
 - `player/`: 35 characters the scenarios log in as (Decimus, Smokegod, Rambler and the rest), copied into a fresh
   `player/` before each scenario.
-- `files/`: files a scenario puts in place before the game boots (`@place`): `bans`, a ban list. A scenario
+- `files/`: files a scenario puts in place before the game boots (`@place`): `bans`, a ban list; `eof.are`, an
+  area file whose last line has no newline, and `area-eof.lst`, an area list that loads only it. A scenario
   can also delete a file before boot (`@remove`), such as `music.txt`.
+- A scenario about a broken boot says `@log`, so the game's log is in its golden, and `@exit N`, the status the
+  game should exit with; `run.py` passes it only if the driver exits with that status.
 
 A bug fix re-saves the goldens it changes (`run.py --save --only NAME`), so its PR shows what the game does
 differently.

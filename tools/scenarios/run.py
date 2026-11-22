@@ -11,6 +11,7 @@ Usage, from the repo root:
 A scenario is tests/scenarios/NAME.scn (the format is in tools/scenarios/scenario.c), and its golden is NAME.golden:
 the line "2.4b6-fixed", then the driver's output. Needs Docker: the game and the driver are built in one gcc:15
 container (tools/scenarios/play.sh), and each scenario runs from a fresh copy of the area and player directories.
+A scenario passes when the driver exits 0, or with the status its @exit line names, and its output matches.
 Exit status: 0 if every scenario matches its golden (or was saved), 1 otherwise. Stdlib only.
 """
 import argparse
@@ -47,6 +48,14 @@ def play(names, work, extra=""):
     return out
 
 
+def expected_exit(name):
+    """The status the driver should exit with: 0, or the scenario's @exit N (a game that stops at boot)."""
+    for line in (SCENARIOS / f"{name}.scn").read_text(encoding="latin-1").splitlines():
+        if line.startswith("@exit "):
+            return line.split()[1]
+    return "0"
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--only", nargs="+", metavar="NAME")
@@ -67,10 +76,12 @@ def main():
             code = (out / f"{n}.exit").read_text().strip() if (out / f"{n}.exit").exists() else "?"
             got = HEADER + (out / f"{n}.out").read_text(encoding="latin-1") if (out / f"{n}.out").exists() else None
             golden = SCENARIOS / f"{n}.golden"
-            if code != "0" or got is None:
+            if code != expected_exit(n) or got is None:
                 err = (out / f"{n}.err").read_text(errors="replace").strip().splitlines() if (out / f"{n}.err").exists() else []
                 report = [l for l in err if "ERROR: AddressSanitizer" in l or "runtime error:" in l]
-                print(f"ERROR     {n}: the driver exited {code}: {(report or err or [''])[-1]}")
+                want_code = expected_exit(n)
+                print(f"ERROR     {n}: the driver exited {code}"
+                      f"{', not ' + want_code if want_code != '0' else ''}: {(report or err or [''])[-1]}")
                 if args.diff:
                     for l in [l for l in err if l.lstrip().startswith("#")][:8]:
                         print("    " + l.strip()[:200])

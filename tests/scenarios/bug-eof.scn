@@ -1,0 +1,10 @@
+# An area file whose last line has no newline, and ends inside a string. fread_string meets the end of the file
+# and calls bug(), which counts the lines to say where: its loop waited for a newline that never came, so the boot
+# hung at full CPU and logged nothing more (#11). Past that, fread_string returned NULL, which load_mobiles passed
+# to race_lookup, a segfault (#12). Now bug() reports line 10, and the boot stops there: the game exits 1, as it
+# does on any other broken area file.
+@log
+@exit 1
+@place eof.are eof.are
+@place area-eof.lst area.lst
+@pulse 1

@@ -2327,10 +2327,8 @@ char *fread_string( FILE *fp )
             break;
  
         case EOF:
-	/* temp fix */
             bug( "Fread_string: EOF", 0 );
-	    return NULL;
-            /* exit( 1 ); */
+            exit( 1 );
             break;
  
         case '\n':
@@ -3288,6 +3286,7 @@ void bug( const char *str, int param )
     {
 	int iLine;
 	int iChar;
+	int c;
 
 	if ( fpArea == stdin )
 	{
@@ -3297,9 +3296,9 @@ void bug( const char *str, int param )
 	{
 	    iChar = ftell( fpArea );
 	    fseek( fpArea, 0, 0 );
-	    for ( iLine = 0; ftell( fpArea ) < iChar; iLine++ )
+	    for ( iLine = 0; ftell( fpArea ) < iChar && !feof( fpArea ); iLine++ )
 	    {
-		while ( getc( fpArea ) != '\n' )
+		while ( ( c = getc( fpArea ) ) != '\n' && c != EOF )
 		    ;
 	    }
 	    fseek( fpArea, iChar, 0 );
