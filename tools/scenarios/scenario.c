@@ -22,6 +22,9 @@
  *   @place NAME DEST     copy the fixture tests/files/NAME (../tests/files/NAME here) to DEST, relative to the
  *                        area directory, before boot reads it: a ban list (ban.txt), say
  *   @remove PATH         delete PATH, relative to the area directory, before boot reads it (music.txt, say)
+ *   @log                 send the game's log (its stderr) to the output, among the steps (before boot)
+ *   @exit N              the game is expected to exit with status N, as it does on a fatal bug() at boot;
+ *                        the driver ignores it, and run.py passes the scenario only if the driver exits N
  *   @connect NAME        a new connection, called NAME in the output, which becomes the one lines go to
  *   @as NAME             send the following lines to connection NAME
  *   @pulse N             run N pulses with no new input
@@ -527,6 +530,14 @@ int main (void)
             if (sscanf (line, "@seed %lu", &s) == 1) { seed_value = (unsigned int) s; continue; }
             if (sscanf (line, "@clock %ld", &clock) == 1) continue;
             if (sscanf (line, "@updates %63s", updbuf) == 1) { updates_list = updbuf; continue; }
+            if (!strcmp (line, "@log"))  /* the game's log (stderr) joins the output, in order */
+            {
+                setvbuf (stdout, NULL, _IONBF, 0);
+                dup2 (1, 2);
+                continue;
+            }
+            if (sscanf (line, "@exit %d", &n) == 1)  /* read by run.py */
+                continue;
             {
                 char src[96], dest[128], from[160];
                 if (sscanf (line, "@place %95s %127s", src, dest) == 2)
