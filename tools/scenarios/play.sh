@@ -4,16 +4,16 @@
 # directory, with the fixture players (tests/player) and empty gods and log directories, writing /out/NAME.out
 # (the driver's output), NAME.err and NAME.exit.
 set -u
-CF="-Wall -std=gnu89 -O -g"
+CF="-Wall -std=gnu89 -O -g ${EXTRA:-}"  # EXTRA: run.py --sanitize's flags
 mkdir -p /w && cp -r /in/src /in/area /in/tests /w/ && mkdir -p /w/player /w/gods /w/log
 cd /w/src
 rm -f ./*.o rom
 {
-  make rom && gcc -c $CF -Dmain=game_main -o comm_driver.o comm.c \
+  make rom C_FLAGS="$CF" L_FLAGS="-O -g ${EXTRA:-}" && gcc -c $CF -Dmain=game_main -o comm_driver.o comm.c \
     && gcc -c $CF -I. -o scenario.o /in/tools/scenarios/scenario.c \
     && gcc -o scenario scenario.o comm_driver.o \
          $(ls ./*.o | grep -v -E '/(comm|comm_driver|scenario)\.o$') \
-         -Wl,--wrap=random,--wrap=srandom -lcrypt
+         ${EXTRA:-} -Wl,--wrap=random,--wrap=srandom -lcrypt
 } > /out/build.log 2>&1
 echo "build exit $?" >> /out/build.log
 [ -x scenario ] || exit 1

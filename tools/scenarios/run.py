@@ -5,6 +5,8 @@ Usage, from the repo root:
     python tools/scenarios/run.py --only NAME ...     just these
     python tools/scenarios/run.py --save [--only ...] write the goldens from what the game does now
     python tools/scenarios/run.py --diff              print each difference (the first 40 lines of a diff)
+    python tools/scenarios/run.py --sanitize ...      build with AddressSanitizer and UBSan, so a memory error
+                                                      stops the game and says where (the goldens are the same)
 
 A scenario is tests/scenarios/NAME.scn (the format is in tools/scenarios/scenario.c), and its golden is NAME.golden:
 the line "2.4b6-fixed", then the driver's output. Needs Docker: the game and the driver are built in one gcc:15
@@ -23,9 +25,10 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 SCENARIOS = ROOT / "tests" / "scenarios"
 HEADER = "2.4b6-fixed\n"
 IMAGE = "gcc:15"
+SANITIZE = "-fsanitize=address,undefined -fno-omit-frame-pointer"
 
 
-def play(names, work):
+def play(names, work, extra=""):
     out = work / "out"
     out.mkdir()
     tree = work / "tree"
@@ -33,7 +36,7 @@ def play(names, work):
         shutil.copytree(ROOT / d, tree / d, ignore=shutil.ignore_patterns("*.o", "rom", "scenario"))
     shutil.copytree(ROOT / "tools" / "scenarios", tree / "tools" / "scenarios")
     mount = lambda src, dst, ro: f"type=bind,source={src},target={dst}" + (",readonly" if ro else "")
-    cmd = ["docker", "run", "--rm", "-e", "SCENARIOS=" + " ".join(names),
+    cmd = ["docker", "run", "--rm", "-e", "SCENARIOS=" + " ".join(names), "-e", f"EXTRA={extra}",
            "--mount", mount(tree, "/in", True), "--mount", mount(out, "/out", False),
            IMAGE, "bash", "/in/tools/scenarios/play.sh"]
     r = subprocess.run(cmd, capture_output=True, text=True)
@@ -49,6 +52,7 @@ def main():
     ap.add_argument("--only", nargs="+", metavar="NAME")
     ap.add_argument("--save", action="store_true", help="write the goldens instead of checking them")
     ap.add_argument("--diff", action="store_true", help="print the start of each difference")
+    ap.add_argument("--sanitize", action="store_true", help="build with AddressSanitizer and UBSan")
     args = ap.parse_args()
     names = args.only or sorted(p.stem for p in SCENARIOS.glob("*.scn"))
     missing = [n for n in names if not (SCENARIOS / f"{n}.scn").exists()]
@@ -57,7 +61,7 @@ def main():
 
     work = Path(tempfile.mkdtemp(prefix="scenarios-"))
     try:
-        out = play(names, work)
+        out = play(names, work, SANITIZE if args.sanitize else "")
         failed = 0
         for n in names:
             code = (out / f"{n}.exit").read_text().strip() if (out / f"{n}.exit").exists() else "?"
@@ -65,7 +69,11 @@ def main():
             golden = SCENARIOS / f"{n}.golden"
             if code != "0" or got is None:
                 err = (out / f"{n}.err").read_text(errors="replace").strip().splitlines() if (out / f"{n}.err").exists() else []
-                print(f"ERROR     {n}: the driver exited {code}: {err[-1] if err else ''}")
+                report = [l for l in err if "ERROR: AddressSanitizer" in l or "runtime error:" in l]
+                print(f"ERROR     {n}: the driver exited {code}: {(report or err or [''])[-1]}")
+                if args.diff:
+                    for l in [l for l in err if l.lstrip().startswith("#")][:8]:
+                        print("    " + l.strip()[:200])
                 failed += 1
             elif args.save:
                 old = golden.read_text(encoding="latin-1") if golden.exists() else None
