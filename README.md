@@ -8,13 +8,15 @@ This isn't ROM, and it isn't released by ROM's authors. ROM's licence lets anyon
 labelled as such, with all of its credits; only Russ Taylor releases ROM itself (see [Licence](#licence)).
 
 **Status:** the stock release is at the `stock-2.4b6` tag, and [the triage](triage/README.md) lists the bugs to fix.
-It builds on current compilers (see [Building](#building)), and no bug is fixed yet.
+It builds on current compilers (see [Building](#building)), and [FIXES.md](FIXES.md) lists every change made
+since the stock release, one commit each.
 
 ## What's here
 
 - **The stock release:** the first commit, tagged [`stock-2.4b6`](https://github.com/abraidotti/2.4b6-fixed/tree/stock-2.4b6),
   is `Rom24b6.tar.gz` byte for byte. Its message records where the release came from and how it was checked.
-- **Every change since:** `git diff stock-2.4b6 main`. The stock files are never edited outside a fix's commit.
+- **Every change since:** [FIXES.md](FIXES.md), generated from the commits, and `git diff stock-2.4b6 main`. The
+  stock files are never edited outside a fix's commit.
 - **The bugs:** [triage/README.md](triage/README.md) takes the bugs found while porting QuickMUD (a ROM derivative)
   to Python, in [abraidotti/QuickMUD-Python](https://github.com/abraidotti/QuickMUD-Python), and checks each one
   against the stock code. The ones in stock are what this repo fixes.
