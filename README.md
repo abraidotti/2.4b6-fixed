@@ -43,11 +43,11 @@ each, and compares them with stock built the old way. Tested with gcc 4.9.4, gcc
 
 ## Testing
 
-`python tools/scenarios/run.py` plays 96 scripted sessions through the game (players logging in, talking, fighting,
+`python tools/scenarios/run.py` plays scripted sessions through the game (players logging in, talking, fighting,
 buying, casting) and compares what the game sends with the saved goldens in [tests/scenarios](tests/scenarios), with
-a fixed seed and clock so every run is the same. Each bug fix re-saves the goldens it changes, so its diff shows
-what the game now does differently. See [tests/README.md](tests/README.md), and
-[#5](https://github.com/abraidotti/2.4b6-fixed/issues/5) for how it works.
+a fixed seed and clock so every run is the same. 96 of them come from QuickMUD-Python. Each bug fix adds one that
+shows its bug, and re-saves the goldens it changes, so its diff shows what the game now does differently. See
+[tests/README.md](tests/README.md), and [#5](https://github.com/abraidotti/2.4b6-fixed/issues/5) for how it works.
 
 ## Lineage
 
