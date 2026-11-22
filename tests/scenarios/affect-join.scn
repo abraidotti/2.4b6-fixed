@@ -1,0 +1,16 @@
+# affect_join: an affect that stacks on one of the same type. Glutton (10, never too full to drink) drinks two
+# poisoned herbal brews (1351) in the temple (3001): the second poison joins the first, and @state shows one
+# poison affect, with the durations and modifiers added and the levels averaged. affect_join averaged them with
+# paf->level = (paf->level += paf_old->level) / 2, which writes paf->level twice in one expression: undefined
+# behaviour, which gcc warns about (#14). The fix adds the levels without writing to paf->level first.
+@connect glut
+Glutton
+psswrd
+@return
+@obj 1351 3001
+@obj 1351 3001
+get all.brew
+drink brew
+@state
+drink 2.brew
+@state
