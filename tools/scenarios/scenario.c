@@ -21,6 +21,7 @@
  *                        the TICK wiznet line carry on whatever it says.
  *   @place NAME DEST     copy the fixture tests/files/NAME (../tests/files/NAME here) to DEST, relative to the
  *                        area directory, before boot reads it: a ban list (ban.txt), say
+ *   @remove PATH         delete PATH, relative to the area directory, before boot reads it (music.txt, say)
  *   @connect NAME        a new connection, called NAME in the output, which becomes the one lines go to
  *   @as NAME             send the following lines to connection NAME
  *   @pulse N             run N pulses with no new input
@@ -534,6 +535,15 @@ int main (void)
                     if (place (from, dest) != 0)
                     {
                         fprintf (stderr, "scenario: @place %s %s: can't copy it\n", src, dest);
+                        return 2;
+                    }
+                    continue;
+                }
+                if (sscanf (line, "@remove %127s", dest) == 1)
+                {
+                    if (remove (dest) != 0)
+                    {
+                        fprintf (stderr, "scenario: @remove %s: can't remove it\n", dest);
                         return 2;
                     }
                     continue;

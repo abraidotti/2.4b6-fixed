@@ -5,11 +5,13 @@ played through the game by `python tools/scenarios/run.py` (Docker), which fails
 The driver and its format are described in [tools/scenarios/scenario.c](../tools/scenarios/scenario.c), and the
 choices behind it in [#5](https://github.com/abraidotti/2.4b6-fixed/issues/5).
 
-- `scenarios/NAME.scn` and `NAME.golden`: 96 scenarios. A golden's first line is `2.4b6-fixed`; the rest is the
+- `scenarios/NAME.scn` and `NAME.golden`: the 96 scenarios from QuickMUD-Python, and one for each bug fixed
+  since (its comment names the issue). A golden's first line is `2.4b6-fixed`; the rest is the
   driver's output.
 - `player/`: 35 characters the scenarios log in as (Decimus, Smokegod, Rambler and the rest), copied into a fresh
   `player/` before each scenario.
-- `files/`: files a scenario puts in place before the game boots (`@place`): `bans`, a ban list.
+- `files/`: files a scenario puts in place before the game boots (`@place`): `bans`, a ban list. A scenario
+  can also delete a file before boot (`@remove`), such as `music.txt`.
 
 A bug fix re-saves the goldens it changes (`run.py --save --only NAME`), so its PR shows what the game does
 differently.

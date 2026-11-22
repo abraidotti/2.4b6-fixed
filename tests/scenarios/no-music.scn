@@ -1,0 +1,17 @@
+# No music.txt: load_songs logs that it can't open the file, then called fclose on the NULL it got, so the boot
+# crashed (#9). Now the game boots with no songs: the jukebox lists none, and plays nothing.
+@updates area,song
+@remove music.txt
+@connect god
+Smokegod
+smoke123
+@return
+@return
+goto 3700
+@obj 3200 3700
+play list
+play bullet
+play loud bullet
+examine juke
+@pulse 72
+quit
