@@ -1,0 +1,272 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect god"
+rng 51942 dc85fa41
+step 2 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "goto 3700"
+out god "Entrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 7 "holylight"
+out god "Holy light mode on.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 8 "@connect hero"
+rng 51962 a7dda492
+step 9 "Heroic"
+out hero "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 10 "psswrd"
+out hero "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 11 "@return"
+out hero "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 12 "@return"
+out hero "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 13 "@as god"
+rng 51962 a7dda492
+step 14 "transfer heroic 3700"
+out god "Heroic arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rSmokegod the Smoke Test is here.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 15 "set char heroic hp 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 16 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 17 "@obj 105 3700"
+rng 51962 a7dda492
+step 18 "@obj 1362 3700"
+rng 51962 a7dda492
+step 19 "@obj 3001 3700"
+rng 51962 a7dda492
+step 20 "@obj 3009 3700"
+rng 51962 a7dda492
+step 21 "@mob 631 3700"
+rng 52047 178998e8
+step 22 "@spec"
+spec 0
+rng 52047 178998e8
+step 23 "force dragon kill heroic"
+out god "The Ancient Gold Dragon fades into existence.\n\rThe Ancient Gold Dragon's pound devastates Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Ancient Gold Dragon fades into existence.\n\rThe Ancient Gold Dragon's pound devastates you!\n\rThe Ancient Gold Dragon is in excellent condition. \n\r\n\r<29970hp 102m 106mv> \xff\xf9"
+rng 52060 839014b9
+step 24 "@spec 48"
+spec 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1
+rng 53146 6a43d15f
+step 25 "peace"
+out god "The Ancient Gold Dragon breathes a bolt of lightning at Heroic.\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at Heroic.\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at Heroic.\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas === OBLITERATES === Heroic!\n\rThe Ancient Gold Dragon spits acid at Heroic.\n\rThe Ancient Gold Dragon's blast of acid === OBLITERATES === Heroic!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at Heroic.\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes out a freezing cone of frost!\n\rThe Ancient Gold Dragon's blast of frost >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at Heroic.\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rHeroic looks very ill.\n\rThe Ancient Gold Dragon's blast of gas === OBLITERATES === Heroic!\n\rThe Ancient Gold Dragon breathes forth a cone of fire.\n\rAn old scroll crackles and burns!\n\rA pink potion bubbles and boils!\n\rThe Ancient Gold Dragon's blast of flame >>> ANNIHILATES <<< Heroic!\n\rThe Ancient Gold Dragon breathes forth a cone of fire.\n\rThe Ancient Gold Dragon's blast of flame >>> ANNIHILATES <<< Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Ancient Gold Dragon breathes a bolt of lightning at you!\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at you!\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at you!\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas === OBLITERATES === you!\n\rThe Ancient Gold Dragon spits a stream of corrosive acid at you.\n\rThe Ancient Gold Dragon's blast of acid === OBLITERATES === you!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at you!\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a freezing cone of frost over you!\n\rThe Ancient Gold Dragon's blast of frost >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a bolt of lightning at you!\n\rThe Ancient Gold Dragon's blast of lightning >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Gold Dragon's blast of gas >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes out a cloud of poisonous gas!\n\rYou feel poison coursing through your veins.\n\rThe Ancient Gold Dragon's blast of gas === OBLITERATES === you!\n\rThe Ancient Gold Dragon breathes a cone of hot fire over you!\n\rAn old scroll crackles and burns!\n\rA pink potion bubbles and boils!\n\rThe Ancient Gold Dragon's blast of flame >>> ANNIHILATES <<< you!\n\rThe Ancient Gold Dragon breathes a cone of hot fire over you!\n\rThe Ancient Gold Dragon's blast of flame >>> ANNIHILATES <<< you!\n\r\n\r<28604hp 102m 106mv> \xff\xf9"
+rng 53146 6a43d15f
+step 26 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53146 6a43d15f
+step 27 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53146 6a43d15f
+step 28 "@pulse 12"
+rng 53146 6a43d15f
+step 29 "@obj 105 3700"
+rng 53146 6a43d15f
+step 30 "@obj 1362 3700"
+rng 53146 6a43d15f
+step 31 "@obj 3001 3700"
+rng 53146 6a43d15f
+step 32 "@obj 3009 3700"
+rng 53146 6a43d15f
+step 33 "@mob 1515 3700"
+rng 53173 044069d5
+step 34 "@spec"
+spec 0
+rng 53173 044069d5
+step 35 "force bat kill heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rYou parry the fire bat's attack.\n\rYou dodge the fire bat's attack.\n\rThe fire bat is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53195 abaa5fe8
+step 36 "@spec 16"
+spec 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0
+rng 53288 277fe3bd
+step 37 "peace"
+out god "The fire bat breathes forth a cone of fire.\n\rAn old scroll crackles and burns!\n\rA pink potion bubbles and boils!\n\rThe fire bat's blast of flame MASSACRES Heroic!\n\rThe fire bat breathes forth a cone of fire.\n\rThe fire bat's blast of flame DISEMBOWELS Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe fire bat breathes a cone of hot fire over you!\n\rAn old scroll crackles and burns!\n\rA pink potion bubbles and boils!\n\rThe fire bat's blast of flame MASSACRES you!\n\rThe fire bat breathes a cone of hot fire over you!\n\rThe fire bat's blast of flame DISEMBOWELS you!\n\r\n\r<29907hp 102m 106mv> \xff\xf9"
+rng 53288 277fe3bd
+step 38 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53288 277fe3bd
+step 39 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53288 277fe3bd
+step 40 "@pulse 12"
+rng 53288 277fe3bd
+step 41 "@obj 105 3700"
+rng 53288 277fe3bd
+step 42 "@obj 1362 3700"
+rng 53288 277fe3bd
+step 43 "@obj 3001 3700"
+rng 53288 277fe3bd
+step 44 "@obj 3009 3700"
+rng 53288 277fe3bd
+step 45 "@mob 9212 3700"
+rng 53327 05788527
+step 46 "force water kill heroic"
+out god "The Water Ruler tries to disarm Heroic, but fails.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rYou block The Water Ruler's attack with your shield.\n\rThe Water Ruler tries to disarm you, but fails.\n\rThe Water Ruler is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53345 984195d3
+step 47 "@spec 16"
+spec 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0
+rng 53489 fe61c117
+step 48 "peace"
+out god "The Water Ruler spits acid at Heroic.\n\rThe Water Ruler's blast of acid === OBLITERATES === Heroic!\n\rThe Water Ruler spits acid at Heroic.\n\rThe Water Ruler's blast of acid === OBLITERATES === Heroic!\n\rThe Water Ruler spits acid at Heroic.\n\rThe Water Ruler's blast of acid === OBLITERATES === Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Water Ruler spits a stream of corrosive acid at you.\n\rThe Water Ruler's blast of acid === OBLITERATES === you!\n\rThe Water Ruler spits a stream of corrosive acid at you.\n\rThe Water Ruler's blast of acid === OBLITERATES === you!\n\rThe Water Ruler spits a stream of corrosive acid at you.\n\rThe Water Ruler's blast of acid === OBLITERATES === you!\n\r\n\r<29753hp 102m 106mv> \xff\xf9"
+rng 53489 fe61c117
+step 49 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53489 fe61c117
+step 50 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53489 fe61c117
+step 51 "@pulse 12"
+rng 53489 fe61c117
+step 52 "@obj 105 3700"
+rng 53489 fe61c117
+step 53 "@obj 1362 3700"
+rng 53489 fe61c117
+step 54 "@obj 3001 3700"
+rng 53489 fe61c117
+step 55 "@obj 3009 3700"
+rng 53489 fe61c117
+step 56 "@mob 2223 3700"
+rng 53531 28a07552
+step 57 "force dragon kill heroic"
+out god "The Great White Dragon's pound devastates Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Great White Dragon's pound devastates you!\n\rThe Great White Dragon is in excellent condition. \n\r\n\r<29969hp 102m 106mv> \xff\xf9"
+rng 53547 501051cc
+step 58 "@spec 16"
+spec 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+rng 53563 e25fa865
+step 59 "peace"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 53563 e25fa865
+step 60 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53563 e25fa865
+step 61 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53563 e25fa865
+step 62 "@pulse 12"
+rng 53563 e25fa865
+step 63 "@mob 9211 3700"
+rng 53602 c9474fca
+step 64 "force elemental kill heroic"
+out god "The Lightning Ruler's pierce mauls Heroic.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Lightning Ruler's pierce mauls you.\n\rThe Lightning Ruler is in excellent condition. \n\r\n\r<29976hp 102m 106mv> \xff\xf9"
+rng 53617 13cda250
+step 65 "@spec 16"
+spec 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
+rng 53694 4b298239
+step 66 "peace"
+out god "The Lightning Ruler breathes a bolt of lightning at Heroic.\n\rThe Lightning Ruler's blast of lightning === OBLITERATES === Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Lightning Ruler breathes a bolt of lightning at you!\n\rThe Lightning Ruler's blast of lightning === OBLITERATES === you!\n\r\n\r<29881hp 102m 106mv> \xff\xf9"
+rng 53694 4b298239
+step 67 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53694 4b298239
+step 68 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53694 4b298239
+step 69 "@pulse 12"
+rng 53694 4b298239
+step 70 "@obj 105 3700"
+rng 53694 4b298239
+step 71 "@obj 1362 3700"
+rng 53694 4b298239
+step 72 "@obj 3001 3700"
+rng 53694 4b298239
+step 73 "@obj 3009 3700"
+rng 53694 4b298239
+step 74 "@mob 3064 3700"
+rng 53699 f8d42e26
+step 75 "@mob 3062 3700"
+rng 53702 19c2fcc3
+step 76 "@mob 2225 3700"
+rng 53782 ef82a387
+step 77 "@spec"
+spec 0
+rng 53782 ef82a387
+step 78 "force dragon kill heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rYou parry the Ancient Green Dragon's attack.\n\rThe Ancient Green Dragon is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53797 e1725ccf
+step 79 "@spec 2"
+spec 1 1
+rng 53947 2decf0ed
+step 80 "peace"
+out god "The Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === Heroic!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === you!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === you!\n\r\n\r<29832hp 102m 106mv> \xff\xf9"
+rng 53947 2decf0ed
+step 81 "restore heroic"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53947 2decf0ed
+step 82 "purge"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 53947 2decf0ed
+step 83 "@pulse 12"
+rng 53947 2decf0ed
+step 84 "@mob 3064 3700"
+rng 53951 a48ce38d
+step 85 "@mob 3062 3700"
+rng 53954 8f61c456
+step 86 "@mob 2225 3700"
+rng 54038 63e85809
+step 87 "force drunk kill dragon"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 54052 0be59c8a
+step 88 "@spec 2"
+spec 1 1
+rng 54164 c552c088
+step 89 "peace"
+out god "The Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 54164 c552c088
+step 90 "@state"
+state room 3700 light 1 people mob mob mob player player
+state exit 0 to 3757 info 0 key 0
+state exit 2 to 3744 info 3 key -1
+state exit 5 to 3001 info 0 key 0
+state char mob 2225 pos 8 hit 2158/2158 mana 186/186 move 100/100 wait 0 daze 0 exp 0 gold 7 silver 313 act 7 affected_by 524840 train 0 on 0 stats 21 21 21 21 21
+state char mob 3062 pos 8 hit 9/9 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048769 affected_by 0 train 0 on 0 stats 10 11 11 11 11
+state char mob 3064 pos 8 hit 32/32 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 68 act 65 affected_by 0 train 0 on 0 stats 11 11 11 11 11
+state char Heroic 51 pos 8 hit 30000/30000 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
+state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 598016 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+rng 54164 c552c088

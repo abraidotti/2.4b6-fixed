@@ -1,0 +1,321 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect cher"
+rng 51942 dc85fa41
+step 2 "Cherub"
+out cher "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out cher "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out cher "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out cher "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@connect god"
+rng 51962 a7dda492
+step 7 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 8 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 9 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 10 "@return"
+out cher "\n\rSmokegod has entered the game.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rCherub the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 11 "set skill cherub all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 12 "set char cherub mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 13 "restore cherub"
+out cher "\n\rSmokegod has restored you.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 14 "set skill smokegod all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 15 "set char smokegod mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 16 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 17 "transfer cherub 3700"
+out cher "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+out god "Cherub disappears in a mushroom cloud.\n\rOk.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 18 "goto 3700"
+out cher "\n\rSmokegod appears in a swirling mist.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+out god "Entrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rCherub the Smoke Test is here.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 19 "@as cher"
+rng 51962 a7dda492
+step 20 "@mob 3064 3700"
+rng 51967 51b9fae8
+step 21 "cast 'acid blast' drunk"
+out cher "Your acid blast does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\r\n\r<100hp 29980m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'acid blast'.\n\rCherub's acid blast does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52040 7ea68ad0
+step 22 "@pulse 24"
+rng 52040 7ea68ad0
+step 23 "@mob 3064 3700"
+rng 52043 7760df97
+step 24 "cast 'burning hands' drunk"
+out cher "Your burning hands *** DEVASTATES *** the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rThe drunk spills his guts all over the floor.\n\r\n\r<100hp 29965m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'burning hands'.\n\rCherub's burning hands *** DEVASTATES *** the drunk!\n\rThe drunk is DEAD!!\n\rThe drunk spills his guts all over the floor.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52050 cdfbd7cb
+step 25 "@pulse 24"
+rng 52050 cdfbd7cb
+step 26 "@mob 9006 3700"
+rng 52140 ad7cbfe6
+step 27 "cast 'colour spray' septon"
+out cher "The septon appears to be blinded.\n\rYour colour spray === OBLITERATES === the septon!\n\rThe septon has some small wounds and bruises. \n\r\n\r<100hp 29950m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'colour spray'.\n\rThe septon appears to be blinded.\n\rCherub's colour spray === OBLITERATES === the septon!\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52145 44b8a04c
+step 28 "@pulse 24"
+rng 52145 44b8a04c
+step 29 "cast fireball septon"
+out cher "Your fireball *** DEVASTATES *** the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'fireball'.\n\rCherub's fireball *** DEVASTATES *** the septon!\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52148 7d4c045d
+step 30 "@pulse 24"
+rng 52148 7d4c045d
+step 31 "@as god"
+rng 52148 7d4c045d
+step 32 "cast 'cause light' septon"
+out cher "\n\rSmokegod utters the words, 'cause light'.\n\rSmokegod's spell decimates the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "Your spell decimates the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29985m 100mv> \xff\xf9"
+rng 52150 3d12f80a
+step 33 "@pulse 24"
+rng 52150 3d12f80a
+step 34 "cast 'cause serious' septon"
+out cher "\n\rSmokegod utters the words, 'cause serious'.\n\rSmokegod's spell maims the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "Your spell maims the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29968m 100mv> \xff\xf9"
+rng 52153 4c8e8fbc
+step 35 "@pulse 24"
+rng 52153 4c8e8fbc
+step 36 "cast 'cause critical' septon"
+out cher "\n\rSmokegod utters the words, 'cause critical'.\n\rSmokegod's spell MASSACRES the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "Your spell MASSACRES the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29948m 100mv> \xff\xf9"
+rng 52157 020cd86e
+step 37 "@pulse 24"
+rng 52157 020cd86e
+step 38 "cast flamestrike septon"
+out cher "\n\rSmokegod utters the words, 'flamestrike'.\n\rSmokegod's flamestrike *** DEMOLISHES *** the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "Your flamestrike *** DEMOLISHES *** the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29928m 100mv> \xff\xf9"
+rng 52196 d7f7177d
+step 39 "@pulse 24"
+rng 52196 d7f7177d
+step 40 "@as god"
+rng 52196 d7f7177d
+step 41 "slay septon"
+out cher "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<100hp 29935m 100mv> \xff\xf9"
+out god "You slay it in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<100hp 29928m 100mv> \xff\xf9"
+rng 52198 b1715d32
+step 42 "@mob 3064 3700"
+rng 52203 08b4b01b
+step 43 "@mob 3062 3700"
+rng 52205 7862d85a
+step 44 "@mob 3501 3700"
+rng 52210 5097f216
+step 45 "@mob 3124 3700"
+rng 52214 27c5a45c
+step 46 "@as cher"
+rng 52214 27c5a45c
+step 47 "cast 'chain lightning' drunk"
+out cher "A lightning bolt leaps from your hand and arcs to the drunk.\n\rYour lightning <<< ERADICATES >>> the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rThe drunk's leg is sliced from his dead body.\n\rThe bolt arcs to the duck!\n\rYour lightning <<< ERADICATES >>> the duck!\n\rThe duck is DEAD!!\n\rYou receive 0 experience points.\n\rThe duck's head is shattered, and his brains splash all over you.\n\rThe bolt arcs to the goblin!\n\rYour lightning <<< ERADICATES >>> the goblin!\n\rThe goblin is DEAD!!\n\rYou receive 0 experience points.\n\rThe goblin's leg is sliced from his dead body.\n\rThe bolt arcs to the beastly fido!\n\rYour lightning <<< ERADICATES >>> the beastly fido!\n\rThe beastly fido is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the beastly fido's death cry.\n\rYou are struck by your own lightning!\n\rYour lightning === OBLITERATES === you!\n\rThat really did HURT!\n\rYou sure are BLEEDING!\n\rThe bolt grounds out through your body.\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'chain lightning'.\n\rA lightning bolt leaps from Cherub's hand and arcs to the drunk.\n\rCherub's lightning <<< ERADICATES >>> the drunk!\n\rThe drunk is DEAD!!\n\rThe drunk's leg is sliced from his dead body.\n\rThe bolt arcs to the duck!\n\rCherub's lightning <<< ERADICATES >>> the duck!\n\rThe duck is DEAD!!\n\rThe duck's head is shattered, and his brains splash all over you.\n\rThe bolt arcs to the goblin!\n\rCherub's lightning <<< ERADICATES >>> the goblin!\n\rThe goblin is DEAD!!\n\rThe goblin's leg is sliced from his dead body.\n\rThe bolt arcs to the beastly fido!\n\rCherub's lightning <<< ERADICATES >>> the beastly fido!\n\rThe beastly fido is DEAD!!\n\rYou hear the beastly fido's death cry.\n\rThe bolt arcs to Cherub...whoops!\n\rCherub's lightning === OBLITERATES === him!\n\rThe bolt seems to have fizzled out.\n\r\n\r<100hp 29928m 100mv> \xff\xf9"
+rng 52537 6a492d4d
+step 48 "@pulse 24"
+rng 52537 6a492d4d
+step 49 "@state"
+state room 3700 light 0 people player player
+state exit 0 to 3757 info 0 key 0
+state exit 2 to 3744 info 3 key -1
+state exit 5 to 3001 info 0 key 0
+state char Smokegod 60 pos 8 hit 100/100 mana 29928/30000 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state char Cherub 52 pos 8 hit 16/100 mana 29910/30000 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 15 wear -1 timer 4 cost 0 values 20 20 0 0 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 17 wear -1 timer 6 cost 0 values 10 10 0 0 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 15 wear -1 timer 5 cost 0 values 20 20 0 0 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 16 wear -1 timer 5 cost 0 values 5 5 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+rng 52537 6a492d4d
+step 50 "@as god"
+rng 52537 6a492d4d
+step 51 "peace"
+out god "Ok.\n\r\n\r<100hp 29928m 100mv> \xff\xf9"
+rng 52537 6a492d4d
+step 52 "@mob 3501 3700"
+rng 52542 4a606c41
+step 53 "@mob 3064 3700"
+rng 52548 69e9a315
+step 54 "@mob 3062 3700"
+rng 52551 288ecbe5
+step 55 "cast demonfire drunk"
+out cher "\n\rSmokegod utters the words, 'demonfire'.\n\rSmokegod's torments === OBLITERATES === him!\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "The demons turn upon you!\n\rYour torments === OBLITERATES === you!\n\rThat really did HURT!\n\rYou sure are BLEEDING!\n\rYou dodge the drunk's attack.\n\rThe drunk is in excellent condition. \n\r\n\r<7hp 29908m 100mv> \xff\xf9"
+rng 52664 0da47a9d
+step 56 "@pulse 24"
+rng 52664 0da47a9d
+step 57 "peace"
+out god "Ok.\n\r\n\r<7hp 29908m 100mv> \xff\xf9"
+rng 52664 0da47a9d
+step 58 "set char smokegod align -1000"
+out god "\n\r<7hp 29908m 100mv> \xff\xf9"
+rng 52664 0da47a9d
+step 59 "cast demonfire drunk"
+out cher "\n\rSmokegod utters the words, 'demonfire'.\n\rSmokegod calls forth the demons of Hell upon the drunk!\n\rSmokegod's torments does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "You conjure forth the demons of hell!\n\rYour torments does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\rThe drunk looks very uncomfortable.\n\r\n\r<7hp 29888m 100mv> \xff\xf9"
+rng 52762 abdc7095
+step 60 "@pulse 24"
+rng 52762 abdc7095
+step 61 "peace"
+out god "Ok.\n\r\n\r<7hp 29888m 100mv> \xff\xf9"
+rng 52762 abdc7095
+step 62 "set char smokegod align 0"
+out god "\n\r<7hp 29888m 100mv> \xff\xf9"
+rng 52762 abdc7095
+step 63 "cast 'dispel evil' goblin"
+out cher "\n\rSmokegod utters the words, 'dispel evil'.\n\rSmokegod's dispel evil === OBLITERATES === the goblin!\n\rThe goblin is DEAD!!\n\rThe goblin's head is shattered, and his brains splash all over you.\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "Your dispel evil === OBLITERATES === the goblin!\n\rThe goblin is DEAD!!\n\rYou receive 0 experience points.\n\rThe goblin's head is shattered, and his brains splash all over you.\n\r\n\r<7hp 29873m 100mv> \xff\xf9"
+rng 52887 1459c9cf
+step 64 "@pulse 24"
+rng 52887 1459c9cf
+step 65 "cast 'dispel evil' 2.drunk"
+out god "They aren't here.\n\r\n\r<7hp 29873m 100mv> \xff\xf9"
+rng 52887 1459c9cf
+step 66 "@pulse 24"
+rng 52887 1459c9cf
+step 67 "cast 'dispel evil' fido"
+out cher "\n\rSmokegod utters the words, 'dispel evil'.\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "The beastly fido does not seem to be affected.\n\rYou dodge the beastly fido's attack.\n\rThe beastly fido is in excellent condition. \n\r\n\r<7hp 29858m 100mv> \xff\xf9"
+rng 52894 babab009
+step 68 "@pulse 24"
+rng 52894 babab009
+step 69 "cast 'dispel good' 2.drunk"
+out god "They aren't here.\n\rThe beastly fido is in excellent condition. \n\r\n\r<7hp 29858m 100mv> \xff\xf9"
+rng 52894 babab009
+step 70 "@pulse 24"
+rng 52894 babab009
+step 71 "cast 'dispel good' goblin"
+out god "They aren't here.\n\rThe beastly fido is in excellent condition. \n\r\n\r<7hp 29858m 100mv> \xff\xf9"
+rng 52894 babab009
+step 72 "@pulse 24"
+rng 52894 babab009
+step 73 "cast 'dispel good' fido"
+out cher "\n\rSmokegod utters the words, 'dispel good'.\n\r\n\r<16hp 29910m 100mv> \xff\xf9"
+out god "The beastly fido does not seem to be affected.\n\rThe beastly fido is in excellent condition. \n\r\n\r<7hp 29843m 100mv> \xff\xf9"
+rng 52898 7b7a7110
+step 74 "@pulse 24"
+rng 52898 7b7a7110
+step 75 "peace"
+out god "Ok.\n\r\n\r<7hp 29843m 100mv> \xff\xf9"
+rng 52898 7b7a7110
+step 76 "@mob 3124 3700"
+rng 52902 f685815a
+step 77 "@mob 9006 3700"
+rng 52990 395f307e
+step 78 "@as cher"
+rng 52990 395f307e
+step 79 "cast 'energy drain' duck"
+out cher "Wow....what a rush!\n\rYour energy drain decimates the duck!\n\rThe duck is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the duck's death cry.\n\r\n\r<16hp 29875m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'energy drain'.\n\rCherub's energy drain decimates the duck!\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<7hp 29843m 100mv> \xff\xf9"
+rng 52994 7328befa
+step 80 "@pulse 24"
+rng 52994 7328befa
+step 81 "cast 'energy drain' septon"
+out cher "You dodge the septon's attack.\n\rThe septon is in excellent condition. \n\r\n\r<16hp 29840m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'energy drain'.\n\r\n\r<7hp 29843m 100mv> \xff\xf9"
+rng 53012 7008193b
+step 82 "@pulse 24"
+rng 53012 7008193b
+step 83 "@as god"
+rng 53012 7008193b
+step 84 "peace"
+out god "Ok.\n\r\n\r<7hp 29843m 100mv> \xff\xf9"
+rng 53012 7008193b
+step 85 "@mob 350 3700"
+rng 53035 54da98da
+step 86 "@as god"
+rng 53035 54da98da
+step 87 "cast earthquake"
+out cher "\n\rSmokegod utters the words, 'earthquake'.\n\rSmokegod makes the earth tremble and shiver.\n\rSmokegod's earthquake misses the pet dragon.\n\rSmokegod's earthquake MANGLES the septon!\n\rSmokegod's earthquake MANGLES the beastly fido!\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's heart is torn from his chest.\n\r\n\r<16hp 29840m 100mv> \xff\xf9"
+out god "The earth trembles beneath your feet!\n\rYour earthquake misses the pet dragon.\n\rYour earthquake MANGLES the septon!\n\rYour earthquake MANGLES the beastly fido!\n\rThe beastly fido is DEAD!!\n\rYou receive 0 experience points.\n\rThe beastly fido's heart is torn from his chest.\n\rThe pet dragon is in excellent condition. \n\r\n\r<7hp 29828m 100mv> \xff\xf9"
+rng 53043 9a24026e
+step 88 "@pulse 24"
+rng 53043 9a24026e
+step 89 "peace"
+out god "Ok.\n\r\n\r<7hp 29828m 100mv> \xff\xf9"
+rng 53043 9a24026e
+step 90 "@as cher"
+rng 53043 9a24026e
+step 91 "cast 'call lightning'"
+out cher "You must be out of doors.\n\r\n\r<16hp 29825m 100mv> \xff\xf9"
+out god "\n\rCherub utters the words, 'call lightning'.\n\r\n\r<7hp 29828m 100mv> \xff\xf9"
+rng 53044 b953ce80
+step 92 "@pulse 24"
+rng 53044 b953ce80
+step 93 "@as god"
+rng 53044 b953ce80
+step 94 "transfer cherub 3005"
+out cher "\n\rSmokegod has transferred you.\n\rThe Temple Square\n\r  You are standing on the temple square.  Huge marble steps lead up to the\n\rtemple gate.  The entrance to the Clerics Guild is to the west, and the old\n\rGrunting Boar Inn, is to the east.  Just south of here you see the market\n\rsquare, the center of Midgaard.\n\r     A small white fountain gushes forth here.\n\r\n\r<16hp 29825m 100mv> \xff\xf9"
+out god "Cherub disappears in a mushroom cloud.\n\rOk.\n\r\n\r<7hp 29828m 100mv> \xff\xf9"
+rng 53044 b953ce80
+step 95 "@as cher"
+rng 53044 b953ce80
+step 96 "cast 'call lightning'"
+out cher "You need bad weather.\n\r\n\r<16hp 29810m 100mv> \xff\xf9"
+rng 53045 5cb00a6f
+step 97 "@pulse 24"
+rng 53045 5cb00a6f
+step 98 "@state"
+state room 3005 light 0 people player
+state exit 0 to 3001 info 0 key -1
+state exit 1 to 3006 info 0 key -1
+state exit 2 to 3014 info 0 key -1
+state exit 3 to 3004 info 0 key -1
+state exit 4 to 3057 info 0 key -1
+state char Cherub 52 pos 8 hit 16/100 mana 29810/30000 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state obj floor 3135 wear -1 timer 0 cost 0 values 0 0 0 0 0
+state room 3700 light 0 people mob mob player
+state exit 0 to 3757 info 0 key 0
+state exit 2 to 3744 info 3 key -1
+state exit 5 to 3001 info 0 key 0
+state char mob 350 pos 8 hit 121/121 mana 155/155 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 131203 affected_by 524936 train 0 on 0 stats 12 16 13 14 13
+state   affect 80 level 10 duration -1 location 0 modifier 0 bitvector 128
+state char mob 9006 pos 8 hit 455/508 mana 216/216 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 196675 affected_by 520 train 0 on 0 stats 17 20 20 17 17
+state char Smokegod 60 pos 8 hit 7/100 mana 29828/30000 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state obj floor 13 wear -1 timer 4 cost 0 values 16 16 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 17 wear -1 timer 5 cost 0 values 10 10 0 0 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 15 wear -1 timer 4 cost 0 values 20 20 0 0 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 17 wear -1 timer 6 cost 0 values 10 10 0 0 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 15 wear -1 timer 5 cost 0 values 20 20 0 0 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 16 wear -1 timer 5 cost 0 values 5 5 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+rng 53045 5cb00a6f
