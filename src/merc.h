@@ -43,8 +43,8 @@
 #endif
 
 /* system calls */
-int unlink();
-int system();
+int unlink( const char *path );
+int system( const char *command );
 
 
 
