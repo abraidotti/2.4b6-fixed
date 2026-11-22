@@ -1,7 +1,9 @@
 CC      = gcc
 PROF    = -O -g
 NOCRYPT =
-C_FLAGS =  -Wall $(PROF) $(NOCRYPT)
+# gnu89: the dialect this code was written in, so a newer compiler's default (C23 in gcc 15) doesn't
+# reinterpret it.
+C_FLAGS =  -Wall -std=gnu89 $(PROF) $(NOCRYPT)
 L_FLAGS =  $(PROF)
 LIBS	= -lcrypt
 

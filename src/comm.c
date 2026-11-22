@@ -172,7 +172,10 @@ int	listen		args( ( int s, int backlog ) );
 */
 
 int	close		args( ( int fd ) );
+/* glibc's <sys/time.h> declares gettimeofday, and this older prototype now
+   conflicts with it.
 int	gettimeofday	args( ( struct timeval *tp, struct timezone *tzp ) );
+*/
 int	read		args( ( int fd, char *buf, int nbyte ) );
 int	select		args( ( int width, fd_set *readfds, fd_set *writefds,
 			    fd_set *exceptfds, struct timeval *timeout ) );

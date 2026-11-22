@@ -8,7 +8,7 @@ This isn't ROM, and it isn't released by ROM's authors. ROM's licence lets anyon
 labelled as such, with all of its credits; only Russ Taylor releases ROM itself (see [Licence](#licence)).
 
 **Status:** the stock release is at the `stock-2.4b6` tag, and [the triage](triage/README.md) lists the bugs to fix.
-No fixes yet. The code doesn't build on a current compiler yet: that comes first.
+It builds on current compilers (see [Building](#building)), and no bug is fixed yet.
 
 ## What's here
 
@@ -18,8 +18,26 @@ No fixes yet. The code doesn't build on a current compiler yet: that comes first
 - **The bugs:** [triage/README.md](triage/README.md) takes the bugs found while porting QuickMUD (a ROM derivative)
   to Python, in [abraidotti/QuickMUD-Python](https://github.com/abraidotti/QuickMUD-Python), and checks each one
   against the stock code. The ones in stock are what this repo fixes.
-- **Tools:** [tools/](tools/) holds the scripts that keep the triage table in step with its data. They're MIT
-  ([tools/LICENSE](tools/LICENSE)), separate from the game's licences.
+- **Tools:** [tools/](tools/) holds the script that keeps the triage table in step with its data, and the build
+  check ([Building](#building)). They're MIT ([tools/LICENSE](tools/LICENSE)), separate from the game's licences.
+
+## Building
+
+On Linux, with gcc or clang, `make` and libcrypt (`libcrypt-dev` on Debian and Ubuntu):
+
+```sh
+cd src && make            # or: make CC=clang
+cd ../area && ../src/rom 4000
+```
+
+Then connect to port 4000 (for example `telnet 127.0.0.1 4000`). The game runs from `area/`, and saves players in
+`player/`.
+
+Stock ROM 2.4b6 doesn't build on today's compilers. The changes that make it build are the first commits after
+`stock-2.4b6`, kept apart from the bug fixes, and none of them changes what the game does
+([#2](https://github.com/abraidotti/2.4b6-fixed/issues/2)). `python tools/buildcheck/run.py` checks that with
+Docker: it builds the code with gcc 4.9, gcc 15 and clang, plays the same scripted session as a new character on
+each, and compares them with stock built the old way. Tested with gcc 4.9.4, gcc 15.3.0 and clang 19.1.7.
 
 ## Lineage
 

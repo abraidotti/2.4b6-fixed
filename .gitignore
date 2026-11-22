@@ -1,0 +1,10 @@
+# What a build or a run leaves behind. The directories themselves are kept by their .gitkeep files.
+src/*.o
+src/rom
+player/*
+gods/*
+log/*
+!player/.gitkeep
+!gods/.gitkeep
+!log/.gitkeep
+area/shutdown.txt
