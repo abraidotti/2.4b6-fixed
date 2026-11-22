@@ -4348,7 +4348,7 @@ void do_prefi (CHAR_DATA *ch, char *argument)
 
 void do_prefix (CHAR_DATA *ch, char *argument)
 {
-    char buf[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
     if (argument[0] == '\0')
     {
