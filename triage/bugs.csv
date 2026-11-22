@@ -1,0 +1,103 @@
+issue,item,verdict,function,summary,note
+4,,stock,do_shutdown do_reboot,shutdown and reboot save characters still being created,Fixed in QuickMUD-Python during R1 (#3).
+5,,quickmud,do_copyover,copyover restores a new character waiting at the MOTD as level 0,Copyover is a QuickMUD add-on. Fixed in QuickMUD-Python (#11).
+6,,stock,do_shutdown,shutdown while wizinvis uses an uninitialised buffer,Fixed in QuickMUD-Python (#12).
+7,,quickmud,qmconfig_read,qmconfig read leaks a file descriptor each time,qmconfig is a QuickMUD add-on. Fixed in QuickMUD-Python (#13).
+8,,stock,affect_join,affect_join averages levels with undefined behaviour,Fixed in QuickMUD-Python (#14).
+9,,quickmud,do_title,title reads before an empty argument,"The read is in QuickMUD's 2000 sanitising code; stock's do_title has none. Fixed in QuickMUD-Python (#15)."
+41,,stock,do_wake,wake stands up the waker not the sleeper,
+42,,stock,do_enter,a follower who uses up a portal's last charge leaves the leader reading freed memory,
+43,,stock,do_pick,pick on a portal that isn't locked says it picked the lock,
+44,1,stock,do_stand,stand from furniture you're in says 'on',
+44,2,stock,do_sit,waking to sit on furniture says 'at',
+44,3,stock,do_sit,sitting up in furniture prints nothing,
+46,,stock,do_description,a description line starting with ~ takes a line off,
+47,,stock,do_wimpy,a word that isn't a number sets wimpy to 0,
+49,,quickmud,do_tell,tell to an awake mob crashes the game,The note-writing check that reads victim->desc came with QuickMUD's boards.
+50,,stock,do_auction,auction with no text sends an empty auction,
+51,,quickmud,all_colour,colour all: red unrecognised and other faults,Colour is a QuickMUD add-on.
+52,,stock,do_tell,tell when deaf says the message didn't get through,
+53,1,stock,do_follow,follow's refusal prints an extra empty line,
+53,2,stock,do_split,split's message prints an extra empty line,
+54,,stock,do_pmote,pmote cuts names short and drops a partial name at the end,
+55,,stock,,qui turns on quiet mode instead of warning about quit,"The command table (interp.c) lists quiet before qui, as stock does."
+57,1,stock,do_put,put all skips an object at the container's weight limit,
+57,2,stock,do_put,put all says nothing when nothing goes in,
+58,,stock,do_put,put all into the donation pit never sets a timer,
+60,1,stock,do_buy do_sell,four shopkeeper tells miss their closing quote,
+60,2,stock,do_brandish do_zap,'Your $p' gives 'Your a burnt staff',
+60,3,stock,do_steal,steal's failure message prints an extra empty line,
+60,4,stock,do_pour,'They aren't holding anything.' has no line end,
+60,5,stock,do_sell,sell's 'piece' or 'pieces' goes by the whole price,
+60,6,stock,obj_cast_spell,"typo: ""Somehting isn't right""","Also #75, item 7: the same line."
+61,,stock,do_sacrifice,sacrifice's autosplit counts charmed followers,
+63,,quickmud,find_note show_note_to_char handle_con_note_to,three ways the note commands crash the game,The boards are a QuickMUD add-on; stock has note.c instead.
+64,,quickmud,do_nread do_board,note messages: read again does nothing and smaller faults,The boards are a QuickMUD add-on.
+65,1,stock,check_ban,a ban with no * never matches,
+65,2,stock,check_ban,*name* bans are tested the wrong way round,
+65,3,quickmud,nanny,a banned newbie isn't told why,"Stock sends the message with write_to_buffer(d, ...); QuickMUD's colour change to send_to_desc lost the connection."
+65,4,stock,ban_site,banning a site already banned walks freed memory,
+65,5,stock,save_bans,save_bans writes to a NULL file when fopen fails,
+66,,quickmud,check_parse_name,logging in as someone writing a note drops them as a 'double newbie',QuickMUD's 2000 double-newbie check; stock has none.
+68,1,stock,do_prefix,prefix never says it's set or changed,
+68,2,stock,do_prefi do_prefix,prefi and prefix end their messages in \r\n,
+68,3,stock,do_ostat,stat obj ends four 'Adds ...' lines in a bare \n,
+68,4,stock,do_ostat,stat obj runs two keyword lists together,
+68,5,stock,do_mstat,stat mob tests IS_NPC(ch) for Practices where it means the victim,
+69,,stock,do_prefix,a long prefix overflows a 256-byte buffer and crashes,
+71,1,stock,do_guild,guild doesn't tell the victim they've joined a clan,
+71,2,stock,do_nochannels do_notell,'Nochannel whom?' and 'Notell whom?' have no newline,
+71,3,stock,do_mset,set char str puts its full stop after the newline,
+71,4,stock,do_mset,set char hunger calls its range Full's,
+71,5,quickmud,do_mset,set char hours ends with no newline,set char hours is QuickMUD's; stock has no hours field.
+71,6,stock,do_trust,trust sends nothing when it works,
+71,7,stock,do_oload,"typo: ""must be be between""",
+71,8,stock,do_clone,clone gives a mob's clone objects 'worn' without equipping them,
+71,9,stock,clone_mobile,clone_mobile applies a mob's affects twice,
+71,10,stock,do_string,string char spec with a bad name removes the mob's own,
+71,11,stock,do_force,force passes the command through act and expands its $ codes,
+72,,stock,do_force,force players and force gods walk freed memory past a quitting player's pet,"Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all."
+75,1,quickmud,violence_update,violence_update skips the round after a freed character,"Stock steps with ch->next after the round, which extract_char keeps valid. QuickMUD reads ch_next before it, with its mob program triggers."
+75,2,stock,check_assist,check_assist picks a target from all of char_list,
+75,3,stock,mob_hit,mob_hit's area attack walks char_list,
+75,4,stock,group_gain,group_gain checks the killer's equipment once per member,
+75,5,stock,one_hit,poison message has no line end,
+75,6,stock,make_corpse,"typo: ""evaporates,scattering""",
+75,8,stock,check_immune,check_immune's vulnerable cases never see immune,
+77,1,stock,do_berserk,"typo: ""to mellow""",
+77,2,stock,do_rescue,rescue while already fighting,
+79,1,stock,spell_dispel_evil spell_dispel_good,dispel evil and good roll their damage twice (UMAX),
+79,2,stock,spell_enchant_weapon,enchant weapon's new hitroll affect is TO_AFFECTS,
+79,3,stock,spell_burning_hands,damage-table spells compare a signed level with sizeof,"Seven spells. The UMAX(0, level) comes after the UMIN, too late."
+79,4,stock,spell_enchant_weapon spell_dispel_magic spell_cancellation,"typos: ""explodeds"" and ""existance""",
+81,1,stock,spell_harm,harm rolls its die twice (UMAX),
+81,2,stock,spell_gas_breath,gas breath spares the mob it's fighting,
+81,3,stock,spell_recharge,recharge's partial success tells the caster twice and the room nothing,
+81,4,stock,spell_infravision,infravision's messages end in \n\r inside act,
+81,5,stock,spell_heat_metal spell_identify,"heat metal's ""You and drop""; identify's lines end in a bare \n",
+83,1,stock,spec_thief,the thief's share rolls twice (UMIN),
+83,2,stock,do_play,play list NAME lists every song,
+83,3,stock,load_songs,no music.txt crashes the boot (fclose NULL),
+83,4,stock,load_songs,a song over 100 lines breaks the rest of the file,
+83,5,stock,spec_cast_adept,the adept's cure disease falls through to return FALSE,
+83,6,stock,spec_ogre_member spec_patrolman spec_nasty,"stray and missing quotes, and 'his gold' for anyone",
+85,1,stock,obj_update,obj_update stops at a freed object,
+85,2,stock,weather_update,dawn's sunlight is out of order,
+85,3,quickmud,char_update,mobs never wander home: nothing sets zone,"Stock's reset_room sets mob->zone (db.c); QuickMUD's OLC resets dropped it, so this works in stock."
+85,4,stock,obj_update,the pit's check in obj_update can't apply,
+87,,quickmud,program_flow cmd_eval expand_arg,mob program faults (all items),Mob programs are a QuickMUD add-on.
+89,,quickmud,do_mpremove do_mpdamage do_mpflee,mob command faults (all items),Mob programs are a QuickMUD add-on.
+92,,quickmud,save_rooms save_mobile save_resets do_asave,olc_save faults (all items),OLC is a QuickMUD add-on.
+94,,quickmud,aedit_security aedit_builder,area editor faults (all items),OLC is a QuickMUD add-on.
+96,,quickmud,redit_oreset string_add format_string,room and string editor faults (all items),OLC is a QuickMUD add-on.
+98,,quickmud,save_object set_obj_values,object editor faults (all items),"OLC is a QuickMUD add-on. Stock's load_objects exits on the bad where, which is its defence, not the bug."
+100,,quickmud,medit_delmprog medit_shop,mob editor faults (all items),OLC is a QuickMUD add-on.
+102,1-6,quickmud,save_other_helps hedit_delete hedit_new do_hedit,help editor faults,OLC is a QuickMUD add-on.
+102,7,different,do_scan,scan never says 'Looking north'; sees through closed doors; crashes on an exit to nowhere,"Stock has the same scan.c, but no scan command in its table, so the faults can't be reached. QuickMUD added the command (doc/QuickMUD Fixes, Fix 6)."
+102,8,stock,do_flag,flag names resist and vuln flags from the immunity table,
+102,9,stock,do_flag,flag takes the whole word a sign starts and says nothing when it works,
+104,1,stock,do_dump,dump says nothing and doesn't check its files,
+104,2,stock,get_skill check_improve,get_skill and check_improve would read before skill_table with sn -1,Latent: no caller passes -1 today.
+106,,quickmud,do_copyover,copyover throws away unsaved OLC work and notes in progress,Copyover is a QuickMUD add-on.
+109,,stock,bug,bug() hangs the boot on an area file's last line with no newline,
+110,,quickmud,convert_object convert_mobile convert_objects,old-format area faults (all items),"The conversions are QuickMUD's; stock reads old areas without them, so its old-format branches do run."
