@@ -2327,10 +2327,8 @@ char *fread_string( FILE *fp )
             break;
  
         case EOF:
-	/* temp fix */
             bug( "Fread_string: EOF", 0 );
-	    return NULL;
-            /* exit( 1 ); */
+            exit( 1 );
             break;
  
         case '\n':
