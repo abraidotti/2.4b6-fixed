@@ -1,0 +1,351 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect god"
+rng 51942 dc85fa41
+step 2 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "set skill smokegod all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 7 "set char smokegod mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 8 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 9 "goto 3700"
+out god "Entrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 10 "@connect dec"
+rng 51962 a7dda492
+step 11 "Decimus"
+out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 12 "psswrd"
+out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 13 "@return"
+out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 14 "@return"
+out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 15 "@as god"
+rng 51962 a7dda492
+step 16 "transfer decimus 3700"
+out god "Decimus arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+out dec "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rSmokegod the Smoke Test is here.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 17 "@mob 9006 3700"
+rng 52040 7ea68ad0
+step 18 "cast harm septon"
+out god "Your harm spell *** DEVASTATES *** the septon!\n\rThe septon has some small wounds and bruises. \n\r\n\r<100hp 29965m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pabraw'.\n\rSmokegod's harm spell *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52044 d714c71e
+step 19 "@pulse 24"
+rng 52044 d714c71e
+step 20 "cast harm septon"
+out god "Your harm spell *** DEVASTATES *** the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29930m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pabraw'.\n\rSmokegod's harm spell *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52049 b0ba0cdf
+step 21 "@pulse 24"
+rng 52049 b0ba0cdf
+step 22 "cast harm septon"
+out god "Your harm spell *** DEVASTATES *** the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29895m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pabraw'.\n\rSmokegod's harm spell *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52055 00d227b9
+step 23 "@pulse 24"
+rng 52055 00d227b9
+step 24 "cast 'lightning bolt' septon"
+out god "Your lightning bolt *** DEVASTATES *** the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29880m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'diesilla barh'.\n\rSmokegod's lightning bolt *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52058 7377f8fc
+step 25 "@pulse 24"
+rng 52058 7377f8fc
+step 26 "cast 'magic missile' septon"
+out god "Your magic missile decimates the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29865m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'waouq wuggurz'.\n\rSmokegod's magic missile decimates the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52062 2d61757b
+step 27 "@pulse 24"
+rng 52062 2d61757b
+step 28 "cast 'shocking grasp' septon"
+out god "Your shocking grasp MUTILATES the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29850m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'gpaqtuio ogrugs'.\n\rSmokegod's shocking grasp MUTILATES the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52065 3999da53
+step 29 "@pulse 24"
+rng 52065 3999da53
+step 30 "cast 'general purpose' septon"
+out god "Your general purpose ammo MUTILATES the septon!\n\rThe septon looks pretty hurt. \n\r\n\r<100hp 29839m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'ounsozgrur sjfsagz'.\n\rSmokegod's general purpose ammo MUTILATES the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52069 02969c70
+step 31 "@pulse 24"
+rng 52069 02969c70
+step 32 "cast 'high explosive' septon"
+out god "Your high explosive ammo *** DEVASTATES *** the septon!\n\rThe septon is in awful condition. \n\r\n\r<100hp 29828m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'puop znshiguzz'.\n\rSmokegod's high explosive ammo *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52074 3162b0e6
+step 33 "@pulse 24"
+rng 52074 3162b0e6
+step 34 "peace"
+out god "Ok.\n\r\n\r<100hp 29828m 100mv> \xff\xf9"
+rng 52074 3162b0e6
+step 35 "slay septon"
+out god "You slay it in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<100hp 29828m 100mv> \xff\xf9"
+out dec "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52076 8f775e3e
+step 36 "cast 'heat metal' decimus"
+out god "Decimus stops using a sub issue sword.\n\rDecimus is burned by a sub issue sword, and throws it to the ground.\n\rYour spell scratches Decimus.\n\rDecimus has some small wounds and bruises. \n\r\n\r<100hp 29803m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pzah wzhar'.\n\rYour skin is seared by a sub issue shield!\n\rYou stop using a sub issue sword.\n\rYou throw your red-hot weapon to the ground!\n\rYour skin is seared by a sub issue vest!\n\rSmokegod's spell scratches you.\n\rSmokegod is in excellent condition. \n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52094 6056935c
+step 37 "@pulse 24"
+rng 52094 6056935c
+step 38 "cast 'heat metal' decimus"
+out god "Decimus stops using a sub issue shield.\n\rDecimus yelps and throws a sub issue shield to the ground!\n\rDecimus stops using a sub issue vest.\n\rDecimus yelps and throws a sub issue vest to the ground!\n\rYour spell misses Decimus.\n\rDecimus has some small wounds and bruises. \n\r\n\r<100hp 29778m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pzah wzhar'.\n\rYou stop using a sub issue shield.\n\rYou remove and drop a sub issue shield before it burns you.\n\rYou stop using a sub issue vest.\n\rYou remove and drop a sub issue vest before it burns you.\n\rSmokegod's spell misses you.\n\rSmokegod is in excellent condition. \n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52111 039a9554
+step 39 "@pulse 24"
+rng 52111 039a9554
+step 40 "peace"
+out god "Ok.\n\r\n\r<100hp 29778m 100mv> \xff\xf9"
+rng 52111 039a9554
+step 41 "@mob 3060 3700"
+rng 52130 d006d930
+step 42 "load obj 3021"
+out god "Ok.\n\r\n\r<100hp 29778m 100mv> \xff\xf9"
+out dec "\n\rSmokegod has created a small sword!\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52130 d006d930
+step 43 "give sword cityguard"
+out god "You give a small sword to the cityguard.\n\r\n\r<100hp 29778m 100mv> \xff\xf9"
+out dec "\n\rSmokegod gives a small sword to the cityguard.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52130 d006d930
+step 44 "force cityguard wield sword"
+out god "The cityguard wields a small sword.\n\rOk.\n\r\n\r<100hp 29778m 100mv> \xff\xf9"
+out dec "\n\rThe cityguard wields a small sword.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52130 d006d930
+step 45 "cast 'heat metal' cityguard"
+out god "The cityguard stops using a small sword.\n\rThe cityguard is burned by a small sword, and throws it to the ground.\n\rYour spell scratches the cityguard.\n\rThe cityguard has a few scratches. \n\r\n\r<100hp 29753m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'pzah wzhar'.\n\rThe cityguard stops using a small sword.\n\rThe cityguard is burned by a small sword, and throws it to the ground.\n\rSmokegod's spell scratches the cityguard.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52135 8b822b9d
+step 46 "@pulse 24"
+rng 52135 8b822b9d
+step 47 "peace"
+out god "Ok.\n\r\n\r<100hp 29753m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 48 "slay cityguard"
+out god "You slay her in cold blood!\n\rYou hear the cityguard's death cry.\n\r\n\r<100hp 29753m 100mv> \xff\xf9"
+out dec "\n\rSmokegod slays the cityguard in cold blood!\n\rYou hear the cityguard's death cry.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52137 491c0f9b
+step 49 "@mob 3062 3700"
+rng 52139 e59d30dd
+step 50 "@mob 3501 3700"
+rng 52144 bb6fc7f9
+step 51 "@mob 3064 3700"
+rng 52148 7d4c045d
+step 52 "cast 'holy word'"
+out god "You utter a word of divine power.\n\rThe drunk looks very uncomfortable.\n\rYour divine wrath >>> ANNIHILATES <<< the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\rThe goblin looks very uncomfortable.\n\rYour divine wrath >>> ANNIHILATES <<< the goblin!\n\rThe goblin is DEAD!!\n\rYou receive 0 experience points.\n\rThe goblin spills his guts all over the floor.\n\rThe beastly fido gets a wild look in her eyes!\n\rYou grant the beastly fido the favor of your god.\n\rYou feel full more powerful.\n\rYou are filled with holy wrath!\n\rYou feel righteous.\n\rYou feel drained.\n\r\n\r<50hp 29553m 0mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'parl xafe'.\n\rSmokegod utters a word of divine power!\n\rSmokegod's divine wrath >>> ANNIHILATES <<< the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\rSmokegod's divine wrath >>> ANNIHILATES <<< the goblin!\n\rThe goblin is DEAD!!\n\rThe goblin spills his guts all over the floor.\n\rThe beastly fido gets a wild look in her eyes!\n\rSmokegod gets a wild look in his eyes!\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52277 e2e0590a
+step 53 "@pulse 24"
+rng 52277 e2e0590a
+step 54 "@state"
+state room 3700 light 1 people mob player player
+state exit 0 to 3757 info 0 key 0
+state exit 2 to 3744 info 3 key -1
+state exit 5 to 3001 info 0 key 0
+state char mob 3062 pos 8 hit 7/7 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048801 affected_by 0 train 0 on 0 stats 10 11 11 11 11
+state   affect 3 level 60 duration 66 location 24 modifier -7 bitvector 0
+state   affect 3 level 60 duration 66 location 18 modifier 7 bitvector 0
+state   affect 52 level 60 duration 20 location 17 modifier 50 bitvector 0
+state   affect 52 level 60 duration 20 location 19 modifier 10 bitvector 0
+state   affect 52 level 60 duration 20 location 18 modifier 10 bitvector 0
+state char Decimus 10 pos 8 hit 26/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state char Smokegod 60 pos 8 hit 50/100 mana 29553/30000 move 0/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state   affect 3 level 60 duration 66 location 24 modifier -7 bitvector 0
+state   affect 3 level 60 duration 66 location 18 modifier 7 bitvector 0
+state   affect 52 level 60 duration 20 location 17 modifier 50 bitvector 0
+state   affect 52 level 60 duration 20 location 19 modifier 10 bitvector 0
+state   affect 52 level 60 duration 20 location 18 modifier 10 bitvector 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 16 wear -1 timer 4 cost 0 values 5 5 0 1 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state   obj in 5 wear -1 timer 0 cost 181 values 81 1 0 0 0
+state obj floor 3021 wear -1 timer 0 cost 250 values 1 1 5 1 0
+state obj floor 3703 wear -1 timer 0 cost 0 values 1 1 1 0 0
+state obj floor 3704 wear -1 timer 0 cost 0 values 1 1 1 0 0
+state obj floor 3702 wear -1 timer 0 cost 360 values 1 1 6 3 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+rng 52277 e2e0590a
+step 55 "peace"
+out god "Ok.\n\r\n\r<50hp 29553m 0mv> \xff\xf9"
+rng 52277 e2e0590a
+step 56 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52277 e2e0590a
+step 57 "@mob 3501 3700"
+rng 52283 0f15cc73
+step 58 "@mob 3064 3700"
+rng 52286 611b2dd5
+step 59 "cast 'ray of truth' goblin"
+out god "You raise your hand and a blinding ray of light shoots forth!\n\rYour ray of truth does UNSPEAKABLE things to the goblin!\n\rThe goblin is DEAD!!\n\rYou receive 0 experience points.\n\rThe goblin's leg is sliced from his dead body.\n\r\n\r<100hp 29980m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'grul ay hfjhp'.\n\rSmokegod raises his hand, and a blinding ray of light shoots forth!\n\rSmokegod's ray of truth does UNSPEAKABLE things to the goblin!\n\rThe goblin is DEAD!!\n\rThe goblin's leg is sliced from his dead body.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52385 7e1a8f68
+step 60 "@pulse 24"
+rng 52385 7e1a8f68
+step 61 "cast 'ray of truth' drunk"
+out god "You raise your hand and a blinding ray of light shoots forth!\n\rThe drunk seems unharmed by the light.\n\rYou dodge the drunk's attack.\n\rThe drunk is in excellent condition. \n\r\n\r<100hp 29960m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'grul ay hfjhp'.\n\rSmokegod raises his hand, and a blinding ray of light shoots forth!\n\rThe drunk seems unharmed by the light.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52398 7bb10bbf
+step 62 "@pulse 24"
+rng 52398 7bb10bbf
+step 63 "peace"
+out god "Ok.\n\r\n\r<100hp 29960m 100mv> \xff\xf9"
+rng 52398 7bb10bbf
+step 64 "set char smokegod align -1000"
+out god "\n\r<100hp 29960m 100mv> \xff\xf9"
+rng 52398 7bb10bbf
+step 65 "cast 'ray of truth' drunk"
+out god "The energy explodes inside you!\n\rYour ray of truth >>> ANNIHILATES <<< you!\n\rThat really did HURT!\n\rYou sure are BLEEDING!\n\rYou are blinded!\n\rYou dodge someone's attack.\n\r\n\r<1hp 29940m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'grul ay hfjhp'.\n\rSmokegod's ray of truth >>> ANNIHILATES <<< him!\n\rSmokegod appears to be blinded.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52505 351d5a5d
+step 66 "@pulse 24"
+rng 52505 351d5a5d
+step 67 "peace"
+out god "Ok.\n\r\n\r<1hp 29940m 100mv> \xff\xf9"
+rng 52505 351d5a5d
+step 68 "set char smokegod align 0"
+out god "\n\r<1hp 29940m 100mv> \xff\xf9"
+rng 52505 351d5a5d
+step 69 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 52505 351d5a5d
+step 70 "@obj 105 3700"
+rng 52505 351d5a5d
+step 71 "@obj 1362 3700"
+rng 52505 351d5a5d
+step 72 "@obj 611 3700 20 10 0 0 0"
+rng 52505 351d5a5d
+step 73 "@mob 3064 3700"
+rng 52510 62459bf1
+step 74 "force drunk get all"
+out god "The drunk gets a bottle of milk.\n\rThe drunk gets an old scroll.\n\rThe drunk gets a pink potion.\n\rThe drunk gets the corpse of the goblin.\n\rThe drunk gets the leg of the goblin.\n\rThe drunk gets the guts of the goblin.\n\rThe drunk gets a small sword.\n\rOk.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+out dec "\n\rThe drunk gets a bottle of milk.\n\rThe drunk gets an old scroll.\n\rThe drunk gets a pink potion.\n\rThe drunk gets the corpse of the goblin.\n\rThe drunk gets the leg of the goblin.\n\rThe drunk gets the guts of the goblin.\n\rThe drunk gets a small sword.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52510 62459bf1
+step 75 "@obj 105 3700"
+rng 52510 62459bf1
+step 76 "@obj 1362 3700"
+rng 52510 62459bf1
+step 77 "cast 'acid breath' drunk"
+out god "You spit acid at the drunk.\n\rThe corpse of the goblin fumes and dissolves.\n\rYour blast of acid does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\r\n\r<100hp 29900m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'aque bcandusahp'.\n\rSmokegod spits acid at the drunk.\n\rThe corpse of the goblin fumes and dissolves.\n\rSmokegod's blast of acid does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52592 148eb0f6
+step 78 "@pulse 24"
+rng 52592 148eb0f6
+step 79 "peace"
+out god "Ok.\n\r\n\r<100hp 29900m 100mv> \xff\xf9"
+rng 52592 148eb0f6
+step 80 "@mob 3064 3700"
+rng 52596 05af34bf
+step 81 "cast 'fire breath' drunk"
+out god "You breath forth a cone of fire.\n\rAn old scroll crackles and burns!\n\rThe drunk is blinded by smoke!\n\rYour blast of flame does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rThe drunk's severed head plops on the ground.\n\rThe drunk is blinded by smoke!\n\rYour blast of flame does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rThe drunk's heart is torn from his chest.\n\rThe beastly fido is blinded by smoke!\n\rYour blast of flame does UNSPEAKABLE things to the beastly fido!\n\rThe beastly fido is DEAD!!\n\rYou receive 0 experience points.\n\rThe beastly fido spills her guts all over the floor.\n\r\n\r<100hp 29700m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'yucandus bcandusahp'.\n\rSmokegod breathes forth a cone of fire.\n\rAn old scroll crackles and burns!\n\rThe drunk is blinded by smoke!\n\rSmokegod's blast of flame does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rThe drunk's severed head plops on the ground.\n\rThe drunk is blinded by smoke!\n\rSmokegod's blast of flame does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rThe drunk's heart is torn from his chest.\n\rThe beastly fido is blinded by smoke!\n\rSmokegod's blast of flame does UNSPEAKABLE things to the beastly fido!\n\rThe beastly fido is DEAD!!\n\rThe beastly fido spills her guts all over the floor.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52727 a189e732
+step 82 "@pulse 24"
+rng 52727 a189e732
+step 83 "peace"
+out god "Ok.\n\r\n\r<100hp 29700m 100mv> \xff\xf9"
+rng 52727 a189e732
+step 84 "@mob 3064 3700"
+rng 52730 88b77bc1
+step 85 "@obj 105 3700"
+rng 52730 88b77bc1
+step 86 "@obj 611 3700 20 10 0 0 0"
+rng 52730 88b77bc1
+step 87 "cast 'frost breath' drunk"
+out god "You breath out a cone of frost.\n\rA pink potion freezes and shatters!\n\rA pink potion freezes and shatters!\n\rThe drunk turns blue and shivers.\n\rYour blast of frost does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rThe drunk spills his guts all over the floor.\n\r\n\r<100hp 29575m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'yfagh bcandusahp'.\n\rSmokegod breathes out a freezing cone of frost!\n\rA pink potion freezes and shatters!\n\rA pink potion freezes and shatters!\n\rThe drunk turns blue and shivers.\n\rSmokegod's blast of frost does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rThe drunk spills his guts all over the floor.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52827 b67d05b1
+step 88 "@pulse 24"
+rng 52827 b67d05b1
+step 89 "peace"
+out god "Ok.\n\r\n\r<100hp 29575m 100mv> \xff\xf9"
+rng 52827 b67d05b1
+step 90 "@mob 3064 3700"
+rng 52830 542093ba
+step 91 "cast 'lightning breath' drunk"
+out god "You breathe a bolt of lightning at the drunk.\n\rYour blast of lightning does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\r\n\r<100hp 29425m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'diesilla bcandusahp'.\n\rSmokegod breathes a bolt of lightning at the drunk.\n\rSmokegod's blast of lightning does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52935 bf460ba8
+step 92 "@pulse 24"
+rng 52935 bf460ba8
+step 93 "peace"
+out god "Ok.\n\r\n\r<100hp 29425m 100mv> \xff\xf9"
+rng 52935 bf460ba8
+step 94 "@mob 3064 3700"
+rng 52940 5715a129
+step 95 "@obj 20 3700"
+rng 52940 5715a129
+step 96 "cast 'gas breath'"
+out god "You breath out a cloud of poisonous gas.\n\rThe drunk looks very ill.\n\rYour blast of gas does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the drunk's death cry.\n\r\n\r<100hp 29250m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'oag bcandusahp'.\n\rSmokegod breathes out a cloud of poisonous gas!\n\rThe drunk looks very ill.\n\rSmokegod's blast of gas does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 53068 684c1f80
+step 97 "@pulse 24"
+rng 53068 684c1f80
+step 98 "peace"
+out god "Ok.\n\r\n\r<100hp 29250m 100mv> \xff\xf9"
+rng 53068 684c1f80
+step 99 "@state"
+state room 3700 light 1 people player player
+state exit 0 to 3757 info 0 key 0
+state exit 2 to 3744 info 3 key -1
+state exit 5 to 3001 info 0 key 0
+state char Decimus 10 pos 8 hit 26/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state char Smokegod 60 pos 8 hit 100/100 mana 29250/30000 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state   affect 3 level 60 duration 66 location 24 modifier -7 bitvector 0
+state   affect 3 level 60 duration 66 location 18 modifier 7 bitvector 0
+state   affect 52 level 60 duration 20 location 17 modifier 50 bitvector 0
+state   affect 52 level 60 duration 20 location 19 modifier 10 bitvector 0
+state   affect 52 level 60 duration 20 location 18 modifier 10 bitvector 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 20 wear -1 timer 0 cost 0 values 8 8 0 0 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 16 wear -1 timer 7 cost 0 values 5 5 0 1 0
+state obj floor 611 wear -1 timer 0 cost 3 values 20 10 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 16 wear -1 timer 5 cost 0 values 5 5 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state obj floor 13 wear -1 timer 5 cost 0 values 16 16 0 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 12 wear -1 timer 6 cost 0 values 0 0 0 0 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state   obj in 611 wear -1 timer 0 cost 3 values 20 10 0 0 0
+state   obj in 1362 wear -1 timer 1784 cost 400 values 10 19 -1 -1 -1
+state   obj in 105 wear -1 timer 906 cost 160 values 6 2 23 -1 -1
+state   obj in 15 wear -1 timer 4 cost 0 values 20 20 0 0 0
+state   obj in 16 wear -1 timer 4 cost 0 values 5 5 0 1 0
+state   obj in 3021 wear -1 timer 0 cost 250 values 1 1 5 1 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
+state   obj in 5 wear -1 timer 0 cost 181 values 81 1 0 0 0
+state obj floor 3703 wear -1 timer 0 cost 0 values 1 1 1 0 0
+state obj floor 3704 wear -1 timer 0 cost 0 values 1 1 1 0 0
+state obj floor 3702 wear -1 timer 0 cost 360 values 1 1 6 3 0
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+rng 53068 684c1f80

@@ -39,6 +39,14 @@ Stock ROM 2.4b6 doesn't build on today's compilers. The changes that make it bui
 Docker: it builds the code with gcc 4.9, gcc 15 and clang, plays the same scripted session as a new character on
 each, and compares them with stock built the old way. Tested with gcc 4.9.4, gcc 15.3.0 and clang 19.1.7.
 
+## Testing
+
+`python tools/scenarios/run.py` plays 96 scripted sessions through the game (players logging in, talking, fighting,
+buying, casting) and compares what the game sends with the saved goldens in [tests/scenarios](tests/scenarios), with
+a fixed seed and clock so every run is the same. Each bug fix re-saves the goldens it changes, so its diff shows
+what the game now does differently. See [tests/README.md](tests/README.md), and
+[#5](https://github.com/abraidotti/2.4b6-fixed/issues/5) for how it works.
+
 ## Lineage
 
 Each generation is a derivative of the one before it and is bound by every earlier licence.
