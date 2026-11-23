@@ -1,0 +1,23 @@
+# flag and the flags that can't be changed. Smokegod (60) gives Decimus holylight, which isn't settable on players,
+# then takes it away, and stats him after each. Stock set it, then couldn't clear it: do_flag kept a non-settable flag
+# that was already set, but set one that wasn't (#70). Now a flag that isn't settable is refused, set or not ("That
+# flag can't be changed."), and a settable one (comm brief) still changes.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@as god
+flag char decimus plr +holylight
+stat decimus
+flag char decimus plr -holylight
+stat decimus
+flag char decimus comm +brief
+stat decimus
+flag char decimus comm -brief
+stat decimus

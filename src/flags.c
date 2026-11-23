@@ -48,6 +48,7 @@ void do_flag(CHAR_DATA *ch, char *argument)
     long *flag, old = 0, new = 0, marked = 0, pos;
     char type;
     const struct flag_type *flag_table;
+    int i;
 
     argument = one_argument(argument,arg1);
     argument = one_argument(argument,arg2);
@@ -213,8 +214,20 @@ void do_flag(CHAR_DATA *ch, char *argument)
 		send_to_char("That flag doesn't exist!\n\r",ch);
 		return;
 	    }
-	    else
-		SET_BIT(marked,pos);
+
+	    /* the entry flag_lookup found: a flag that isn't settable is refused, set or not */
+	    for (i = 0; flag_table[i].name != NULL; i++)
+		if (LOWER(word[0]) == LOWER(flag_table[i].name[0])
+		&&  !str_prefix(word,flag_table[i].name))
+		    break;
+
+	    if (!flag_table[i].settable)
+	    {
+		send_to_char("That flag can't be changed.\n\r",ch);
+		return;
+	    }
+
+	    SET_BIT(marked,pos);
 	}
 
 	for (pos = 0; flag_table[pos].name != NULL; pos++)
