@@ -39,6 +39,8 @@
  *   @state               dump the characters and objects in every room a connection's character is in
  *   @return              an empty line of input (blank lines are skipped), then one pulse
  *   @file PATH           print a file the game wrote, such as ../player/NAME (relative to the area directory)
+ *   @mkdir PATH          make a directory at PATH (after boot), so the game can't open a file there for writing,
+ *                        even as root: ban.txt, say
  *   anything else        a line of input for the current connection, then one pulse
  *
  * The output, for every step (a line or an @ line):
@@ -68,6 +70,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
+#include <sys/stat.h>
 #include <sys/types.h>
 #include <time.h>
 #include <unistd.h>
@@ -694,6 +697,14 @@ int main (void)
                 printf ("file %s ", line + 6);
                 esc (fbuf, got);
                 putchar ('\n');
+            }
+        }
+        else if (!strncmp (line, "@mkdir ", 7))
+        {
+            if (mkdir (line + 7, 0755) != 0)
+            {
+                fprintf (stderr, "scenario: @mkdir %s: can't make it\n", line + 7);
+                return 2;
             }
         }
         else

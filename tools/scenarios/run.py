@@ -78,6 +78,8 @@ def main():
             golden = SCENARIOS / f"{n}.golden"
             if code != expected_exit(n) or got is None:
                 err = (out / f"{n}.err").read_text(errors="replace").strip().splitlines() if (out / f"{n}.err").exists() else []
+                if got is not None and not err:  # @log sends the game's stderr, and so a sanitizer's report, to .out
+                    err = got.strip().splitlines()
                 report = [l for l in err if "ERROR: AddressSanitizer" in l or "runtime error:" in l]
                 want_code = expected_exit(n)
                 print(f"ERROR     {n}: the driver exited {code}"
