@@ -1759,6 +1759,7 @@ void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
 {
     int i;
     AFFECT_DATA *paf;
+    OBJ_DATA *obj;
 
     if ( parent == NULL || clone == NULL || !IS_NPC(parent))
 	return;
@@ -1824,15 +1825,33 @@ void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
 	clone->damage[i]	= parent->damage[i];
 
     /*
-     * The values copied above include what the parent's affects add to
-     * them: take that off, so the clone starts without them. Then add the
-     * affects once.
+     * The values copied above include what the parent's affects and worn
+     * objects add to them: take that off, so the clone starts from the
+     * parent's own values. Then add the affects once; do_clone equips the
+     * clone's copies of the objects, which adds theirs.
      */
     for (paf = parent->affected; paf != NULL; paf = paf->next)
 	clone_unmodify(clone,paf);
 
+    for (obj = parent->carrying; obj != NULL; obj = obj->next_content)
+    {
+	if (obj->wear_loc == WEAR_NONE)
+	    continue;
+
+	for (i = 0; i < 4; i++)
+	    clone->armor[i] += apply_ac(obj,obj->wear_loc,i);
+
+	if (!obj->enchanted)
+	    for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
+		clone_unmodify(clone,paf);
+	for (paf = obj->affected; paf != NULL; paf = paf->next)
+	    clone_unmodify(clone,paf);
+    }
+
+    /* an object's spell affects are the parent's too: equipping adds them */
     for (paf = parent->affected; paf != NULL; paf = paf->next)
-	affect_to_char(clone,paf);
+	if (paf->location != APPLY_SPELL_AFFECT)
+	    affect_to_char(clone,paf);
 
 }
 
