@@ -2037,8 +2037,8 @@ void do_brandish( CHAR_DATA *ch, char *argument )
 
     if ( --staff->value[2] <= 0 )
     {
-	act( "$n's $p blazes bright and is gone.", ch, staff, NULL, TO_ROOM );
-	act( "Your $p blazes bright and is gone.", ch, staff, NULL, TO_CHAR );
+	act( "$p blazes bright and is gone.", ch, staff, NULL, TO_ROOM );
+	act( "$p blazes bright and is gone.", ch, staff, NULL, TO_CHAR );
 	extract_obj( staff );
     }
 
@@ -2130,8 +2130,8 @@ void do_zap( CHAR_DATA *ch, char *argument )
 
     if ( --wand->value[2] <= 0 )
     {
-	act( "$n's $p explodes into fragments.", ch, wand, NULL, TO_ROOM );
-	act( "Your $p explodes into fragments.", ch, wand, NULL, TO_CHAR );
+	act( "$p explodes into fragments.", ch, wand, NULL, TO_ROOM );
+	act( "$p explodes into fragments.", ch, wand, NULL, TO_CHAR );
 	extract_obj( wand );
     }
 

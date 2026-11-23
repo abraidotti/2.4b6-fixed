@@ -64,6 +64,6 @@ rng 51973 a400b2cc
 step 21 "@pulse 24"
 rng 51973 a400b2cc
 step 22 "zap decimus"
-out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\rYour a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPickpocket zaps you with a small wand.\n\rPickpocket's a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\rA small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rPickpocket zaps you with a small wand.\n\rA small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51975 09ccb864
