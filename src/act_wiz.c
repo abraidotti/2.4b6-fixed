@@ -1420,6 +1420,9 @@ void do_ostat( CHAR_DATA *ch, char *argument )
 	    	send_to_char( " ", ch );
 	}
 
+	if ( obj->extra_descr != NULL && obj->pIndexData->extra_descr != NULL )
+	    send_to_char( " ", ch );	/* between the object's and the prototype's */
+
 	for ( ed = obj->pIndexData->extra_descr; ed != NULL; ed = ed->next )
 	{
 	    send_to_char( ed->keyword, ch );
