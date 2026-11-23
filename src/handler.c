@@ -309,7 +309,7 @@ int check_immune(CHAR_DATA *ch, int dam_type)
 	immune = IS_IMMUNE;
     else if (IS_SET(ch->res_flags,bit) && immune != IS_IMMUNE)
 	immune = IS_RESISTANT;
-    else if (IS_SET(ch->vuln_flags,bit))
+    if (IS_SET(ch->vuln_flags,bit))
     {
 	if (immune == IS_IMMUNE)
 	    immune = IS_RESISTANT;

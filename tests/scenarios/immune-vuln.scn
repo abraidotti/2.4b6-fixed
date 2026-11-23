@@ -1,0 +1,23 @@
+# check_immune with a vulnerability and a resistance or immunity to the same damage. Hassan (3011, in the temple,
+# 4000 hit points) resists fire, and is immune and vulnerable to mental in stock's own area file. Smokegod (60) makes
+# him vulnerable to fire too and casts burning hands at him; then immune to fire as well, and casts again. @state
+# shows his hit points after each. check_immune's vulnerability test came after the immunity and resistance tests
+# as an else, so it never saw them: resistant and vulnerable counted as resistant, and immune and vulnerable as
+# immune (#56). Now they're normal and resistant.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+set skill smokegod all 100
+set char smokegod mana 30000
+stat hassan
+flag mob hassan vuln fire
+stat hassan
+cast 'burning hands' hassan
+@pulse 12
+@state
+flag mob hassan immunity fire
+cast 'burning hands' hassan
+@pulse 12
+@state
