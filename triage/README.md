@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **10 fixed so far**, and 69 left (35 wrong behaviour, 34 message).
+  **11 fixed so far**, and 68 left (34 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -30,7 +30,7 @@ unexamined, not fixed.
 | [#4](https://github.com/abraidotti/QuickMUD-Python/issues/4) | shutdown and reboot save characters still being created | behaviour |  | [`do_shutdown`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2037), [`do_reboot`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2005) | Fixed in QuickMUD-Python during R1 (#3). |
 | [#6](https://github.com/abraidotti/QuickMUD-Python/issues/6) | shutdown while wizinvis uses an uninitialised buffer | crash | [#16](https://github.com/abraidotti/2.4b6-fixed/issues/16) | [`do_shutdown`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2037) | Fixed in QuickMUD-Python (#12). |
 | [#8](https://github.com/abraidotti/QuickMUD-Python/issues/8) | affect_join averages levels with undefined behaviour | crash | [#14](https://github.com/abraidotti/2.4b6-fixed/issues/14) | [`affect_join`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L1298) | Fixed in QuickMUD-Python (#14). |
-| [#41](https://github.com/abraidotti/QuickMUD-Python/issues/41) | wake stands up the waker not the sleeper | behaviour |  | [`do_wake`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L1307) |  |
+| [#41](https://github.com/abraidotti/QuickMUD-Python/issues/41) | wake stands up the waker not the sleeper | behaviour | [#30](https://github.com/abraidotti/2.4b6-fixed/issues/30) | [`do_wake`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L1307) |  |
 | [#42](https://github.com/abraidotti/QuickMUD-Python/issues/42) | a follower who uses up a portal's last charge leaves the leader reading freed memory | crash | [#26](https://github.com/abraidotti/2.4b6-fixed/issues/26) | [`do_enter`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_enter.c#L64) |  |
 | [#43](https://github.com/abraidotti/QuickMUD-Python/issues/43) | pick on a portal that isn't locked says it picked the lock | message |  | [`do_pick`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L740) |  |
 | [#44](https://github.com/abraidotti/QuickMUD-Python/issues/44) (1) | stand from furniture you're in says 'on' | message |  | [`do_stand`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L871) |  |

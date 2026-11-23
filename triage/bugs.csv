@@ -5,7 +5,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 7,,quickmud,,,qmconfig_read,qmconfig read leaks a file descriptor each time,qmconfig is a QuickMUD add-on. Fixed in QuickMUD-Python (#13).
 8,,stock,crash,#14,affect_join,affect_join averages levels with undefined behaviour,Fixed in QuickMUD-Python (#14).
 9,,quickmud,,,do_title,title reads before an empty argument,"The read is in QuickMUD's 2000 sanitising code; stock's do_title has none. Fixed in QuickMUD-Python (#15)."
-41,,stock,behaviour,,do_wake,wake stands up the waker not the sleeper,
+41,,stock,behaviour,#30,do_wake,wake stands up the waker not the sleeper,
 42,,stock,crash,#26,do_enter,a follower who uses up a portal's last charge leaves the leader reading freed memory,
 43,,stock,message,,do_pick,pick on a portal that isn't locked says it picked the lock,
 44,1,stock,message,,do_stand,stand from furniture you're in says 'on',
