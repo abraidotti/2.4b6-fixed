@@ -198,10 +198,10 @@ step 61 "buy nothing"
 out purse "The baker tells you 'I don't sell that -- try 'list''.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 62 "buy 0*bread"
-out purse "The baker tells you 'Get real!\n\r\n\r<29hp 102m 100mv> \xff\xf9"
+out purse "The baker tells you 'Get real!'\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 63 "buy 100*bread"
-out purse "The baker tells you 'Get real!\n\r\n\r<29hp 102m 100mv> \xff\xf9"
+out purse "The baker tells you 'Get real!'\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 64 "buy bread"
 out purse "You buy a bread for 9 silver.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
@@ -223,7 +223,7 @@ step 67 "buy bread"
 out dec "The baker tells you 'You can't afford to buy a bread'.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51967 51b9fae8
 step 68 "buy 2*bread"
-out dec "The baker tells you 'You can't afford to buy that many.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
+out dec "The baker tells you 'You can't afford to buy that many.'\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51967 51b9fae8
 step 69 "@as unseen"
 rng 51967 51b9fae8
@@ -330,7 +330,7 @@ step 94 "buy 2.bread"
 out purse "The grocer tells you 'I don't sell that -- try 'list''.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
 rng 51975 09ccb864
 step 95 "buy 3*bread"
-out purse "The grocer tells you 'I don't have that many in stock.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
+out purse "The grocer tells you 'I don't have that many in stock.'\n\r\n\r<29hp 102m 94mv> \xff\xf9"
 rng 51975 09ccb864
 step 96 "buy 2*bread"
 out purse "You buy a bread[2] for 26 silver.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
@@ -347,7 +347,7 @@ out unseen "\n\rPurser sells a hooded brass lantern.\n\r\n\r<29hp 102m 94mv> \xf
 out seer "\n\rPurser sells a hooded brass lantern.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
 rng 51978 33017d7e
 step 98 "sell nugget"
-out purse "The grocer tells you 'I'm afraid I don't have enough wealth to buy a gold nugget.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
+out purse "The grocer tells you 'I'm afraid I don't have enough wealth to buy a gold nugget.'\n\r\n\r<29hp 102m 94mv> \xff\xf9"
 rng 51978 33017d7e
 step 99 "sell amulet"
 out purse "You can't let go of it.\n\r\n\r<29hp 102m 94mv> \xff\xf9"
@@ -503,7 +503,7 @@ step 123 "list sword"
 out purse "[Lv Price Qty] Item\n\r[ 1   432  1 ] a sub issue sword\n\r[ 7   732 -- ] a long sword\n\r[ 0   300 -- ] a small sword\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 rng 51988 d9c02521
 step 124 "buy 2*sub"
-out purse "The weaponsmith tells you 'I don't have that many in stock.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
+out purse "The weaponsmith tells you 'I don't have that many in stock.'\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 rng 51988 d9c02521
 step 125 "buy sub"
 out purse "You buy a sub issue sword for 432 silver.\n\r\n\r<29hp 102m 90mv> \xff\xf9"

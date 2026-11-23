@@ -2635,7 +2635,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 
 	if (number < 1 || number > 99)
 	{
-	    act("$n tells you 'Get real!",keeper,NULL,ch,TO_VICT);
+	    act("$n tells you 'Get real!'",keeper,NULL,ch,TO_VICT);
 	    return;
 	}
 
@@ -2662,7 +2662,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 
 	    if (count < number)
 	    {
-	    	act("$n tells you 'I don't have that many in stock.",
+	    	act("$n tells you 'I don't have that many in stock.'",
 		    keeper,NULL,ch,TO_VICT);
 	    	ch->reply = keeper;
 	    	return;
@@ -2672,7 +2672,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 	if ( (ch->silver + ch->gold * 100) < cost * number )
 	{
 	    if (number > 1)
-		act("$n tells you 'You can't afford to buy that many.",
+		act("$n tells you 'You can't afford to buy that many.'",
 		    keeper,obj,ch,TO_VICT);
 	    else
 	    	act( "$n tells you 'You can't afford to buy $p'.",
@@ -2898,7 +2898,7 @@ void do_sell( CHAR_DATA *ch, char *argument )
     }
     if ( cost > (keeper-> silver + 100 * keeper->gold) )
     {
-	act("$n tells you 'I'm afraid I don't have enough wealth to buy $p.",
+	act("$n tells you 'I'm afraid I don't have enough wealth to buy $p.'",
 	    keeper,obj,ch,TO_VICT);
 	return;
     }
