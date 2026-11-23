@@ -227,8 +227,8 @@ out purse "You don't have that much to split.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 71 "split 503 100"
 out purse "You split 503 silver coins. Your share is 169 silver.\n\rYou split 100 gold coins. Your share is 34 gold.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPurser splits 503 silver and 100 gold coins, giving you 167 silver and 33 gold.\n\r\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rPurser splits 503 silver and 100 gold coins, giving you 167 silver and 33 gold.\n\r\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rPurser splits 503 silver and 100 gold coins, giving you 167 silver and 33 gold.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rPurser splits 503 silver and 100 gold coins, giving you 167 silver and 33 gold.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 72 "split 2"
 out purse "Don't even bother, cheapskate.\n\r\n\r<29hp 102m 106mv> \xff\xf9"

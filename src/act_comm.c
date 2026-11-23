@@ -1886,7 +1886,7 @@ void do_split( CHAR_DATA *ch, char *argument )
     else
     {
 	sprintf(buf,
-"$n splits %d silver and %d gold coins, giving you %d silver and %d gold.\n\r",
+"$n splits %d silver and %d gold coins, giving you %d silver and %d gold.",
 	 amount_silver,amount_gold,share_silver,share_gold);
     }
 
