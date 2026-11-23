@@ -74,6 +74,10 @@ void do_enter( CHAR_DATA *ch, char *argument)
         ROOM_INDEX_DATA *old_room;
 	OBJ_DATA *portal;
 	CHAR_DATA *fch, *fch_next;
+	/* the portal a leader is leading followers through, which they leave
+	   for the leader to fade: the leader's call still reads it after theirs */
+	static OBJ_DATA *portal_led = NULL;
+	OBJ_DATA *portal_led_before;
 
         old_room = ch->in_room;
 
@@ -188,11 +192,14 @@ void do_enter( CHAR_DATA *ch, char *argument)
             	}
  
             	act( "You follow $N.", fch, NULL, ch, TO_CHAR );
+		portal_led_before = portal_led;
+		portal_led = portal;
 		do_function(fch, &do_enter, argument);
+		portal_led = portal_led_before;
             }
     	}
 
- 	if (portal != NULL && portal->value[0] == -1)
+ 	if (portal != NULL && portal->value[0] == -1 && portal != portal_led)
 	{
 	    act("$p fades out of existence.",ch,portal,NULL,TO_CHAR);
 	    if (ch->in_room == old_room)

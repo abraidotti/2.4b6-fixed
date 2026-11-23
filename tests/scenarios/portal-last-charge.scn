@@ -1,0 +1,39 @@
+# A follower uses up a portal's last charge. At the entrance to Mud School (3700), a gate (25) with two charges
+# leads to the temple (3001). Outlaw (18) follows Decimus (10); Pupil (10) stays behind. Decimus enters: his charge
+# leaves one, and Outlaw, led through after him, uses it up, so Outlaw's own do_enter extracts the gate. Then
+# Decimus's do_enter, which led him, read the freed gate again: in its follower loop, in "fades out of existence",
+# and in a second extract_obj (#26): Pupil saw the gate fade twice, and the log said "Extract_obj: obj 25 not
+# found". Now a follower leaves a gate its leader is leading them through for the leader's do_enter to fade and
+# extract: Decimus and Pupil each see it fade once.
+@connect dec
+Decimus
+psswrd
+@return
+@return
+goto 3700
+@connect out
+Outlaw
+psswrd
+@return
+@return
+@connect pup
+Pupil
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+transfer decimus 3700
+transfer outlaw 3700
+transfer pupil 3700
+@as out
+follow decimus
+@obj 25 3700 2 0 0 3001 -1
+@as dec
+enter gate
+look
+@as pup
+look
