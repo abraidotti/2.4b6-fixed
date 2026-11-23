@@ -2640,6 +2640,11 @@ void do_wimpy( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' )
 	wimpy = ch->max_hit / 5;
+    else if ( !is_number( arg ) )
+    {
+	send_to_char( "You must provide a number.\n\r", ch );
+	return;
+    }
     else
 	wimpy = atoi( arg );
 

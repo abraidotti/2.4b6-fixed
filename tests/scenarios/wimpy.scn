@@ -1,0 +1,15 @@
+# wimpy, with and without a number. Decimus (10, 29 hit points) sets it to the default (a fifth of his hit
+# points), to 14, then types words that aren't numbers: wimpy read them with atoi and set 0, turning wimpy off,
+# and said so (#32). Now it refuses them, as scroll does, and keeps the wimpy he had. Then too high and too low.
+@connect dec
+Decimus
+psswrd
+@return
+@return
+wimpy
+wimpy 14
+wimpy foo
+wimpy 1o
+score
+wimpy 100
+wimpy -1
