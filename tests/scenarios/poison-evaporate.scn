@@ -1,0 +1,43 @@
+# Two of fight.c's messages, in the temple (3001) with violence_update on. A goblin (3501), made level 60 with 5000
+# hit points, wields a small sword (3021, level 60) poisoned and nothing else (values 1 2 4 1 128). Decimus (10,
+# given 30000 hit points) fights it until the sword poisons him: "You feel poison coursing through your veins." had
+# no line end, so the next message ran on from it (#74). Then Decimus wears a floating disc (23) made to rot at
+# death (extra 32768), with a bread in it, and Smokegod (60) slays him: the disc "evaporates, scattering its
+# contents." (stock had no space after the comma).
+@updates area,violence
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@obj 3021 3001 1 2 4 1 128
+@mob 3501 3001
+set obj sword level 60
+set char goblin level 60
+set char goblin hp 5000
+restore goblin
+get sword
+give sword goblin
+force goblin wield sword
+set char decimus hp 30000
+restore decimus
+@as dec
+kill goblin
+@pulse until 600 coursing
+@as god
+peace
+@obj 23 3001 100 16 0 50 100
+@obj 3011 3001
+@as dec
+get disc
+wear disc
+get bread
+put bread disc
+@as god
+set obj disc extra 32768
+slay decimus

@@ -1,0 +1,113 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area,violence
+rng 51942 dc85fa41
+step 1 "@connect dec"
+rng 51942 dc85fa41
+step 2 "Decimus"
+out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "psswrd"
+out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 5 "@return"
+out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@connect god"
+rng 51962 a7dda492
+step 7 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 8 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 9 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 10 "@return"
+out dec "\n\rSmokegod has entered the game.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rDecimus the Recruit is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 11 "@obj 3021 3001 1 2 4 1 128"
+rng 51962 a7dda492
+step 12 "@mob 3501 3001"
+rng 51967 51b9fae8
+step 13 "set obj sword level 60"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 14 "set char goblin level 60"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 15 "set char goblin hp 5000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 16 "restore goblin"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 17 "get sword"
+out dec "\n\rSmokegod gets a small sword.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "You get a small sword.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 18 "give sword goblin"
+out dec "\n\rSmokegod gives a small sword to the goblin.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "You give a small sword to the goblin.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 19 "force goblin wield sword"
+out dec "\n\rThe goblin wields a small sword.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "The goblin wields a small sword.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 20 "set char decimus hp 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 21 "restore decimus"
+out dec "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 22 "@as dec"
+rng 51967 51b9fae8
+step 23 "kill goblin"
+out dec "The goblin parries your attack.\n\rThe goblin is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 51976 8093c1b0
+step 24 "@pulse until 600 coursing"
+pulses 19
+out dec "\n\rThe goblin's slice grazes you.\n\rThe goblin parries your attack.\n\rThe goblin is in excellent condition. \n\r\n\r<29994hp 102m 106mv> \xff\xf9\n\rThe goblin's slice grazes you.\n\rYou feel poison coursing through your veins.\n\rThe goblin's slice misses you.\n\rThe goblin parries your attack.\n\rThe goblin is in excellent condition. \n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "\n\rThe goblin's slice grazes Decimus.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe goblin's slice grazes Decimus.\n\rDecimus is poisoned by the venom on a small sword.\n\rThe goblin's slice misses Decimus.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 25 "@as god"
+rng 52027 ca56f3de
+step 26 "peace"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 27 "@obj 23 3001 100 16 0 50 100"
+rng 52027 ca56f3de
+step 28 "@obj 3011 3001"
+rng 52027 ca56f3de
+step 29 "@as dec"
+rng 52027 ca56f3de
+step 30 "get disc"
+out dec "You get a floating disc.\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus gets a floating disc.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 31 "wear disc"
+out dec "You release a floating disc and it floats next to you.\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus releases a floating disc to float next to him.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 32 "get bread"
+out dec "You get a bread.\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus gets a bread.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 33 "put bread disc"
+out dec "You put a bread on a floating disc.\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus puts a bread on a floating disc.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 34 "@as god"
+rng 52027 ca56f3de
+step 35 "set obj disc extra 32768"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 36 "slay decimus"
+out dec "\n\rSmokegod slays you in cold blood!\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
+out god "You slay him in cold blood!\n\rDecimus hits the ground ... DEAD.\n\rA floating disc evaporates, scattering its contents.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52029 dca6abb4
