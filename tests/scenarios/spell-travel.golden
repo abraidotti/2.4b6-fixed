@@ -460,10 +460,10 @@ out cher "\n\rSmokegod gets a small wand.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod gets a small wand.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52656 27ad3d68
 step 135 "cast recharge wand"
-out god "A small wand glows softly.\n\rA small wand glows softly.\n\r\n\r<100hp 28606m 25mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out cher "\n\rSmokegod utters the words, 'recharge'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
+out god "A small wand glows softly.\n\r\n\r<100hp 28606m 25mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'recharge'.\n\rA small wand glows softly.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52659 58e09e2b
 step 136 "@pulse 24"
 rng 52669 bfd784c9
@@ -476,10 +476,10 @@ out cher "\n\rSmokegod gets a small wand.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod gets a small wand.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52669 bfd784c9
 step 139 "cast recharge wand"
-out god "A small wand glows softly.\n\rA small wand glows softly.\n\r\n\r<100hp 28546m 25mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out cher "\n\rSmokegod utters the words, 'recharge'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
+out god "A small wand glows softly.\n\r\n\r<100hp 28546m 25mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'recharge'.\n\rA small wand glows softly.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52671 9388a016
 step 140 "@pulse 24"
 rng 52671 9388a016
@@ -492,10 +492,10 @@ out cher "\n\rSmokegod gets a small wand.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod gets a small wand.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52671 9388a016
 step 143 "cast recharge wand"
-out god "A small wand glows softly.\n\rA small wand glows softly.\n\r\n\r<100hp 28486m 25mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out cher "\n\rSmokegod utters the words, 'recharge'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
+out god "A small wand glows softly.\n\r\n\r<100hp 28486m 25mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'recharge'.\n\rA small wand glows softly.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52673 20be8a76
 step 144 "@pulse 24"
 rng 52673 20be8a76
@@ -508,10 +508,10 @@ out cher "\n\rSmokegod gets a small wand.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod gets a small wand.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52673 20be8a76
 step 147 "cast recharge wand"
-out god "A small wand glows softly.\n\rA small wand glows softly.\n\r\n\r<100hp 28426m 25mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out cher "\n\rSmokegod utters the words, 'recharge'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
+out god "A small wand glows softly.\n\r\n\r<100hp 28426m 25mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'recharge'.\n\rA small wand glows softly.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rSmokegod utters the words, 'candusqpabraoz'.\n\rA small wand glows softly.\n\r\n\r<29hp 29650m 106mv> \xff\xf9"
 rng 52678 fd082928
 step 148 "@pulse 24"
 rng 52678 fd082928

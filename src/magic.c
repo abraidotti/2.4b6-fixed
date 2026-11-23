@@ -4029,7 +4029,7 @@ void spell_recharge( int sn, int level, CHAR_DATA *ch, void *vo,int target)
 	int chargeback,chargemax;
 
 	act("$p glows softly.",ch,obj,NULL,TO_CHAR);
-	act("$p glows softly.",ch,obj,NULL,TO_CHAR);
+	act("$p glows softly.",ch,obj,NULL,TO_ROOM);
 
 	chargemax = obj->value[1] - obj->value[2];
 	
