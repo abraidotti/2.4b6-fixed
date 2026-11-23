@@ -56,7 +56,7 @@ each: **87 so far**. `git diff stock-2.4b6 main` shows them all at once, and
 | [`4a4dda1`](https://github.com/abraidotti/2.4b6-fixed/commit/4a4dda1605eb0bf582d57aac65df3618aaae6fba) | do_string: a spec that isn't one leaves the mob's own alone | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) |
 | [`075bf3f`](https://github.com/abraidotti/2.4b6-fixed/commit/075bf3f8a4bde90ec69a9922e85600fb018c32c2) | do_force: the command goes into "forces you to" as $t | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) |
 | [`f0f86d3`](https://github.com/abraidotti/2.4b6-fixed/commit/f0f86d3b888a5a9ea068095c9ac35510ab4508e8) | do_flag: just the sign is the sign, and say Ok. | [#68](https://github.com/abraidotti/2.4b6-fixed/issues/68) |
-| [`3b6393a`](https://github.com/abraidotti/2.4b6-fixed/commit/3b6393a91533c9471e52e6ea1c0a26f0e58d179e) | do_rescue: refuse while fighting someone else | [#55](https://github.com/abraidotti/2.4b6-fixed/issues/55) |
+| [`2f12482`](https://github.com/abraidotti/2.4b6-fixed/commit/2f124825f6c732ce3aac4be5d9d3d5efd0f7bca4) | obj_update: drop the pit test that can't apply | [#51](https://github.com/abraidotti/2.4b6-fixed/issues/51) |
 
 ## Messages (35)
 

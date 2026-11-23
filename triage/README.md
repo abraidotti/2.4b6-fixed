@@ -9,9 +9,9 @@ there, with the same faulty lines?
 
 **102 bugs from 49 issues:**
 
-- **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **75 fixed so far**, and 4 left (4 wrong behaviour).
-- **1 stock, but different:** stock has the code, but the bug can't happen the same way.
+- **78 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
+  **75 fixed so far**, and 3 left (3 wrong behaviour).
+- **2 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
 An issue with several bugs has a row for each, numbered as in the issue. A row with no number is the whole
@@ -23,7 +23,7 @@ QuickMUD-Python, are in [FIXES.md](https://github.com/abraidotti/2.4b6-fixed/blo
 boards replaced) was never read during the port, so its bugs, if any, aren't in this table. That code is
 unexamined, not fixed.
 
-## In stock ROM 2.4b6 (79)
+## In stock ROM 2.4b6 (78)
 
 | Issue | Bug | Kind | Fixed | Where | Note |
 |---|---|---|---|---|---|
@@ -82,7 +82,7 @@ unexamined, not fixed.
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (6) | typo: "evaporates,scattering" | message | [#74](https://github.com/abraidotti/2.4b6-fixed/issues/74) | [`make_corpse`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L1427) |  |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (8) | check_immune's vulnerable cases never see immune | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_immune`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L255) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (1) | typo: "to mellow" | message | [#72](https://github.com/abraidotti/2.4b6-fixed/issues/72) | [`do_berserk`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2121) |  |
-| [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour | [#55](https://github.com/abraidotti/2.4b6-fixed/issues/55) | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
+| [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour |  | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (1) | dispel evil and good roll their damage twice (UMAX) | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_dispel_evil`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1950), [`spell_dispel_good`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1981) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (2) | enchant weapon's new hitroll affect is TO_AFFECTS | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (3) | damage-table spells compare a signed level with sizeof | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_burning_hands`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L877) | Seven spells. The UMAX(0, level) comes after the UMIN, too late. |
@@ -100,18 +100,18 @@ unexamined, not fixed.
 | [#83](https://github.com/abraidotti/QuickMUD-Python/issues/83) (6) | stray and missing quotes, and 'his gold' for anyone | message | [#81](https://github.com/abraidotti/2.4b6-fixed/issues/81) | [`spec_ogre_member`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L185), [`spec_patrolman`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L244), [`spec_nasty`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L323) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (1) | obj_update stops at a freed object | crash | [#24](https://github.com/abraidotti/2.4b6-fixed/issues/24) | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (2) | dawn's sunlight is out of order | behaviour | [#50](https://github.com/abraidotti/2.4b6-fixed/issues/50) | [`weather_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L467) |  |
-| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (4) | the pit's check in obj_update can't apply | behaviour |  | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
-| [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (8) | flag names resist and vuln flags from the immunity table | behaviour |  | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) |  |
+| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (4) | the pit's check in obj_update can't apply | behaviour | [#51](https://github.com/abraidotti/2.4b6-fixed/issues/51) | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
 | [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (9) | flag takes the whole word a sign starts and says nothing when it works | behaviour | [#68](https://github.com/abraidotti/2.4b6-fixed/issues/68) | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) |  |
 | [#104](https://github.com/abraidotti/QuickMUD-Python/issues/104) (1) | dump says nothing and doesn't check its files | behaviour | [#53](https://github.com/abraidotti/2.4b6-fixed/issues/53) | [`do_dump`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L2790) |  |
 | [#104](https://github.com/abraidotti/QuickMUD-Python/issues/104) (2) | get_skill and check_improve would read before skill_table with sn -1 | behaviour | [#53](https://github.com/abraidotti/2.4b6-fixed/issues/53) | [`get_skill`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L352), [`check_improve`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/skills.c#L908) | Latent: no caller passes -1 today. |
 | [#109](https://github.com/abraidotti/QuickMUD-Python/issues/109) | bug() hangs the boot on an area file's last line with no newline | crash | [#11](https://github.com/abraidotti/2.4b6-fixed/issues/11) | [`bug`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L3286) |  |
 
-## Stock, but different (1)
+## Stock, but different (2)
 
 | Issue | Bug | Where | Note |
 |---|---|---|---|
 | [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (7) | scan never says 'Looking north'; sees through closed doors; crashes on an exit to nowhere | [`do_scan`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/scan.c#L48) | Stock has the same scan.c, but no scan command in its table, so the faults can't be reached. QuickMUD added the command (doc/QuickMUD Fixes, Fix 6). |
+| [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (8) | flag names resist and vuln flags from the immunity table | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) | Stock has the code, but no res_flags or vuln_flags table: tables.c has imm_flags alone, and check_immune (handler.c) says the immunity, resistance and vulnerability bits must all be the same, so naming all three from imm_flags is the design. QuickMUD's OLC added the separate tables (#69). |
 
 ## QuickMUD only (22)
 

@@ -958,12 +958,9 @@ void obj_update( void )
 	else if ( obj->in_room != NULL
 	&&      ( rch = obj->in_room->people ) != NULL )
 	{
-	    if (! (obj->in_obj && obj->in_obj->pIndexData->vnum == OBJ_VNUM_PIT
-	           && !CAN_WEAR(obj->in_obj,ITEM_TAKE)))
-	    {
-	    	act( message, rch, obj, NULL, TO_ROOM );
-	    	act( message, rch, obj, NULL, TO_CHAR );
-	    }
+	    /* an object in a container, the pit's included, has no in_room: it decays unseen */
+	    act( message, rch, obj, NULL, TO_ROOM );
+	    act( message, rch, obj, NULL, TO_CHAR );
 	}
 
         if ((obj->item_type == ITEM_CORPSE_PC || obj->wear_loc == WEAR_FLOAT)
