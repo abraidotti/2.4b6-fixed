@@ -2041,7 +2041,6 @@ void do_shutdown( CHAR_DATA *ch, char *argument )
     DESCRIPTOR_DATA *d,*d_next;
     CHAR_DATA *vch;
 
-    if (ch->invis_level < LEVEL_HERO)
     sprintf( buf, "Shutdown by %s.", ch->name );
     append_file( ch, SHUTDOWN_FILE, buf );
     strcat( buf, "\n\r" );
