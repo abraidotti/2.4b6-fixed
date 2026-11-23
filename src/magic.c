@@ -890,7 +890,7 @@ void spell_burning_hands(int sn,int level, CHAR_DATA *ch, void *vo, int target)
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell( level, victim,DAM_FIRE) )
@@ -1375,7 +1375,7 @@ void spell_chill_touch( int sn, int level, CHAR_DATA *ch, void *vo,int target )
     AFFECT_DATA af;
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( !saves_spell( level, victim,DAM_COLD ) )
@@ -1415,7 +1415,7 @@ void spell_colour_spray( int sn, int level, CHAR_DATA *ch, void *vo,int target )
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2,  dam_each[level] * 2 );
     if ( saves_spell( level, victim,DAM_LIGHT) )
@@ -1972,7 +1972,10 @@ void spell_dispel_evil( int sn, int level, CHAR_DATA *ch, void *vo,int target)
     if (victim->hit > (ch->level * 4))
       dam = dice( level, 4 );
     else
-      dam = UMAX(victim->hit, dice(level,4));
+    {
+      dam = dice( level, 4 );	/* once: UMAX would roll it twice */
+      dam = UMAX(victim->hit, dam);
+    }
     if ( saves_spell( level, victim,DAM_HOLY) )
 	dam /= 2;
     damage( ch, victim, dam, sn, DAM_HOLY ,TRUE);
@@ -2003,7 +2006,10 @@ void spell_dispel_good( int sn, int level, CHAR_DATA *ch, void *vo,int target )
     if (victim->hit > (ch->level * 4))
       dam = dice( level, 4 );
     else
-      dam = UMAX(victim->hit, dice(level,4));
+    {
+      dam = dice( level, 4 );	/* once: UMAX would roll it twice */
+      dam = UMAX(victim->hit, dam);
+    }
     if ( saves_spell( level, victim,DAM_NEGATIVE) )
         dam /= 2;
     damage( ch, victim, dam, sn, DAM_NEGATIVE ,TRUE);
@@ -2605,6 +2611,7 @@ void spell_enchant_weapon(int sn,int level,CHAR_DATA *ch, void *vo,int target)
     {
         paf = new_affect();
  
+        paf->where      = TO_OBJECT;
         paf->type       = sn;
         paf->level      = level;
         paf->duration   = -1;
@@ -2674,7 +2681,7 @@ void spell_fireball( int sn, int level, CHAR_DATA *ch, void *vo,int target )
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell( level, victim, DAM_FIRE) )
@@ -3574,7 +3581,7 @@ void spell_lightning_bolt(int sn,int level,CHAR_DATA *ch,void *vo,int target)
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell( level, victim,DAM_LIGHTNING) )
@@ -3662,7 +3669,7 @@ void spell_magic_missile( int sn, int level, CHAR_DATA *ch,void *vo,int target)
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell( level, victim,DAM_ENERGY) )
@@ -4191,7 +4198,7 @@ void spell_shocking_grasp(int sn,int level,CHAR_DATA *ch,void *vo,int target)
     };
     int dam;
 
-    level	= UMIN(level, sizeof(dam_each)/sizeof(dam_each[0]) - 1);
+    level	= UMIN(level, (int) (sizeof(dam_each)/sizeof(dam_each[0])) - 1);
     level	= UMAX(0, level);
     dam		= number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell( level, victim,DAM_LIGHTNING) )

@@ -1,0 +1,39 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect god"
+rng 51942 dc85fa41
+step 2 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "set skill smokegod all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 7 "set char smokegod mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 8 "@obj 3021 3001"
+rng 51962 a7dda492
+step 9 "get sword"
+out god "You get a small sword.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 10 "cast 'enchant weapon' sword"
+out god "A small sword glows a brillant blue!\n\r\n\r<100hp 0m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 11 "@pulse 24"
+rng 51967 51b9fae8
+step 12 "save"
+out god "Saving. Remember that ROM has automatic saving now.\n\r\n\r<100hp 0m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 13 "@file ../player/Smokegod"
+file ../player/Smokegod "#PLAYER\nName Smokegod~\nId   1763337600\nLogO 1763400008\nVers 5\nProm <%hhp %mm %vmv> ~\nRace human~\nSex  1\nCla  0\nLevl 60\nPlyd 8\nNot  0 0 0 0 0\nScro 22\nRoom 3001\nHMV  100 100 0 30000 100 100\nGold 0\nSilv 0\nExp  0\nAct  QT\nComm NOP\nPos  8\nAlig  0\nACs 100 100 100 100\nAttr 13 13 13 13 13\nAMod 0 0 0 0 0\nPass SmIJj6Ypaw.rM~\nTitl  the Smoke Test~\nPnts 40\nTSex 1\nLLev 0\nHMVP 100 30000 100\nCnd  0 48 48 48\nSk 100 'reserved'\nSk 100 'acid blast'\nSk 100 'armor'\nSk 100 'bless'\nSk 100 'blindness'\nSk 100 'burning hands'\nSk 100 'call lightning'\nSk 100 'calm'\nSk 100 'cancellation'\nSk 100 'cause critical'\nSk 100 'cause light'\nSk 100 'cause serious'\nSk 100 'chain lightning'\nSk 100 'change sex'\nSk 100 'charm person'\nSk 100 'chill touch'\nSk 100 'colour spray'\nSk 100 'continual light'\nSk 100 'control weather'\nSk 100 'create food'\nSk 100 'create rose'\nSk 100 'create spring'\nSk 100 'create water'\nSk 100 'cure blindness'\nSk 100 'cure critical'\nSk 100 'cure disease'\nSk 100 'cure light'\nSk 100 'cure poison'\nSk 100 'cure serious'\nSk 100 'curse'\nSk 100 'demonfire'\nSk 100 'detect evil'\nSk 100 'detect good'\nSk 100 'detect hidden'\nSk 100 'detect invis'\nSk 100 'detect magic'\nSk 100 'detect poison'\nSk 100 'dispel evil'\nSk 100 'dispel good'\nSk 100 'dispel magic'\nSk 100 'earthquake'\nSk 100 'enchant armor'\nSk 100 'enchant weapon'\nSk 100 'energy drain'\nSk 100 'faerie fire'\nSk 100 'faerie fog'\nSk 100 'farsight'\nSk 100 'fireball'\nSk 100 'fireproof'\nSk 100 'flamestrike'\nSk 100 'fly'\nSk 100 'floating disc'\nSk 100 'frenzy'\nSk 100 'gate'\nSk 100 'giant strength'\nSk 100 'harm'\nSk 100 'haste'\nSk 100 'heal'\nSk 100 'heat metal'\nSk 100 'holy word'\nSk 100 'identify'\nSk 100 'infravision'\nSk 100 'invisibility'\nSk 100 'know alignment'\nSk 100 'lightning bolt'\nSk 100 'locate object'\nSk 100 'magic missile'\nSk 100 'mass healing'\nSk 100 'mass invis'\nSk 100 'nexus'\nSk 100 'pass door'\nSk 100 'plague'\nSk 100 'poison'\nSk 100 'portal'\nSk 100 'protection evil'\nSk 100 'protection good'\nSk 100 'ray of truth'\nSk 100 'recharge'\nSk 100 'refresh'\nSk 100 'remove curse'\nSk 100 'sanctuary'\nSk 100 'shield'\nSk 100 'shocking grasp'\nSk 100 'sleep'\nSk 100 'slow'\nSk 100 'stone skin'\nSk 100 'summon'\nSk 100 'teleport'\nSk 100 'ventriloquate'\nSk 100 'weaken'\nSk 100 'word of recall'\nSk 100 'acid breath'\nSk 100 'fire breath'\nSk 100 'frost breath'\nSk 100 'gas breath'\nSk 100 'lightning breath'\nSk 100 'general purpose'\nSk 100 'high explosive'\nSk 100 'axe'\nSk 100 'dagger'\nSk 100 'flail'\nSk 100 'mace'\nSk 100 'polearm'\nSk 100 'shield block'\nSk 100 'spear'\nSk 100 'sword'\nSk 100 'whip'\nSk 100 'backstab'\nSk 100 'bash'\nSk 100 'berserk'\nSk 100 'dirt kicking'\nSk 100 'disarm'\nSk 100 'dodge'\nSk 100 'enhanced damage'\nSk 100 'envenom'\nSk 100 'hand to hand'\nSk 100 'kick'\nSk 100 'parry'\nSk 100 'rescue'\nSk 100 'trip'\nSk 100 'second attack'\nSk 100 'third attack'\nSk 100 'fast healing'\nSk 100 'haggle'\nSk 100 'hide'\nSk 100 'lore'\nSk 100 'meditation'\nSk 100 'peek'\nSk 100 'pick lock'\nSk 100 'sneak'\nSk 100 'steal'\nSk 100 'scrolls'\nSk 100 'staves'\nSk 100 'wands'\nSk 100 'recall'\nGr 'rom basics'\nEnd\n\n#O\nVnum 3021\nEnchanted\nNest 0\nExtF 65\nCond 0\nWear -1\nLev  1\nCost 250\nAffc 'enchant weapon'   1  60  -1   2  18          0\nAffc 'enchant weapon'   1  60  -1   2  19          0\nEnd\n\n#END\n"
+rng 51967 51b9fae8
