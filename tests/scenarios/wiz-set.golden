@@ -67,10 +67,10 @@ step 22 "set char nobody str 18"
 out god "They aren't here.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52225 4a188c22
 step 23 "set char decimus str 2"
-out god "Strength range is 3 to 21\n\r.\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Strength range is 3 to 21.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52225 4a188c22
 step 24 "set char decimus str 99"
-out god "Strength range is 3 to 21\n\r.\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Strength range is 3 to 21.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52225 4a188c22
 step 25 "set char decimus str 18"
 out god "\n\r<100hp 100m 100mv> \xff\xf9"

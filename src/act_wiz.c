@@ -3371,7 +3371,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
 	if ( value < 3 || value > get_max_train(victim,STAT_STR) )
 	{
 	    sprintf(buf,
-		"Strength range is 3 to %d\n\r.",
+		"Strength range is 3 to %d.\n\r",
 		get_max_train(victim,STAT_STR));
 	    send_to_char(buf,ch);
 	    return;
