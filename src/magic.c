@@ -3478,7 +3478,7 @@ void spell_infravision( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 	  act("$N already has infravision.",ch,NULL,victim,TO_CHAR);
 	return;
     }
-    act( "$n's eyes glow red.", ch, NULL, NULL, TO_ROOM );
+    act( "$n's eyes glow red.", victim, NULL, NULL, TO_ROOM );
 
     af.where	 = TO_AFFECTS;
     af.type      = sn;
