@@ -57,78 +57,90 @@ rng 51962 a7dda492
 step 19 "@connect new1"
 rng 51962 a7dda492
 step 20 "Freshling"
-out new1 "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Did I get that right, Freshling (Y/N)? "
+out new1 "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? New players are not allowed from your site.\n\r"
+closed new1
 rng 51962 a7dda492
 step 21 "@as god"
 rng 51962 a7dda492
-step 22 "ban *nario newbies"
+step 22 "allow scenario"
+out god "Ban on scenario lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 23 "ban *nario newbies"
 out god "nario has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 23 "@connect new2"
+step 24 "@connect new2"
 rng 51962 a7dda492
-step 24 "Greenhorn"
+step 25 "Greenhorn"
 out new2 "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? New players are not allowed from your site.\n\r"
 closed new2
 rng 51962 a7dda492
-step 25 "@as god"
+step 26 "@as god"
 rng 51962 a7dda492
-step 26 "ban *cenari* permit"
+step 27 "allow nario"
+out god "Ban on nario lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 28 "ban *cenari* permit"
 out god "cenari has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 27 "@connect dec"
+step 29 "@connect dec"
 rng 51962 a7dda492
-step 28 "Decimus"
+step 30 "Decimus"
 out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
-rng 51962 a7dda492
-step 29 "psswrd"
-out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
-rng 51962 a7dda492
-step 30 "@return"
-out god "\n\rDecimus has entered the game.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rSmokegod the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 31 "@as god"
 rng 51962 a7dda492
-step 32 "permban scenar* permit"
+step 32 "allow cenari"
+out god "Ban on cenari lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 33 "permban scenar* permit"
 out god "scenar has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 33 "@file ban.txt"
+step 34 "@file ban.txt"
 file ban.txt "scenar               60 AEF\n"
 rng 51962 a7dda492
-step 34 "@connect quin"
+step 35 "@connect quin"
 rng 51962 a7dda492
-step 35 "Quintus"
+step 36 "Quintus"
 out quin "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Your site has been banned from this mud.\n\r"
 closed quin
 rng 51962 a7dda492
-step 36 "@as god"
+step 37 "@as god"
 rng 51962 a7dda492
-step 37 "ban *bigscenarios* permit"
+step 38 "allow scenar"
+out god "Ban on scenar lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 39 "ban *bigscenarios* permit"
 out god "bigscenarios has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 38 "@connect seer"
+step 40 "@connect seer"
 rng 51962 a7dda492
-step 39 "Seer"
+step 41 "Seer"
 out seer "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Your site has been banned from this mud.\n\r"
 closed seer
 rng 51962 a7dda492
-step 40 "@as god"
-rng 51962 a7dda492
-step 41 "ban"
-out god "Banned sites  level  type     status\n\r*bigscenarios*    60   permit   temp\n\rscenar*         60   permit   perm\n\r*cenari*        60   permit   temp\n\r*nario          60   newbies  temp\n\rscenario        60   newbies  temp\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 51962 a7dda492
-step 42 "ban scenar*"
-out god "scenar has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+step 42 "@as god"
 rng 51962 a7dda492
 step 43 "ban"
-out god "Banned sites  level  type     status\n\rscenar*         60   all      temp\n\r*bigscenarios*    60   permit   temp\n\r*cenari*        60   permit   temp\n\r*nario          60   newbies  temp\n\rscenario        60   newbies  temp\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Banned sites  level  type     status\n\r*bigscenarios*    60   permit   temp\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 44 "allow scenar"
+step 44 "allow bigscenarios"
+out god "Ban on bigscenarios lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 45 "ban scenar*"
+out god "scenar has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 46 "ban scenar* newbies"
+out god "scenar has been banned.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 47 "ban"
+out god "Banned sites  level  type     status\n\rscenar*         60   newbies  temp\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 48 "allow scenar"
 out god "Ban on scenar lifted.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 45 "ban"
-out god "Banned sites  level  type     status\n\r*bigscenarios*    60   permit   temp\n\r*cenari*        60   permit   temp\n\r*nario          60   newbies  temp\n\rscenario        60   newbies  temp\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+step 49 "ban"
+out god "Banned sites  level  type     status\n\rhighpower.example    61   newbies  temp\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
-step 46 "@file ban.txt"
+step 50 "@file ban.txt"
 file ban.txt missing
 rng 51962 a7dda492
