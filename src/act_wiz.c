@@ -2417,7 +2417,8 @@ void do_clone(CHAR_DATA *ch, char *argument )
 		clone_object(obj,new_obj);
 		recursive_clone(ch,obj,new_obj);
 		obj_to_char(new_obj,clone);
-		new_obj->wear_loc = obj->wear_loc;
+		if (obj->wear_loc != WEAR_NONE)
+		    equip_char(clone,new_obj,obj->wear_loc);
 	    }
 	}
 	char_to_room(clone,ch->in_room);

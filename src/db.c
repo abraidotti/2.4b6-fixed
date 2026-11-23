@@ -1737,11 +1737,29 @@ CHAR_DATA *create_mobile( MOB_INDEX_DATA *pMobIndex )
     return mob;
 }
 
+/*
+ * Take off what an affect adds to a character's numbers (stats, hit points,
+ * armor, hitroll and so on), for clone_mobile. Its flags are left: they're
+ * bits, and adding the affect again sets them the same.
+ */
+void	affect_modify	args( ( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd ) );
+
+static void clone_unmodify(CHAR_DATA *ch, AFFECT_DATA *paf)
+{
+    AFFECT_DATA af;
+
+    af		 = *paf;
+    af.where	 = TO_AFFECTS;
+    af.bitvector = 0;
+    affect_modify(ch,&af,FALSE);
+}
+
 /* duplicate a mobile exactly -- except inventory */
 void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
 {
     int i;
     AFFECT_DATA *paf;
+    OBJ_DATA *obj;
 
     if ( parent == NULL || clone == NULL || !IS_NPC(parent))
 	return;
@@ -1806,9 +1824,34 @@ void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
     for (i = 0; i < 3; i++)
 	clone->damage[i]	= parent->damage[i];
 
-    /* now add the affects */
+    /*
+     * The values copied above include what the parent's affects and worn
+     * objects add to them: take that off, so the clone starts from the
+     * parent's own values. Then add the affects once; do_clone equips the
+     * clone's copies of the objects, which adds theirs.
+     */
     for (paf = parent->affected; paf != NULL; paf = paf->next)
-        affect_to_char(clone,paf);
+	clone_unmodify(clone,paf);
+
+    for (obj = parent->carrying; obj != NULL; obj = obj->next_content)
+    {
+	if (obj->wear_loc == WEAR_NONE)
+	    continue;
+
+	for (i = 0; i < 4; i++)
+	    clone->armor[i] += apply_ac(obj,obj->wear_loc,i);
+
+	if (!obj->enchanted)
+	    for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
+		clone_unmodify(clone,paf);
+	for (paf = obj->affected; paf != NULL; paf = paf->next)
+	    clone_unmodify(clone,paf);
+    }
+
+    /* an object's spell affects are the parent's too: equipping adds them */
+    for (paf = parent->affected; paf != NULL; paf = paf->next)
+	if (paf->location != APPLY_SPELL_AFFECT)
+	    affect_to_char(clone,paf);
 
 }
 
