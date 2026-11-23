@@ -1,0 +1,621 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect dec"
+rng 51942 dc85fa41
+step 2 "Decimus"
+out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "psswrd"
+out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 5 "@return"
+out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@connect cher"
+rng 51962 a7dda492
+step 7 "Cherub"
+out cher "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 8 "smoke123"
+out cher "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 9 "@return"
+out cher "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 10 "@return"
+out dec "\n\rCherub has entered the game.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rDecimus the Recruit is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 11 "@connect god"
+rng 51962 a7dda492
+step 12 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 13 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 14 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 15 "@return"
+out dec "\n\rSmokegod has entered the game.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod has entered the game.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rCherub the Smoke Test is here.\n\rDecimus the Recruit is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 16 "set skill smokegod all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 17 "set char smokegod mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 18 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 19 "holylight"
+out god "Holy light mode on.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 20 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29995m 100mv> \xff\xf9"
+rng 51965 542a0729
+step 21 "@pulse 24"
+rng 51965 542a0729
+step 22 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29975m 100mv> \xff\xf9"
+rng 51968 b7a8be27
+step 23 "@pulse 24"
+rng 51968 b7a8be27
+step 24 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29970m 100mv> \xff\xf9"
+rng 51969 8619d420
+step 25 "@pulse 24"
+rng 51969 8619d420
+step 26 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29950m 100mv> \xff\xf9"
+rng 51972 73ead2f2
+step 27 "@pulse 24"
+rng 51972 73ead2f2
+step 28 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29945m 100mv> \xff\xf9"
+rng 51973 a400b2cc
+step 29 "@pulse 24"
+rng 51973 a400b2cc
+step 30 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\rYou are no longer invisible.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29925m 100mv> \xff\xf9"
+rng 51975 09ccb864
+step 31 "@pulse 24"
+rng 51975 09ccb864
+step 32 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
+rng 51976 8093c1b0
+step 33 "@pulse 24"
+rng 51976 8093c1b0
+step 34 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\rYou are no longer invisible.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29900m 100mv> \xff\xf9"
+rng 51978 33017d7e
+step 35 "@pulse 24"
+rng 51978 33017d7e
+step 36 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29895m 100mv> \xff\xf9"
+rng 51979 8fd201c6
+step 37 "@pulse 24"
+rng 51979 8fd201c6
+step 38 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29875m 100mv> \xff\xf9"
+rng 51982 3923dba2
+step 39 "@pulse 24"
+rng 51982 3923dba2
+step 40 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29870m 100mv> \xff\xf9"
+rng 51983 95b68061
+step 41 "@pulse 24"
+rng 51983 95b68061
+step 42 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\rYou are no longer invisible.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29850m 100mv> \xff\xf9"
+rng 51985 67922cec
+step 43 "@pulse 24"
+rng 51985 67922cec
+step 44 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29845m 100mv> \xff\xf9"
+rng 51986 f5128765
+step 45 "@pulse 24"
+rng 51986 f5128765
+step 46 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\rYou are no longer invisible.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29825m 100mv> \xff\xf9"
+rng 51988 d9c02521
+step 47 "@pulse 24"
+rng 51988 d9c02521
+step 48 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29820m 100mv> \xff\xf9"
+rng 51989 1390e204
+step 49 "@pulse 24"
+rng 51989 1390e204
+step 50 "cast cancellation decimus"
+out dec "\n\rSmokegod utters the words, 'qaiqzrrahuai'.\n\rYou are no longer invisible.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'cancellation'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29800m 100mv> \xff\xf9"
+rng 51993 04c2ec02
+step 51 "@pulse 24"
+rng 51993 04c2ec02
+step 52 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29795m 100mv> \xff\xf9"
+rng 51995 fa6cc523
+step 53 "@pulse 24"
+rng 51995 fa6cc523
+step 54 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29780m 100mv> \xff\xf9"
+rng 52007 0136d895
+step 55 "@pulse 24"
+rng 52007 0136d895
+step 56 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29775m 100mv> \xff\xf9"
+rng 52010 c5482e87
+step 57 "@pulse 24"
+rng 52020 0e9a6874
+step 58 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29760m 100mv> \xff\xf9"
+rng 52027 ca56f3de
+step 59 "@pulse 24"
+rng 52027 ca56f3de
+step 60 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29755m 100mv> \xff\xf9"
+rng 52028 c7ae9756
+step 61 "@pulse 24"
+rng 52028 c7ae9756
+step 62 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29740m 100mv> \xff\xf9"
+rng 52040 7ea68ad0
+step 63 "@pulse 24"
+rng 52040 7ea68ad0
+step 64 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29735m 100mv> \xff\xf9"
+rng 52041 1183deb5
+step 65 "@pulse 24"
+rng 52041 1183deb5
+step 66 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29720m 100mv> \xff\xf9"
+rng 52052 abbb09af
+step 67 "@pulse 24"
+rng 52052 abbb09af
+step 68 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29715m 100mv> \xff\xf9"
+rng 52055 00d227b9
+step 69 "@pulse 24"
+rng 52055 00d227b9
+step 70 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29700m 100mv> \xff\xf9"
+rng 52065 3999da53
+step 71 "@pulse 24"
+rng 52065 3999da53
+step 72 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29695m 100mv> \xff\xf9"
+rng 52066 7eb440d5
+step 73 "@pulse 24"
+rng 52066 7eb440d5
+step 74 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rYou are no longer invisible.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29680m 100mv> \xff\xf9"
+rng 52075 14d040ac
+step 75 "@pulse 24"
+rng 52075 14d040ac
+step 76 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\rYou fade out of existence.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\rDecimus fades out of existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades out of existence.\n\r\n\r<100hp 29675m 100mv> \xff\xf9"
+rng 52076 8f775e3e
+step 77 "@pulse 24"
+rng 52076 8f775e3e
+step 78 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Spell failed.\n\r\n\r<100hp 29660m 100mv> \xff\xf9"
+rng 52084 8606f9f1
+step 79 "@pulse 24"
+rng 52084 8606f9f1
+step 80 "cast invis decimus"
+out dec "\n\rSmokegod utters the words, 'uizuguburuhl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'invisibility'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "\n\r<100hp 29655m 100mv> \xff\xf9"
+rng 52085 af33eb52
+step 81 "@pulse 24"
+rng 52085 af33eb52
+step 82 "cast 'dispel magic' decimus"
+out dec "\n\rSmokegod utters the words, 'eugszr waouq'.\n\rYou are no longer invisible.\n\rJoin a clan if you want to kill players.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'dispel magic'.\n\rDecimus fades into existence.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Decimus fades into existence.\n\rOk.\n\r\n\r<100hp 29640m 100mv> \xff\xf9"
+rng 52092 5310e838
+step 83 "@pulse 24"
+rng 52092 5310e838
+step 84 "@obj 3021 3001"
+rng 52092 5310e838
+step 85 "get sword"
+out dec "\n\rSmokegod gets a small sword.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod gets a small sword.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "You get a small sword.\n\r\n\r<100hp 29640m 100mv> \xff\xf9"
+rng 52092 5310e838
+step 86 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 29540m 100mv> \xff\xf9"
+rng 52095 4e97a245
+step 87 "@pulse 24"
+rng 52095 4e97a245
+step 88 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows brightly, then fades.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows brightly, then fades.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows brightly, then fades...oops.\n\r\n\r<100hp 29440m 100mv> \xff\xf9"
+rng 52097 d917fa20
+step 89 "@pulse 24"
+rng 52097 d917fa20
+step 90 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 29340m 100mv> \xff\xf9"
+rng 52100 efe90daa
+step 91 "@pulse 24"
+rng 52100 efe90daa
+step 92 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 29240m 100mv> \xff\xf9"
+rng 52102 d7358012
+step 93 "@pulse 24"
+rng 52102 d7358012
+step 94 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 29140m 100mv> \xff\xf9"
+rng 52104 3acb326c
+step 95 "@pulse 24"
+rng 52104 3acb326c
+step 96 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 29040m 100mv> \xff\xf9"
+rng 52109 0b563a1a
+step 97 "@pulse 24"
+rng 52111 039a9554
+step 98 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 28940m 100mv> \xff\xf9"
+rng 52115 460632fa
+step 99 "@pulse 24"
+rng 52115 460632fa
+step 100 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 28840m 100mv> \xff\xf9"
+rng 52118 245aec29
+step 101 "@pulse 24"
+rng 52118 245aec29
+step 102 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows brightly, then fades.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows brightly, then fades.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows brightly, then fades...oops.\n\r\n\r<100hp 28740m 100mv> \xff\xf9"
+rng 52121 2131d8b6
+step 103 "@pulse 24"
+rng 52121 2131d8b6
+step 104 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows a brillant blue!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows a brillant blue!\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows a brillant blue!\n\r\n\r<100hp 28640m 100mv> \xff\xf9"
+rng 52125 2ae6e7b9
+step 105 "@pulse 24"
+rng 52125 2ae6e7b9
+step 106 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 28540m 100mv> \xff\xf9"
+rng 52127 0a7d8a88
+step 107 "@pulse 24"
+rng 52127 0a7d8a88
+step 108 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 28440m 100mv> \xff\xf9"
+rng 52129 49e64991
+step 109 "@pulse 24"
+rng 52129 49e64991
+step 110 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows blue.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows blue.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows blue.\n\r\n\r<100hp 28340m 100mv> \xff\xf9"
+rng 52131 76e05a1d
+step 111 "@pulse 24"
+rng 52131 76e05a1d
+step 112 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword glows a brillant blue!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword glows a brillant blue!\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword glows a brillant blue!\n\r\n\r<100hp 28240m 100mv> \xff\xf9"
+rng 52133 0d8ab8bb
+step 113 "@pulse 24"
+rng 52133 0d8ab8bb
+step 114 "cast 'enchant weapon' sword"
+out dec "\n\rSmokegod utters the words, 'unsoqpaih xzasai'.\n\rA small sword shivers violently and explodes!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'enchant weapon'.\n\rA small sword shivers violently and explodes!\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "A small sword shivers violently and explodes!\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 115 "@pulse 24"
+rng 52135 8b822b9d
+step 116 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 117 "@pulse 24"
+rng 52135 8b822b9d
+step 118 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 119 "@pulse 24"
+rng 52135 8b822b9d
+step 120 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 121 "@pulse 24"
+rng 52135 8b822b9d
+step 122 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 123 "@pulse 24"
+rng 52135 8b822b9d
+step 124 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 125 "@pulse 24"
+rng 52135 8b822b9d
+step 126 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 127 "@pulse 24"
+rng 52135 8b822b9d
+step 128 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 129 "@pulse 24"
+rng 52135 8b822b9d
+step 130 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 131 "@pulse 24"
+rng 52135 8b822b9d
+step 132 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 133 "@pulse 24"
+rng 52135 8b822b9d
+step 134 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52135 8b822b9d
+step 135 "@pulse 24"
+rng 52136 dbb00f56
+step 136 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 137 "@pulse 24"
+rng 52136 dbb00f56
+step 138 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 139 "@pulse 24"
+rng 52136 dbb00f56
+step 140 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 141 "@pulse 24"
+rng 52136 dbb00f56
+step 142 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 143 "@pulse 24"
+rng 52136 dbb00f56
+step 144 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 145 "@pulse 24"
+rng 52136 dbb00f56
+step 146 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 147 "@pulse 24"
+rng 52136 dbb00f56
+step 148 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 149 "@pulse 24"
+rng 52136 dbb00f56
+step 150 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 151 "@pulse 24"
+rng 52136 dbb00f56
+step 152 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 153 "@pulse 24"
+rng 52136 dbb00f56
+step 154 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 155 "@pulse 24"
+rng 52136 dbb00f56
+step 156 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 157 "@pulse 24"
+rng 52136 dbb00f56
+step 158 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 159 "@pulse 24"
+rng 52136 dbb00f56
+step 160 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 161 "@pulse 24"
+rng 52136 dbb00f56
+step 162 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 163 "@pulse 24"
+rng 52136 dbb00f56
+step 164 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 165 "@pulse 24"
+rng 52136 dbb00f56
+step 166 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 167 "@pulse 24"
+rng 52136 dbb00f56
+step 168 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 169 "@pulse 24"
+rng 52136 dbb00f56
+step 170 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 171 "@pulse 24"
+rng 52136 dbb00f56
+step 172 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 173 "@pulse 24"
+rng 52136 dbb00f56
+step 174 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52136 dbb00f56
+step 175 "@pulse 24"
+rng 52137 491c0f9b
+step 176 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 177 "@pulse 24"
+rng 52137 491c0f9b
+step 178 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 179 "@pulse 24"
+rng 52137 491c0f9b
+step 180 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 181 "@pulse 24"
+rng 52137 491c0f9b
+step 182 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 183 "@pulse 24"
+rng 52137 491c0f9b
+step 184 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 185 "@pulse 24"
+rng 52137 491c0f9b
+step 186 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 187 "@pulse 24"
+rng 52137 491c0f9b
+step 188 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 189 "@pulse 24"
+rng 52137 491c0f9b
+step 190 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 191 "@pulse 24"
+rng 52137 491c0f9b
+step 192 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 193 "@pulse 24"
+rng 52137 491c0f9b
+step 194 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 195 "@pulse 24"
+rng 52137 491c0f9b
+step 196 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 197 "@pulse 24"
+rng 52137 491c0f9b
+step 198 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 199 "@pulse 24"
+rng 52137 491c0f9b
+step 200 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 201 "@pulse 24"
+rng 52137 491c0f9b
+step 202 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 203 "@pulse 24"
+rng 52137 491c0f9b
+step 204 "cast 'enchant weapon' sword"
+out god "You are not carrying that.\n\r\n\r<100hp 28140m 100mv> \xff\xf9"
+rng 52137 491c0f9b
+step 205 "@pulse 24"
+rng 52137 491c0f9b
