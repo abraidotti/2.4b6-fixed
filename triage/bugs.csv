@@ -96,8 +96,8 @@ issue,item,verdict,kind,fixed,function,summary,note
 102,7,different,,,do_scan,scan never says 'Looking north'; sees through closed doors; crashes on an exit to nowhere,"Stock has the same scan.c, but no scan command in its table, so the faults can't be reached. QuickMUD added the command (doc/QuickMUD Fixes, Fix 6)."
 102,8,stock,behaviour,,do_flag,flag names resist and vuln flags from the immunity table,
 102,9,stock,behaviour,,do_flag,flag takes the whole word a sign starts and says nothing when it works,
-104,1,stock,behaviour,,do_dump,dump says nothing and doesn't check its files,
-104,2,stock,behaviour,,get_skill check_improve,get_skill and check_improve would read before skill_table with sn -1,Latent: no caller passes -1 today.
+104,1,stock,behaviour,#53,do_dump,dump says nothing and doesn't check its files,
+104,2,stock,behaviour,#53,get_skill check_improve,get_skill and check_improve would read before skill_table with sn -1,Latent: no caller passes -1 today.
 106,,quickmud,,,do_copyover,copyover throws away unsaved OLC work and notes in progress,Copyover is a QuickMUD add-on.
 109,,stock,crash,#11,bug,bug() hangs the boot on an area file's last line with no newline,
 110,,quickmud,,,convert_object convert_mobile convert_objects,old-format area faults (all items),"The conversions are QuickMUD's; stock reads old areas without them, so its old-format branches do run."

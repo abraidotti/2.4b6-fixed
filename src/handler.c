@@ -358,7 +358,7 @@ int get_skill(CHAR_DATA *ch, int sn)
 	skill = ch->level * 5 / 2;
     }
 
-    else if (sn < -1 || sn > MAX_SKILL)
+    else if (sn < -1 || sn >= MAX_SKILL)
     {
 	bug("Bad sn %d in get_skill.",sn);
 	skill = 0;
@@ -442,7 +442,9 @@ int get_skill(CHAR_DATA *ch, int sn)
 
     if (ch->daze > 0)
     {
-	if (skill_table[sn].spell_fun != spell_null)
+	/* sn -1 is a level-based skill, and a bad sn was logged above */
+	if (sn >= 0 && sn < MAX_SKILL
+	&&  skill_table[sn].spell_fun != spell_null)
 	    skill /= 2;
 	else
 	    skill = 2 * skill / 3;

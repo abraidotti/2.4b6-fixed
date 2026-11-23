@@ -913,6 +913,9 @@ void check_improve( CHAR_DATA *ch, int sn, bool success, int multiplier )
     if (IS_NPC(ch))
 	return;
 
+    if (sn < 0 || sn >= MAX_SKILL)  /* -1, an exotic weapon's sn, is no skill */
+	return;
+
     if (ch->level < skill_table[sn].skill_level[ch->class]
     ||  skill_table[sn].rating[ch->class] == 0
     ||  ch->pcdata->learned[sn] == 0

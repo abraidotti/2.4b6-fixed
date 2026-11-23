@@ -2782,6 +2782,24 @@ void do_memory( CHAR_DATA *ch, char *argument )
     return;
 }
 
+/*
+ * Open one of dump's report files, or say why not: do_dump then reopens
+ * fpReserve and stops.
+ */
+static FILE *dump_open( CHAR_DATA *ch, char *name )
+{
+    char buf[MAX_STRING_LENGTH];
+    FILE *fp;
+
+    if ( ( fp = fopen( name, "w" ) ) == NULL )
+    {
+	perror( name );
+	sprintf( buf, "Couldn't open %s, so the dump stops there.\n\r", name );
+	send_to_char( buf, ch );
+    }
+    return fp;
+}
+
 void do_dump( CHAR_DATA *ch, char *argument )
 {
     int count,count2,num_pcs,aff_count;
@@ -2799,7 +2817,11 @@ void do_dump( CHAR_DATA *ch, char *argument )
 
     /* open file */
     fclose(fpReserve);
-    fp = fopen("mem.dmp","w");
+    if ( ( fp = dump_open( ch, "mem.dmp" ) ) == NULL )
+    {
+	fpReserve = fopen( NULL_FILE, "r" );
+	return;
+    }
 
     /* report use of data structures */
     
@@ -2890,7 +2912,11 @@ void do_dump( CHAR_DATA *ch, char *argument )
     fclose(fp);
 
     /* start printing out mobile data */
-    fp = fopen("mob.dmp","w");
+    if ( ( fp = dump_open( ch, "mob.dmp" ) ) == NULL )
+    {
+	fpReserve = fopen( NULL_FILE, "r" );
+	return;
+    }
 
     fprintf(fp,"\nMobile Analysis\n");
     fprintf(fp,  "---------------\n");
@@ -2906,7 +2932,11 @@ void do_dump( CHAR_DATA *ch, char *argument )
     fclose(fp);
 
     /* start printing out object data */
-    fp = fopen("obj.dmp","w");
+    if ( ( fp = dump_open( ch, "obj.dmp" ) ) == NULL )
+    {
+	fpReserve = fopen( NULL_FILE, "r" );
+	return;
+    }
 
     fprintf(fp,"\nObject Analysis\n");
     fprintf(fp,  "---------------\n");
@@ -2923,6 +2953,7 @@ void do_dump( CHAR_DATA *ch, char *argument )
     /* close file */
     fclose(fp);
     fpReserve = fopen( NULL_FILE, "r" );
+    send_to_char( "Dumped to mem.dmp, mob.dmp and obj.dmp.\n\r", ch );
 }
 
 
