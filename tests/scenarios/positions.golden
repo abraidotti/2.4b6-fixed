@@ -229,7 +229,7 @@ out dec "\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 67 "stand 3.bench"
 out dec "You stand in the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rDecimus stands on the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rDecimus stands in the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 68 "sleep 3.bench"
 out dec "You go to sleep in the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"

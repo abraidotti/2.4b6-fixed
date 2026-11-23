@@ -959,7 +959,7 @@ void do_stand( CHAR_DATA *ch, char *argument )
 	else
 	{
 	    act("You stand in $p.",ch,obj,NULL,TO_CHAR);
-	    act("$n stands on $p.",ch,obj,NULL,TO_ROOM);
+	    act("$n stands in $p.",ch,obj,NULL,TO_ROOM);
 	}
 	ch->position = POS_STANDING;
 	break;
