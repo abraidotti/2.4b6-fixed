@@ -598,7 +598,7 @@ void one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt )
 	
 	    if (!saves_spell(level / 2,victim,DAM_POISON)) 
 	    {
-		send_to_char("You feel poison coursing through your veins.",
+		send_to_char("You feel poison coursing through your veins.\n\r",
 		    victim);
 		act("$n is poisoned by the venom on $p.",
 		    victim,wield,NULL,TO_ROOM);
