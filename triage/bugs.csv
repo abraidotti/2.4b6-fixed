@@ -21,7 +21,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 53,2,stock,message,,do_split,split's message prints an extra empty line,
 54,,stock,message,,do_pmote,pmote cuts names short and drops a partial name at the end,
 55,,stock,behaviour,#34,,qui turns on quiet mode instead of warning about quit,"The command table (interp.c) lists quiet before qui, as stock does."
-57,1,stock,behaviour,,do_put,put all skips an object at the container's weight limit,
+57,1,stock,behaviour,#44,do_put,put all skips an object at the container's weight limit,
 57,2,stock,message,,do_put,put all says nothing when nothing goes in,
 58,,stock,behaviour,#42,do_put,put all into the donation pit never sets a timer,
 60,1,stock,message,,do_buy do_sell,four shopkeeper tells miss their closing quote,

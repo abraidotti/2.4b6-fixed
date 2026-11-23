@@ -130,7 +130,9 @@ step 42 "put vest box"
 out dec "It won't fit.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 43 "put all.pants box"
-out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "You put a pair of leather pants in a box.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rDecimus puts a pair of leather pants in a box.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus puts a pair of leather pants in a box.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 44 "@state"
 state room 3001 light 2 people player player player mob
@@ -150,7 +152,6 @@ state   obj carried 1345 wear -1 timer 0 cost 1000 values 750 0 0 50 50
 state   obj carried 616 wear -1 timer 0 cost 270 values 1 2 2 0 0
 state   obj carried 3064 wear -1 timer 0 cost 136 values 1 2 2 0 0
 state   obj carried 3063 wear -1 timer 0 cost 136 values 1 2 2 0 0
-state   obj carried 3062 wear -1 timer 0 cost 136 values 1 2 2 0 0
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
@@ -162,11 +163,10 @@ state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
 state obj floor 23 wear -1 timer 0 cost 0 values 100 16 0 50 100
 state obj floor 5007 wear -1 timer 0 cost 20 values 100 5 0 10 100
 state obj floor 3033 wear -1 timer 0 cost 30 values 10 0 0 5 100
+state   obj in 3062 wear -1 timer 0 cost 136 values 1 2 2 0 0
 rng 51962 a7dda492
 step 45 "put pants box"
-out dec "You put a pair of leather pants in a box.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rDecimus puts a pair of leather pants in a box.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out god "\n\rDecimus puts a pair of leather pants in a box.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "You do not have that item.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 46 "put pants box"
 out dec "You do not have that item.\n\r\n\r<29hp 102m 106mv> \xff\xf9"

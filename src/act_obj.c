@@ -458,7 +458,7 @@ void do_put( CHAR_DATA *ch, char *argument )
 	    &&   can_drop_obj( ch, obj )
 	    &&   get_obj_weight( obj ) + get_true_weight( container )
 		 <= (container->value[0] * 10) 
-	    &&   get_obj_weight(obj) < (container->value[3] * 10))
+	    &&   get_obj_weight(obj) <= (container->value[3] * 10))
 	    {
 	    	if (container->pIndexData->vnum == OBJ_VNUM_PIT
 	    	&&  !CAN_WEAR(container, ITEM_TAKE) )
