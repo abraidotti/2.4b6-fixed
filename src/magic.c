@@ -2973,7 +2973,8 @@ void spell_harm( int sn, int level, CHAR_DATA *ch, void *vo,int target)
     CHAR_DATA *victim = (CHAR_DATA *) vo;
     int dam;
 
-    dam = UMAX(  20, victim->hit - dice(1,4) );
+    dam = dice(1,4);	/* once: UMAX would roll it twice */
+    dam = UMAX(  20, victim->hit - dam );
     if ( saves_spell( level, victim,DAM_HARM) )
 	dam = UMIN( 50, dam / 2 );
     dam = UMIN( 100, dam );
@@ -4638,7 +4639,7 @@ void spell_gas_breath( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 
 	if (is_safe_spell(ch,vch,TRUE)
 	||  (IS_NPC(ch) && IS_NPC(vch) 
-	&&   (ch->fighting == vch || vch->fighting == ch)))
+	&&   (ch->fighting != vch || vch->fighting != ch)))
 	    continue;
 
 	if (saves_spell(level,vch,DAM_POISON))

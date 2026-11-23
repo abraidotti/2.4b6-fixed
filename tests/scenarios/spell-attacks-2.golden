@@ -58,27 +58,27 @@ rng 52044 d714c71e
 step 20 "cast harm septon"
 out god "Your harm spell *** DEVASTATES *** the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29930m 100mv> \xff\xf9"
 out dec "\n\rSmokegod utters the words, 'pabraw'.\n\rSmokegod's harm spell *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52049 b0ba0cdf
+rng 52048 fcc770ed
 step 21 "@pulse 24"
-rng 52049 b0ba0cdf
+rng 52048 fcc770ed
 step 22 "cast harm septon"
 out god "Your harm spell *** DEVASTATES *** the septon!\n\rThe septon has quite a few wounds. \n\r\n\r<100hp 29895m 100mv> \xff\xf9"
 out dec "\n\rSmokegod utters the words, 'pabraw'.\n\rSmokegod's harm spell *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52055 00d227b9
+rng 52052 abbb09af
 step 23 "@pulse 24"
-rng 52055 00d227b9
+rng 52052 abbb09af
 step 24 "cast 'lightning bolt' septon"
-out god "Your lightning bolt *** DEVASTATES *** the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29880m 100mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'diesilla barh'.\n\rSmokegod's lightning bolt *** DEVASTATES *** the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52058 7377f8fc
+out god "Your lightning bolt === OBLITERATES === the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29880m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'diesilla barh'.\n\rSmokegod's lightning bolt === OBLITERATES === the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52057 7ce3d097
 step 25 "@pulse 24"
-rng 52058 7377f8fc
+rng 52057 7ce3d097
 step 26 "cast 'magic missile' septon"
-out god "Your magic missile decimates the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29865m 100mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'waouq wuggurz'.\n\rSmokegod's magic missile decimates the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52062 2d61757b
+out god "Your magic missile injures the septon.\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29865m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'waouq wuggurz'.\n\rSmokegod's magic missile injures the septon.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52060 839014b9
 step 27 "@pulse 24"
-rng 52062 2d61757b
+rng 52060 839014b9
 step 28 "cast 'shocking grasp' septon"
 out god "Your shocking grasp MUTILATES the septon!\n\rThe septon has some big nasty wounds and scratches. \n\r\n\r<100hp 29850m 100mv> \xff\xf9"
 out dec "\n\rSmokegod utters the words, 'gpaqtuio ogrugs'.\n\rSmokegod's shocking grasp MUTILATES the septon!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
