@@ -2915,7 +2915,7 @@ void do_sell( CHAR_DATA *ch, char *argument )
         check_improve(ch,gsn_haggle,TRUE,4);
     }
     sprintf( buf, "You sell $p for %d silver and %d gold piece%s.",
-	cost - (cost/100) * 100, cost/100, cost == 1 ? "" : "s" );
+	cost - (cost/100) * 100, cost/100, cost/100 == 1 ? "" : "s" );
     act( buf, ch, obj, NULL, TO_CHAR );
     ch->gold     += cost/100;
     ch->silver 	 += cost - (cost/100) * 100;

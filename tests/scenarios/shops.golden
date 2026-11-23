@@ -493,7 +493,7 @@ rng 51986 f5128765
 step 121 "sell sword"
 out purse "\n\rDecimus sells a sub issue sword.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 out pick "\n\rDecimus sells a sub issue sword.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
-out dec "You sell a sub issue sword for 44 silver and 1 gold pieces.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
+out dec "You sell a sub issue sword for 44 silver and 1 gold piece.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 out unseen "\n\rDecimus sells a sub issue sword.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 out seer "\n\rDecimus sells a sub issue sword.\n\r\n\r<29hp 102m 90mv> \xff\xf9"
 rng 51988 d9c02521
