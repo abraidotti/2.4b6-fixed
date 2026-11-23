@@ -1,0 +1,19 @@
+# A wizinvis immortal shuts the game down. As wiz-shutdown, but Smokegod (60) types wizinvis first: no echo goes
+# to anyone, every connection closes, and shutdown.txt still says who. do_shutdown's first "if (ch->invis_level <
+# LEVEL_HERO)" had no braces and guarded only the sprintf, so for a wizinvis immortal append_file and strcat used
+# a buffer nothing had filled (#16): shutdown.txt got garbage or nothing, and stock's startup script, finding no
+# shutdown.txt, restarted the game.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@as god
+wizinvis
+shutdown
+@file shutdown.txt
