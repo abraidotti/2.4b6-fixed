@@ -2600,13 +2600,26 @@ char *fread_word( FILE *fp )
 }
 
 /*
+ * The magic number in front of each alloc_mem block. It's as big as the
+ * strictest type, so the block after it is aligned for any of them (a
+ * bare int left every block off by 4 on a 64-bit machine).
+ */
+typedef union mem_header
+{
+    int		num;
+    long	l;
+    double	d;
+    void *	p;
+} MEM_HEADER;
+
+/*
  * Allocate some ordinary memory,
  *   with the expectation of freeing it someday.
  */
 void *alloc_mem( int sMem )
 {
     void *pMem;
-    int *magic;
+    MEM_HEADER *magic;
     int iList;
 
     sMem += sizeof(*magic);
@@ -2633,8 +2646,8 @@ void *alloc_mem( int sMem )
         rgFreeList[iList] = * ((void **) rgFreeList[iList]);
     }
 
-    magic = (int *) pMem;
-    *magic = MAGIC_NUM;
+    magic = (MEM_HEADER *) pMem;
+    magic->num = MAGIC_NUM;
     pMem += sizeof(*magic);
 
     return pMem;
@@ -2649,19 +2662,19 @@ void *alloc_mem( int sMem )
 void free_mem( void *pMem, int sMem )
 {
     int iList;
-    int *magic;
+    MEM_HEADER *magic;
 
     pMem -= sizeof(*magic);
-    magic = (int *) pMem;
+    magic = (MEM_HEADER *) pMem;
 
-    if (*magic != MAGIC_NUM)
+    if (magic->num != MAGIC_NUM)
     {
         bug("Attempt to recyle invalid memory of size %d.",sMem);
         bug((char*) pMem + sizeof(*magic),0);
         return;
     }
 
-    *magic = 0;
+    magic->num = 0;
     sMem += sizeof(*magic);
 
     for ( iList = 0; iList < MAX_MEM_LIST; iList++ )
