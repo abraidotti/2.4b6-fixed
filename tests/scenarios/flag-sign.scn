@@ -1,0 +1,18 @@
+# flag with a sign. Smokegod (60) sets and clears a fido's (3062) blindness, with the sign written on the flag's
+# name (+blind) and apart from it (+ blind), and stats the fido after each. flag took the whole first word as the
+# sign, so +blind changed nothing ("Which flags do you wish to change?"), and when it worked it said nothing
+# (#68). Now both ways set and clear it, and flag says "Ok.".
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@mob 3062 3001
+flag mob fido aff +blind
+stat fido
+flag mob fido aff -blind
+stat fido
+flag mob fido aff + blind
+stat fido
+flag mob fido aff - blind
+stat fido
