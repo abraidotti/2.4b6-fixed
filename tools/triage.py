@@ -7,6 +7,9 @@ Each row of bugs.csv is one bug from an issue in abraidotti/QuickMUD-Python, wit
   stock      the bug is in stock ROM 2.4b6's code, as QuickMUD has it
   quickmud   QuickMUD only: an add-on, or code QuickMUD changed (stock is fine, or has no such code)
   different  stock has the code but differs, so the bug can't happen the same way
+A stock row also has a kind (crash, behaviour or message: what its fix changes) and, once it's fixed, the issue
+here that its fix commit closes ("#N"). Every such issue must be named by a "Fixes:" trailer on a commit since
+stock-2.4b6, or this fails, so the table never claims a fix the history doesn't have.
 Every function a "stock" or "different" row names must be in stock's src/ (read from the files at the
 stock-2.4b6 tag, which are the files in src/ until a fix changes them), or this fails. Stdlib only.
 """
@@ -28,6 +31,8 @@ VERDICTS = {
     "different": "Stock, but different",
     "quickmud": "QuickMUD only",
 }
+KINDS = {"crash": "crash or hang", "behaviour": "wrong behaviour", "message": "message"}
+FIXED = re.compile(r"^#\d+$")
 DEF = re.compile(r"^[A-Za-z_][\w \t\*]*?\b([A-Za-z_]\w*)\s*\(")
 SKIP = {"if", "while", "for", "switch", "return", "sizeof"}
 
@@ -60,6 +65,13 @@ def functions():
     return found
 
 
+def closed_issues():
+    """The issues named by a Fixes: trailer on a commit since the stock tag."""
+    out = subprocess.run(["git", "-C", str(ROOT), "log", "--format=%(trailers:key=Fixes,valueonly,separator=%x2C)",
+                          f"{TAG}..HEAD"], capture_output=True, text=True, check=True).stdout
+    return {i.strip() for i in out.replace("\n", ",").split(",") if i.strip()}
+
+
 def where(row, index):
     names = row["function"].split()
     if row["verdict"] == "quickmud":
@@ -77,6 +89,9 @@ def render(rows, index):
     count = Counter(r["verdict"] for r in rows)
     issues = sorted({int(r["issue"]) for r in rows})
     stock_issues = sorted({int(r["issue"]) for r in rows if r["verdict"] == "stock"})
+    stock = [r for r in rows if r["verdict"] == "stock"]
+    fixed = [r for r in stock if r["fixed"]]
+    left = Counter(r["kind"] for r in stock if not r["fixed"])
     lines = [
         "# Which QuickMUD-Python bugs are in stock ROM 2.4b6",
         "",
@@ -89,12 +104,16 @@ def render(rows, index):
         "",
         f"**{len(rows)} bugs from {len(issues)} issues:**",
         "",
-        f"- **{count['stock']} in stock ROM 2.4b6**, from {len(stock_issues)} issues. These are what this repo fixes.",
+        f"- **{count['stock']} in stock ROM 2.4b6**, from {len(stock_issues)} issues. These are what this repo fixes:",
+        f"  **{len(fixed)} fixed so far**, and {sum(left.values())} left"
+        f" ({', '.join(f'{left[k]} {v}' for k, v in KINDS.items() if left[k])}).",
         f"- **{count['different']} stock, but different:** stock has the code, but the bug can't happen the same way.",
         f"- **{count['quickmud']} QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.",
         "",
         "An issue with several bugs has a row for each, numbered as in the issue. A row with no number is the whole",
-        "issue. Links to stock code point at the function's first line at the tag.",
+        "issue. Links to stock code point at the function's first line at the tag. A stock bug's kind says what its",
+        "fix changes, and Fixed links the issue here that its fix closes. Bugs found while fixing these, and not from",
+        f"QuickMUD-Python, are in [FIXES.md]({REPO}/blob/main/FIXES.md) only.",
         "",
         "**Not examined:** stock code that QuickMUD replaced or removed (for example `note.c`, which QuickMUD's",
         "boards replaced) was never read during the port, so its bugs, if any, aren't in this table. That code is",
@@ -102,12 +121,20 @@ def render(rows, index):
     ]
     for verdict, title in VERDICTS.items():
         group = [r for r in rows if r["verdict"] == verdict]
-        lines += ["", f"## {title} ({len(group)})", "", "| Issue | Bug | Where | Note |", "|---|---|---|---|"]
+        if verdict == "stock":
+            head = ["| Issue | Bug | Kind | Fixed | Where | Note |", "|---|---|---|---|---|---|"]
+        else:
+            head = ["| Issue | Bug | Where | Note |", "|---|---|---|---|"]
+        lines += ["", f"## {title} ({len(group)})", ""] + head
         for r in group:
             item = f" ({r['item']})" if r["item"] else ""
             note = r["note"].replace("|", "\\|")
             summary = r["summary"].replace("|", "\\|")
-            lines.append(f"| [#{r['issue']}]({ISSUES}/{r['issue']}){item} | {summary} | {where(r, index)} | {note} |")
+            extra = ""
+            if verdict == "stock":
+                fix = f"[{r['fixed']}]({REPO}/issues/{r['fixed'][1:]})" if r["fixed"] else ""
+                extra = f" {r['kind']} | {fix} |"
+            lines.append(f"| [#{r['issue']}]({ISSUES}/{r['issue']}){item} | {summary} |{extra} {where(r, index)} | {note} |")
     return "\n".join(lines) + "\n"
 
 
@@ -118,6 +145,18 @@ def main():
     bad = [f"#{r['issue']} ({r['item'] or '-'}): verdict {r['verdict']!r}" for r in rows if r["verdict"] not in VERDICTS]
     bad += [f"#{r['issue']} ({r['item'] or '-'}): {n} isn't in stock's src/"
             for r in rows if r["verdict"] != "quickmud" for n in r["function"].split() if n not in index]
+    closed = closed_issues()
+    for r in rows:
+        tag = f"#{r['issue']} ({r['item'] or '-'})"
+        if r["verdict"] == "stock":
+            if r["kind"] not in KINDS:
+                bad.append(f"{tag}: kind {r['kind']!r} isn't one of {', '.join(KINDS)}")
+            if r["fixed"] and not FIXED.match(r["fixed"]):
+                bad.append(f"{tag}: fixed {r['fixed']!r} isn't #N")
+            elif r["fixed"] and r["fixed"] not in closed:
+                bad.append(f"{tag}: fixed {r['fixed']}, but no commit since {TAG} says Fixes: {r['fixed']}")
+        elif r["kind"] or r["fixed"]:
+            bad.append(f"{tag}: only a stock row has a kind and a fixed issue")
     if bad:
         sys.exit("bugs.csv:\n  " + "\n  ".join(bad))
     text = render(rows, index)
