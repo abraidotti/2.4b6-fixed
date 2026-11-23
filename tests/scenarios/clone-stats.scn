@@ -1,0 +1,48 @@
+# What a mob's clone gets (#66). In the temple (3001), Smokegod (60) and Seraph (56).
+# - Smokegod has Hassan wield a glowing long sword (3349: hitroll +2, damroll +2), blesses him (hitroll and saves),
+#   stats him, and clones him. The clone goes first in the room, so it's 1.hassan. Stock copied Hassan's hitroll,
+#   damroll and saves, which already had the sword's and bless's in them, then added bless again: the clone had bless
+#   twice. Now it gets Hassan's own values, bless once and the sword equipped, so it matches Hassan, and removing the
+#   sword takes each of them to the same values.
+# - Smokegod gives a cityguard (3060) a ring of protection (3043: armor -2, saves -1), sets its cost to 2000 (too much
+#   for Seraph to clone at trust 55) and her trust to 55, and Seraph clones the guard. Stock's clone kept the ring's
+#   armor and saves without the ring: its worn objects were copied as worn but never equipped, and their bonuses came
+#   with the guard's values. Now the clone has the guard's values without the ring, and it has no ring to remove.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@connect ser
+Seraph
+smoke123
+@return
+@return
+@as god
+set skill smokegod all 100
+load obj 3349
+give long hassan
+force hassan wield long
+cast bless hassan
+@pulse 12
+stat hassan
+clone mob hassan
+stat 1.hassan
+stat 2.hassan
+force 1.hassan remove long
+stat 1.hassan
+force 2.hassan remove long
+stat 2.hassan
+@mob 3060 3001
+load obj 3043
+set obj ring cost 2000
+give ring cityguard
+force cityguard wear ring
+trust seraph 55
+stat cityguard
+@as ser
+clone cityguard
+@as god
+stat 1.cityguard
+stat 2.cityguard
+force 1.cityguard remove ring
