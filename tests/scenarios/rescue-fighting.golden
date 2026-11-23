@@ -95,18 +95,16 @@ rng 52033 d933ea17
 step 30 "@as hero"
 rng 52033 d933ea17
 step 31 "rescue locksmith"
-out god "Heroic rescues Locksmith!\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out lock "\n\rHeroic rescues you!\n\r\n\r<20hp 102m 106mv> \xff\xf9"
-out hero "You rescue Locksmith!\n\rThe cityguard is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52034 5485b550
+out hero "You're busy fighting!\n\rThe cityguard is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52033 d933ea17
 step 32 "@as god"
-rng 52034 5485b550
+rng 52033 d933ea17
 step 33 "stat heroic"
 out god "Name: Heroic\n\rVnum: 0  Format: pc  Race: human  Group: 0  Sex: male  Room: 3005\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rHp: 29/29  Mana: 102/102  Move: 106/106  Practices: 1\n\rLv: 51  Class: warrior  Align: 750  Gold: 0  Silver: 0  Exp: 2088\n\rArmor: pierce: 95  bash: 95  slash: 95  magic: 99\n\rHit: 4  Dam: 4  Saves: -1  Size: medium  Position: fighting  Wimpy: 0\n\rFighting: cityguard guard\n\rThirst: 45  Hunger: 45  Full: 42  Drunk: 0\n\rCarry number: 5  Carry weight: 14\n\rAge: 17  Played: 0  Last Level: 0  Timer: 0\n\rAct: player no_summon\n\rComm: prompt combine\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: \n\rLong  description: (none)\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52034 5485b550
+rng 52033 d933ea17
 step 34 "stat 1.cityguard"
 out god "Name: cityguard guard\n\rVnum: 3060  Format: new  Race: human  Group: 3000  Sex: female  Room: 3005\n\rCount: 13  Killed: 0\n\rStr: 17(17)  Int: 13(13)  Wis: 14(14)  Dex: 14(14)  Con: 16(16)\n\rHp: 301/301  Mana: 150/150  Move: 100/100  Practices: 0\n\rLv: 15  Class: mobile  Align: 1000  Gold: 2  Silver: 4  Exp: 0\n\rArmor: pierce: 0  bash: 0  slash: 0  magic: 80\n\rHit: 5  Dam: 7  Saves: 0  Size: medium  Position: fighting  Wimpy: 0\n\rDamage: 2d4  Message:  punch\n\rFighting: Heroic\n\rCarry number: 0  Carry weight: 0\n\rAct: npc scavenger stay_area warrior\n\rComm: no_shout no_tell no_channels\n\rOffense: bash berserk disarm parry rescue assist_guard assist_vnum\n\rResist: magic\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the cityguard\n\rLong  description: A cityguard stands here.\n\rMobile has special procedure spec_guard.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52034 5485b550
+rng 52033 d933ea17
 step 35 "stat 2.cityguard"
-out god "Name: cityguard guard\n\rVnum: 3060  Format: new  Race: human  Group: 3000  Sex: male  Room: 3005\n\rCount: 13  Killed: 0\n\rStr: 17(17)  Int: 13(13)  Wis: 14(14)  Dex: 14(14)  Con: 16(16)\n\rHp: 286/286  Mana: 150/150  Move: 100/100  Practices: 0\n\rLv: 15  Class: mobile  Align: 1000  Gold: 1  Silver: 75  Exp: 0\n\rArmor: pierce: 0  bash: 0  slash: 0  magic: 80\n\rHit: 5  Dam: 7  Saves: 0  Size: medium  Position: fighting  Wimpy: 0\n\rDamage: 2d4  Message:  punch\n\rFighting: Heroic\n\rCarry number: 0  Carry weight: 0\n\rAct: npc scavenger stay_area warrior\n\rComm: no_shout no_tell no_channels\n\rOffense: bash berserk disarm parry rescue assist_guard assist_vnum\n\rResist: magic\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the cityguard\n\rLong  description: A cityguard stands here.\n\rMobile has special procedure spec_guard.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52034 5485b550
+out god "Name: cityguard guard\n\rVnum: 3060  Format: new  Race: human  Group: 3000  Sex: male  Room: 3005\n\rCount: 13  Killed: 0\n\rStr: 17(17)  Int: 13(13)  Wis: 14(14)  Dex: 14(14)  Con: 16(16)\n\rHp: 286/286  Mana: 150/150  Move: 100/100  Practices: 0\n\rLv: 15  Class: mobile  Align: 1000  Gold: 1  Silver: 75  Exp: 0\n\rArmor: pierce: 0  bash: 0  slash: 0  magic: 80\n\rHit: 5  Dam: 7  Saves: 0  Size: medium  Position: fighting  Wimpy: 0\n\rDamage: 2d4  Message:  punch\n\rFighting: Locksmith\n\rCarry number: 0  Carry weight: 0\n\rAct: npc scavenger stay_area warrior\n\rComm: no_shout no_tell no_channels\n\rOffense: bash berserk disarm parry rescue assist_guard assist_vnum\n\rResist: magic\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the cityguard\n\rLong  description: A cityguard stands here.\n\rMobile has special procedure spec_guard.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 52033 d933ea17
