@@ -1,5 +1,5 @@
 issue,item,verdict,kind,fixed,function,summary,note
-4,,stock,behaviour,,do_shutdown do_reboot,shutdown and reboot save characters still being created,Fixed in QuickMUD-Python during R1 (#3).
+4,,stock,behaviour,#40,do_shutdown do_reboot,shutdown and reboot save characters still being created,Fixed in QuickMUD-Python during R1 (#3).
 5,,quickmud,,,do_copyover,copyover restores a new character waiting at the MOTD as level 0,Copyover is a QuickMUD add-on. Fixed in QuickMUD-Python (#11).
 6,,stock,crash,#16,do_shutdown,shutdown while wizinvis uses an uninitialised buffer,Fixed in QuickMUD-Python (#12).
 7,,quickmud,,,qmconfig_read,qmconfig read leaks a file descriptor each time,qmconfig is a QuickMUD add-on. Fixed in QuickMUD-Python (#13).
