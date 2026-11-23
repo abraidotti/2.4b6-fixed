@@ -2973,7 +2973,8 @@ void spell_harm( int sn, int level, CHAR_DATA *ch, void *vo,int target)
     CHAR_DATA *victim = (CHAR_DATA *) vo;
     int dam;
 
-    dam = UMAX(  20, victim->hit - dice(1,4) );
+    dam = dice(1,4);	/* once: UMAX would roll it twice */
+    dam = UMAX(  20, victim->hit - dam );
     if ( saves_spell( level, victim,DAM_HARM) )
 	dam = UMIN( 50, dam / 2 );
     dam = UMIN( 100, dam );

@@ -168,56 +168,56 @@ out god "The spectre fades into existence.\n\rThe spectre's pound injures Heroic
 out hero "\n\rThe spectre fades into existence.\n\rThe spectre's pound injures you.\n\rThe spectre tries to disarm you, but fails.\n\rThe spectre is in excellent condition. \n\r\n\r<29987hp 102m 106mv> \xff\xf9"
 rng 52452 484d98a0
 step 53 "@spec 10"
-spec 1 0 0 0 1 0 0 0 0 0
-rng 52468 3c6e0672
+spec 1 0 0 0 0 1 0 0 0 0
+rng 52467 00c065a7
 step 54 "peace"
 out god "The spectre's harm spell DISEMBOWELS Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rThe spectre's harm spell DISEMBOWELS you!\n\r\n\r<29945hp 102m 106mv> \xff\xf9"
-rng 52468 3c6e0672
+rng 52467 00c065a7
 step 55 "transfer heroic 3700"
 out god "Heroic disappears in a mushroom cloud.\n\rHeroic arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r(White Aura) A spectre has begun to materialize in front of you!\n\rSmokegod the Smoke Test is here.\n\r\n\r<29945hp 102m 106mv> \xff\xf9"
-rng 52468 3c6e0672
+rng 52467 00c065a7
 step 56 "restore heroic"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52468 3c6e0672
+rng 52467 00c065a7
 step 57 "purge"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52468 3c6e0672
+rng 52467 00c065a7
 step 58 "@pulse 12"
-rng 52468 3c6e0672
+rng 52467 00c065a7
 step 59 "@mob 8006 3700"
-rng 52495 bb7f0b22
+rng 52492 c611d23d
 step 60 "@spec"
 spec 0
-rng 52495 bb7f0b22
+rng 52492 c611d23d
 step 61 "force judge kill heroic"
-out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rYou parry a rookie judge's attack.\n\rA rookie judge is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52508 947f561e
+out god "A rookie judge's trip misses Heroic.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rYou parry a rookie judge's attack.\n\rA rookie judge's trip misses you.\n\rA rookie judge is in excellent condition. \n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 52505 351d5a5d
 step 62 "@spec 20"
-spec 0 1 0 0 0 0 1 1 1 0 0 0 0 1 0 0 0 0 0 0
-rng 52541 cd68da8c
+spec 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 0 0 0 0 0
+rng 52540 fcf8e860
 step 63 "peace"
-out god "A rookie judge's high explosive ammo devastates Heroic!\n\rA rookie judge's high explosive ammo MUTILATES Heroic!\n\rA rookie judge's high explosive ammo DISEMBOWELS Heroic!\n\rA rookie judge's high explosive ammo devastates Heroic!\n\rA rookie judge's high explosive ammo maims Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rA rookie judge's high explosive ammo devastates you!\n\rA rookie judge's high explosive ammo MUTILATES you!\n\rA rookie judge's high explosive ammo DISEMBOWELS you!\n\rA rookie judge's high explosive ammo devastates you!\n\rA rookie judge's high explosive ammo maims you!\n\r\n\r<29824hp 102m 106mv> \xff\xf9"
-rng 52541 cd68da8c
+out god "A rookie judge's high explosive ammo devastates Heroic!\n\rA rookie judge's high explosive ammo DISEMBOWELS Heroic!\n\rA rookie judge's high explosive ammo MUTILATES Heroic!\n\rA rookie judge's high explosive ammo DISEMBOWELS Heroic!\n\rA rookie judge's high explosive ammo devastates Heroic!\n\rA rookie judge's high explosive ammo maims Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rA rookie judge's high explosive ammo devastates you!\n\rA rookie judge's high explosive ammo DISEMBOWELS you!\n\rA rookie judge's high explosive ammo MUTILATES you!\n\rA rookie judge's high explosive ammo DISEMBOWELS you!\n\rA rookie judge's high explosive ammo devastates you!\n\rA rookie judge's high explosive ammo maims you!\n\r\n\r<29781hp 102m 106mv> \xff\xf9"
+rng 52540 fcf8e860
 step 64 "transfer heroic 3700"
 out god "Heroic disappears in a mushroom cloud.\n\rHeroic arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rA Rookie judge is on his first beat here.\n\rSmokegod the Smoke Test is here.\n\r\n\r<29824hp 102m 106mv> \xff\xf9"
-rng 52541 cd68da8c
+out hero "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rA Rookie judge is on his first beat here.\n\rSmokegod the Smoke Test is here.\n\r\n\r<29781hp 102m 106mv> \xff\xf9"
+rng 52540 fcf8e860
 step 65 "restore heroic"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52541 cd68da8c
+rng 52540 fcf8e860
 step 66 "purge"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out hero "\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52541 cd68da8c
+rng 52540 fcf8e860
 step 67 "@pulse 12"
-rng 52541 cd68da8c
+rng 52540 fcf8e860
 step 68 "@mob 2017 3700"
 rng 52580 74da6a5f
 step 69 "@spec"
