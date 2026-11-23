@@ -655,7 +655,7 @@ void obj_cast_spell( int sn, int level, CHAR_DATA *ch, CHAR_DATA *victim, OBJ_DA
 	    {
 		if (is_safe_spell(ch,victim,FALSE) && ch != victim)
 		{
-		    send_to_char("Somehting isn't right...\n\r",ch);
+		    send_to_char("Something isn't right...\n\r",ch);
 		    return;
 		}
 
