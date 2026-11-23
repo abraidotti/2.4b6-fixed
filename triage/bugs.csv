@@ -8,9 +8,9 @@ issue,item,verdict,kind,fixed,function,summary,note
 41,,stock,behaviour,#30,do_wake,wake stands up the waker not the sleeper,
 42,,stock,crash,#26,do_enter,a follower who uses up a portal's last charge leaves the leader reading freed memory,
 43,,stock,message,#83,do_pick,pick on a portal that isn't locked says it picked the lock,
-44,1,stock,message,,do_stand,stand from furniture you're in says 'on',
-44,2,stock,message,,do_sit,waking to sit on furniture says 'at',
-44,3,stock,message,,do_sit,sitting up in furniture prints nothing,
+44,1,stock,message,#85,do_stand,stand from furniture you're in says 'on',
+44,2,stock,message,#85,do_sit,waking to sit on furniture says 'at',
+44,3,stock,message,#85,do_sit,sitting up in furniture prints nothing,
 46,,stock,behaviour,#36,do_description,a description line starting with ~ takes a line off,
 47,,stock,behaviour,#32,do_wimpy,a word that isn't a number sets wimpy to 0,
 49,,quickmud,,,do_tell,tell to an awake mob crashes the game,The note-writing check that reads victim->desc came with QuickMUD's boards.
