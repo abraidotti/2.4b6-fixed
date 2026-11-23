@@ -56,7 +56,12 @@ void do_flag(CHAR_DATA *ch, char *argument)
     type = argument[0];
 
     if (type == '=' || type == '-' || type == '+')
-        argument = one_argument(argument,word);
+    {
+	/* just the sign: +holylight is + and holylight, as + holylight is */
+	argument++;
+	while (*argument == ' ')
+	    argument++;
+    }
 
     if (arg1[0] == '\0')
     {
@@ -240,6 +245,7 @@ void do_flag(CHAR_DATA *ch, char *argument)
 	    }
 	}
 	*flag = new;
+	send_to_char("Ok.\n\r",ch);
 	return;
     }
 }

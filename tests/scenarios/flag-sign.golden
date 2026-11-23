@@ -1,0 +1,43 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect god"
+rng 51942 dc85fa41
+step 2 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@mob 3062 3001"
+rng 51964 b60256bc
+step 7 "flag mob fido aff +blind"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 8 "stat fido"
+out god "Name: fido dog\n\rVnum: 3062  Format: new  Race: fido  Group: 0  Sex: male  Room: 3001\n\rCount: 5  Killed: 0\n\rStr: 10(10)  Int: 11(11)  Wis: 11(11)  Dex: 11(11)  Con: 11(11)\n\rHp: 10/10  Mana: 100/100  Move: 100/100  Practices: 0\n\rLv: 0  Class: mobile  Align: -200  Gold: 0  Silver: 0  Exp: 0\n\rArmor: pierce: 100  bash: 100  slash: 100  magic: 100\n\rHit: 0  Dam: 0  Saves: 0  Size: small  Position: standing  Wimpy: 0\n\rDamage: 1d4  Message:  bite\n\rFighting: (none)\n\rCarry number: 0  Carry weight: 0\n\rAct: npc aggressive stay_area wimpy no_align\n\rComm: no_shout no_tell no_channels\n\rOffense: dodge assist_race\n\rVulnerable: magic\n\rForm: poison animal mammal\n\rParts: head legs heart brains guts feet ears eyes tail fangs\n\rAffected by blind\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the beastly fido\n\rLong  description: A beastly fido is here.\n\rMobile has special procedure spec_fido.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 9 "flag mob fido aff -blind"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 10 "stat fido"
+out god "Name: fido dog\n\rVnum: 3062  Format: new  Race: fido  Group: 0  Sex: male  Room: 3001\n\rCount: 5  Killed: 0\n\rStr: 10(10)  Int: 11(11)  Wis: 11(11)  Dex: 11(11)  Con: 11(11)\n\rHp: 10/10  Mana: 100/100  Move: 100/100  Practices: 0\n\rLv: 0  Class: mobile  Align: -200  Gold: 0  Silver: 0  Exp: 0\n\rArmor: pierce: 100  bash: 100  slash: 100  magic: 100\n\rHit: 0  Dam: 0  Saves: 0  Size: small  Position: standing  Wimpy: 0\n\rDamage: 1d4  Message:  bite\n\rFighting: (none)\n\rCarry number: 0  Carry weight: 0\n\rAct: npc aggressive stay_area wimpy no_align\n\rComm: no_shout no_tell no_channels\n\rOffense: dodge assist_race\n\rVulnerable: magic\n\rForm: poison animal mammal\n\rParts: head legs heart brains guts feet ears eyes tail fangs\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the beastly fido\n\rLong  description: A beastly fido is here.\n\rMobile has special procedure spec_fido.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 11 "flag mob fido aff + blind"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 12 "stat fido"
+out god "Name: fido dog\n\rVnum: 3062  Format: new  Race: fido  Group: 0  Sex: male  Room: 3001\n\rCount: 5  Killed: 0\n\rStr: 10(10)  Int: 11(11)  Wis: 11(11)  Dex: 11(11)  Con: 11(11)\n\rHp: 10/10  Mana: 100/100  Move: 100/100  Practices: 0\n\rLv: 0  Class: mobile  Align: -200  Gold: 0  Silver: 0  Exp: 0\n\rArmor: pierce: 100  bash: 100  slash: 100  magic: 100\n\rHit: 0  Dam: 0  Saves: 0  Size: small  Position: standing  Wimpy: 0\n\rDamage: 1d4  Message:  bite\n\rFighting: (none)\n\rCarry number: 0  Carry weight: 0\n\rAct: npc aggressive stay_area wimpy no_align\n\rComm: no_shout no_tell no_channels\n\rOffense: dodge assist_race\n\rVulnerable: magic\n\rForm: poison animal mammal\n\rParts: head legs heart brains guts feet ears eyes tail fangs\n\rAffected by blind\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the beastly fido\n\rLong  description: A beastly fido is here.\n\rMobile has special procedure spec_fido.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 13 "flag mob fido aff - blind"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
+step 14 "stat fido"
+out god "Name: fido dog\n\rVnum: 3062  Format: new  Race: fido  Group: 0  Sex: male  Room: 3001\n\rCount: 5  Killed: 0\n\rStr: 10(10)  Int: 11(11)  Wis: 11(11)  Dex: 11(11)  Con: 11(11)\n\rHp: 10/10  Mana: 100/100  Move: 100/100  Practices: 0\n\rLv: 0  Class: mobile  Align: -200  Gold: 0  Silver: 0  Exp: 0\n\rArmor: pierce: 100  bash: 100  slash: 100  magic: 100\n\rHit: 0  Dam: 0  Saves: 0  Size: small  Position: standing  Wimpy: 0\n\rDamage: 1d4  Message:  bite\n\rFighting: (none)\n\rCarry number: 0  Carry weight: 0\n\rAct: npc aggressive stay_area wimpy no_align\n\rComm: no_shout no_tell no_channels\n\rOffense: dodge assist_race\n\rVulnerable: magic\n\rForm: poison animal mammal\n\rParts: head legs heart brains guts feet ears eyes tail fangs\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: the beastly fido\n\rLong  description: A beastly fido is here.\n\rMobile has special procedure spec_fido.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51964 b60256bc
