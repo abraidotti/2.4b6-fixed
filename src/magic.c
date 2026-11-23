@@ -3098,7 +3098,7 @@ void spell_heat_metal( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 		    {
                         act("$n yelps and throws $p to the ground!",
                             victim,obj_lose,NULL,TO_ROOM);
-                        act("You and drop $p before it burns you.",
+                        act("You drop $p before it burns you.",
                             victim,obj_lose,NULL,TO_CHAR);
                         dam += (number_range(1,obj_lose->level) / 6);
                         obj_from_char(obj_lose);
@@ -3147,7 +3147,7 @@ void spell_heat_metal( int sn, int level, CHAR_DATA *ch, void *vo,int target )
                     {
                         act("$n throws a burning hot $p to the ground!",
                             victim,obj_lose,NULL,TO_ROOM);
-                        act("You and drop $p before it burns you.",
+                        act("You drop $p before it burns you.",
                             victim,obj_lose,NULL,TO_CHAR);
                         dam += (number_range(1,obj_lose->level) / 6);
                         obj_from_char(obj_lose);
@@ -3381,11 +3381,11 @@ void spell_identify( int sn, int level, CHAR_DATA *ch, void *vo,int target )
                 switch(paf->where)
                 {
                     case TO_AFFECTS:
-                        sprintf(buf,"Adds %s affect.\n",
+                        sprintf(buf,"Adds %s affect.\n\r",
                             affect_bit_name(paf->bitvector));
                         break;
                     case TO_OBJECT:
-                        sprintf(buf,"Adds %s object flag.\n",
+                        sprintf(buf,"Adds %s object flag.\n\r",
                             extra_bit_name(paf->bitvector));
                         break;
                     case TO_IMMUNE:
@@ -3427,15 +3427,15 @@ void spell_identify( int sn, int level, CHAR_DATA *ch, void *vo,int target )
                 switch(paf->where)
                 {
                     case TO_AFFECTS:
-                        sprintf(buf,"Adds %s affect.\n",
+                        sprintf(buf,"Adds %s affect.\n\r",
                             affect_bit_name(paf->bitvector));
                         break;
                     case TO_OBJECT:
-                        sprintf(buf,"Adds %s object flag.\n",
+                        sprintf(buf,"Adds %s object flag.\n\r",
                             extra_bit_name(paf->bitvector));
                         break;
 		    case TO_WEAPON:
-			sprintf(buf,"Adds %s weapon flags.\n",
+			sprintf(buf,"Adds %s weapon flags.\n\r",
 			    weapon_bit_name(paf->bitvector));
 			break;
                     case TO_IMMUNE:
@@ -3475,10 +3475,10 @@ void spell_infravision( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 	if (victim == ch)
 	  send_to_char("You can already see in the dark.\n\r",ch);
 	else
-	  act("$N already has infravision.\n\r",ch,NULL,victim,TO_CHAR);
+	  act("$N already has infravision.",ch,NULL,victim,TO_CHAR);
 	return;
     }
-    act( "$n's eyes glow red.\n\r", ch, NULL, NULL, TO_ROOM );
+    act( "$n's eyes glow red.", ch, NULL, NULL, TO_ROOM );
 
     af.where	 = TO_AFFECTS;
     af.type      = sn;
@@ -4029,7 +4029,7 @@ void spell_recharge( int sn, int level, CHAR_DATA *ch, void *vo,int target)
 	int chargeback,chargemax;
 
 	act("$p glows softly.",ch,obj,NULL,TO_CHAR);
-	act("$p glows softly.",ch,obj,NULL,TO_CHAR);
+	act("$p glows softly.",ch,obj,NULL,TO_ROOM);
 
 	chargemax = obj->value[1] - obj->value[2];
 	
