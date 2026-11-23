@@ -4112,7 +4112,8 @@ void do_force( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    sprintf( buf, "$n forces you to '%s'.", argument );
+    /* the command goes in as $t, so act doesn't expand $ codes in it */
+    strcpy( buf, "$n forces you to '$t'." );
 
     if ( !str_cmp( arg, "all" ) )
     {
@@ -4134,7 +4135,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 
 	    if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) )
 	    {
-		act( buf, ch, NULL, vch, TO_VICT );
+		act( buf, ch, argument, vch, TO_VICT );
 		interpret( vch, argument );
 	    }
 	}
@@ -4160,7 +4161,7 @@ void do_force( CHAR_DATA *ch, char *argument )
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) 
 	    &&	 vch->level < LEVEL_HERO)
             {
-                act( buf, ch, NULL, vch, TO_VICT );
+                act( buf, ch, argument, vch, TO_VICT );
                 interpret( vch, argument );
             }
         }
@@ -4186,7 +4187,7 @@ void do_force( CHAR_DATA *ch, char *argument )
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch )
             &&   vch->level >= LEVEL_HERO)
             {
-                act( buf, ch, NULL, vch, TO_VICT );
+                act( buf, ch, argument, vch, TO_VICT );
                 interpret( vch, argument );
             }
         }
@@ -4227,7 +4228,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 	    return;
 	}
 
-	act( buf, ch, NULL, victim, TO_VICT );
+	act( buf, ch, argument, victim, TO_VICT );
 	interpret( victim, argument );
     }
 
