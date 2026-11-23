@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **74 fixed so far**, and 5 left (5 wrong behaviour).
+  **76 fixed so far**, and 3 left (3 wrong behaviour).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -70,8 +70,8 @@ unexamined, not fixed.
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (4) | set char hunger calls its range Full's | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_mset`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3324) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (6) | trust sends nothing when it works | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_trust`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2714) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (7) | typo: "must be be between" | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_oload`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2493) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (8) | clone gives a mob's clone objects 'worn' without equipping them | behaviour |  | [`do_clone`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2312) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (9) | clone_mobile applies a mob's affects twice | behaviour |  | [`clone_mobile`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L1744) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (8) | clone gives a mob's clone objects 'worn' without equipping them | behaviour | [#66](https://github.com/abraidotti/2.4b6-fixed/issues/66) | [`do_clone`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2312) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (9) | clone_mobile applies a mob's affects twice | behaviour | [#66](https://github.com/abraidotti/2.4b6-fixed/issues/66) | [`clone_mobile`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L1744) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (10) | string char spec with a bad name removes the mob's own | behaviour | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) | [`do_string`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3700) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (11) | force passes the command through act and expands its $ codes | behaviour | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) |  |
 | [#72](https://github.com/abraidotti/QuickMUD-Python/issues/72) | force players and force gods walk freed memory past a quitting player's pet | crash | [#22](https://github.com/abraidotti/2.4b6-fixed/issues/22) | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) | Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all. |

@@ -52,8 +52,8 @@ issue,item,verdict,kind,fixed,function,summary,note
 71,5,quickmud,,,do_mset,set char hours ends with no newline,set char hours is QuickMUD's; stock has no hours field.
 71,6,stock,message,#99,do_trust,trust sends nothing when it works,
 71,7,stock,message,#99,do_oload,"typo: ""must be be between""",
-71,8,stock,behaviour,,do_clone,clone gives a mob's clone objects 'worn' without equipping them,
-71,9,stock,behaviour,,clone_mobile,clone_mobile applies a mob's affects twice,
+71,8,stock,behaviour,#66,do_clone,clone gives a mob's clone objects 'worn' without equipping them,
+71,9,stock,behaviour,#66,clone_mobile,clone_mobile applies a mob's affects twice,
 71,10,stock,behaviour,#65,do_string,string char spec with a bad name removes the mob's own,
 71,11,stock,behaviour,#65,do_force,force passes the command through act and expands its $ codes,
 72,,stock,crash,#22,do_force,force players and force gods walk freed memory past a quitting player's pet,"Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all."
