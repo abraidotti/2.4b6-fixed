@@ -3,7 +3,8 @@
 # Outlaw (18, a KILLER and a THIEF). Each no- command toggles, refuses those of the same trust or above, and shows on
 # wiznet's penalties; nochannel's and notell's "whom?" have no newline (#71). Snoop shows what the victim types
 # and sees, refuses a snoop-proof victim, one already snooped and a loop (made with trust), and "snoop self" ends
-# them all. guild into a clan that isn't independent doesn't tell the victim (#71). Last, a denied player is quit
+# them all. guild into a clan that isn't independent tells the victim (stock didn't, #99). Last, a denied player
+# is quit
 # and can't come back, and wizlock and newlock turn away a mortal and a new name.
 @connect god
 Smokegod

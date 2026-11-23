@@ -223,6 +223,7 @@ void do_guild( CHAR_DATA *ch, char *argument )
 	send_to_char(buf,ch);
 	sprintf(buf,"You are now a member of clan %s.\n\r",
 	    capitalize(clan_table[clan].name));
+	send_to_char(buf,victim);
     }
 
     victim->clan = clan;

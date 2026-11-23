@@ -438,6 +438,7 @@ out dec "\n\rYou are now a loner.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 53702 19c2fcc3
 step 135 "guild decimus rom"
 out ser "They are now a member of clan Rom.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rYou are now a member of clan Rom.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 53702 19c2fcc3
 step 136 "guild decimus none"
 out ser "They are now clanless.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
