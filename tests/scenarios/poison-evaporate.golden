@@ -109,5 +109,5 @@ out god "\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52027 ca56f3de
 step 36 "slay decimus"
 out dec "\n\rSmokegod slays you in cold blood!\n\r\n\r<29986hp 102m 106mv> \xff\xf9"
-out god "You slay him in cold blood!\n\rDecimus hits the ground ... DEAD.\n\rA floating disc evaporates,scattering its contents.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "You slay him in cold blood!\n\rDecimus hits the ground ... DEAD.\n\rA floating disc evaporates, scattering its contents.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52029 dca6abb4

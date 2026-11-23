@@ -1506,7 +1506,7 @@ void make_corpse( CHAR_DATA *ch )
 		{
 		    OBJ_DATA *in, *in_next;
 
-		    act("$p evaporates,scattering its contents.",
+		    act("$p evaporates, scattering its contents.",
 			ch,obj,NULL,TO_ROOM);
 		    for (in = obj->contains; in != NULL; in = in_next)
 		    {
