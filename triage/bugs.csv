@@ -17,8 +17,8 @@ issue,item,verdict,kind,fixed,function,summary,note
 50,,stock,behaviour,#38,do_auction,auction with no text sends an empty auction,
 51,,quickmud,,,all_colour,colour all: red unrecognised and other faults,Colour is a QuickMUD add-on.
 52,,stock,message,,do_tell,tell when deaf says the message didn't get through,
-53,1,stock,message,,do_follow,follow's refusal prints an extra empty line,
-53,2,stock,message,,do_split,split's message prints an extra empty line,
+53,1,stock,message,#87,do_follow,follow's refusal prints an extra empty line,
+53,2,stock,message,#87,do_split,split's message prints an extra empty line,
 54,,stock,message,,do_pmote,pmote cuts names short and drops a partial name at the end,
 55,,stock,behaviour,#34,,qui turns on quiet mode instead of warning about quit,"The command table (interp.c) lists quiet before qui, as stock does."
 57,1,stock,behaviour,#44,do_put,put all skips an object at the container's weight limit,

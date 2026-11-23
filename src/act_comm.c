@@ -1499,7 +1499,7 @@ void do_follow( CHAR_DATA *ch, char *argument )
 
     if (!IS_NPC(victim) && IS_SET(victim->act,PLR_NOFOLLOW) && !IS_IMMORTAL(ch))
     {
-	act("$N doesn't seem to want any followers.\n\r",
+	act("$N doesn't seem to want any followers.",
              ch,NULL,victim, TO_CHAR);
         return;
     }
@@ -1886,7 +1886,7 @@ void do_split( CHAR_DATA *ch, char *argument )
     else
     {
 	sprintf(buf,
-"$n splits %d silver and %d gold coins, giving you %d silver and %d gold.\n\r",
+"$n splits %d silver and %d gold coins, giving you %d silver and %d gold.",
 	 amount_silver,amount_gold,share_silver,share_gold);
     }
 

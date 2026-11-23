@@ -718,7 +718,7 @@ out purse "OK.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out god "\n\rPurser drops some coins.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 102 "get coins"
-out dec "\n\rPurser gets 30 silver coins and 4 gold coins.\n\rPurser splits 30 silver and 4 gold coins, giving you 15 silver and 2 gold.\n\r\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rPurser gets 30 silver coins and 4 gold coins.\n\rPurser splits 30 silver and 4 gold coins, giving you 15 silver and 2 gold.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out quin "\n\rPurser gets 30 silver coins and 4 gold coins.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out purse "You get 30 silver coins and 4 gold coins.\n\rYou split 30 silver coins. Your share is 15 silver.\n\rYou split 4 gold coins. Your share is 2 gold.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out god "\n\rPurser gets 30 silver coins and 4 gold coins.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
