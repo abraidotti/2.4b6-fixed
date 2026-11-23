@@ -1,0 +1,16 @@
+# alloc_mem's blocks and alignment, with the game's log shown. Decimus looks at the temple (3001) with a long sword
+# (3022) and a club (3023) on the floor, and at what he carries: show_list_to_char keeps its list of strings in an
+# alloc_mem block. Stock put an int magic number in front of each block, so on a 64-bit machine every block was off
+# by 4, and the list's pointers were stored misaligned: under --sanitize, UBSan reported "store to misaligned
+# address ... for type 'char *'" into the log, and this scenario differed from its golden (#104). The golden is the
+# same with the fix: the header is now as big as the strictest type, and the log has nothing to say.
+@log
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@obj 3022 3001
+@obj 3023 3001
+look
+inventory
