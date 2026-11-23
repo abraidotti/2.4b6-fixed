@@ -1,0 +1,43 @@
+# force past a quitting player's pet. Outlaw (18) logs in, then Decimus (10), who buys a kitten (3090, @charm pet),
+# quits, which saves it, and logs in again: char_list is now Decimus, his kitten, Outlaw. Smokegod (60) types
+# force players quit: Decimus quits, and nuke_pets frees the kitten, which the loop had taken as its next
+# character. It walked on through the free list and stopped, so Outlaw was never forced (#22). Now the loop takes
+# the next player, past any mobs, before each command: both quit. Then the same again with force all.
+@connect out
+Outlaw
+psswrd
+@return
+@return
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@mob 3090 3001
+@charm pet
+quit
+@connect dec2
+Decimus
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+force players quit
+who
+@connect out2
+Outlaw
+psswrd
+@return
+@return
+@connect dec3
+Decimus
+psswrd
+@return
+@return
+@as god
+force all quit
+who

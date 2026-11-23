@@ -4123,7 +4123,10 @@ void do_force( CHAR_DATA *ch, char *argument )
 
 	for ( vch = char_list; vch != NULL; vch = vch_next )
 	{
-	    vch_next = vch->next;
+	    /* the next player: a mob after this one may be its pet, which quit frees */
+	    for ( vch_next = vch->next; vch_next != NULL && IS_NPC(vch_next);
+		  vch_next = vch_next->next )
+		;
 
 	    if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) )
 	    {
@@ -4145,7 +4148,10 @@ void do_force( CHAR_DATA *ch, char *argument )
  
         for ( vch = char_list; vch != NULL; vch = vch_next )
         {
-            vch_next = vch->next;
+            /* the next player: a mob after this one may be its pet, which quit frees */
+            for ( vch_next = vch->next; vch_next != NULL && IS_NPC(vch_next);
+                  vch_next = vch_next->next )
+                ;
  
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) 
 	    &&	 vch->level < LEVEL_HERO)
@@ -4168,7 +4174,10 @@ void do_force( CHAR_DATA *ch, char *argument )
  
         for ( vch = char_list; vch != NULL; vch = vch_next )
         {
-            vch_next = vch->next;
+            /* the next player: a mob after this one may be its pet, which quit frees */
+            for ( vch_next = vch->next; vch_next != NULL && IS_NPC(vch_next);
+                  vch_next = vch_next->next )
+                ;
  
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch )
             &&   vch->level >= LEVEL_HERO)
