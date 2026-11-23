@@ -1,0 +1,42 @@
+# rescue while already fighting. In the temple square (3005), Smokegod (60) sets Heroic's (51) skills to 100, and
+# Locksmith (30) follows Heroic, in his group. Smokegod sets one cityguard (3060) on Heroic and another on Locksmith,
+# and Heroic, fighting the first, rescues Locksmith from the second. Stock let him: set_fighting logged "Set_fighting:
+# already fighting", Heroic went on fighting the first guard, and the second turned on him, fought by two and fighting
+# one (#55). Now rescue refuses: "You're busy fighting!". Smokegod stats Heroic and both guards after, so their
+# "Fighting:" lines show who fights whom. (Not @log: under --sanitize, the log also has UBSan's reports on stock's
+# alloc_mem, whose blocks aren't aligned for pointers, #104.)
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@connect lock
+Locksmith
+psswrd
+@return
+@return
+@connect hero
+Heroic
+psswrd
+@return
+@return
+@as god
+set skill heroic all 100
+transfer heroic 3005
+transfer locksmith 3005
+goto 3005
+@as lock
+follow heroic
+@as hero
+group locksmith
+@as god
+@mob 3060 3005
+@mob 3060 3005
+force 1.cityguard kill heroic
+force 2.cityguard kill locksmith
+@as hero
+rescue locksmith
+@as god
+stat heroic
+stat 1.cityguard
+stat 2.cityguard

@@ -52,8 +52,8 @@ issue,item,verdict,kind,fixed,function,summary,note
 71,5,quickmud,,,do_mset,set char hours ends with no newline,set char hours is QuickMUD's; stock has no hours field.
 71,6,stock,message,#99,do_trust,trust sends nothing when it works,
 71,7,stock,message,#99,do_oload,"typo: ""must be be between""",
-71,8,stock,behaviour,,do_clone,clone gives a mob's clone objects 'worn' without equipping them,
-71,9,stock,behaviour,,clone_mobile,clone_mobile applies a mob's affects twice,
+71,8,stock,behaviour,#66,do_clone,clone gives a mob's clone objects 'worn' without equipping them,
+71,9,stock,behaviour,#66,clone_mobile,clone_mobile applies a mob's affects twice,
 71,10,stock,behaviour,#65,do_string,string char spec with a bad name removes the mob's own,
 71,11,stock,behaviour,#65,do_force,force passes the command through act and expands its $ codes,
 72,,stock,crash,#22,do_force,force players and force gods walk freed memory past a quitting player's pet,"Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all."
@@ -65,7 +65,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 75,6,stock,message,#74,make_corpse,"typo: ""evaporates,scattering""",
 75,8,stock,behaviour,#56,check_immune,check_immune's vulnerable cases never see immune,
 77,1,stock,message,#72,do_berserk,"typo: ""to mellow""",
-77,2,stock,behaviour,,do_rescue,rescue while already fighting,
+77,2,stock,behaviour,#55,do_rescue,rescue while already fighting,
 79,1,stock,behaviour,#58,spell_dispel_evil spell_dispel_good,dispel evil and good roll their damage twice (UMAX),
 79,2,stock,behaviour,#58,spell_enchant_weapon,enchant weapon's new hitroll affect is TO_AFFECTS,
 79,3,stock,behaviour,#58,spell_burning_hands,damage-table spells compare a signed level with sizeof,"Seven spells. The UMAX(0, level) comes after the UMIN, too late."
@@ -84,7 +84,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 85,1,stock,crash,#24,obj_update,obj_update stops at a freed object,
 85,2,stock,behaviour,#50,weather_update,dawn's sunlight is out of order,
 85,3,quickmud,,,char_update,mobs never wander home: nothing sets zone,"Stock's reset_room sets mob->zone (db.c); QuickMUD's OLC resets dropped it, so this works in stock."
-85,4,stock,behaviour,,obj_update,the pit's check in obj_update can't apply,
+85,4,stock,behaviour,#51,obj_update,the pit's check in obj_update can't apply,
 87,,quickmud,,,program_flow cmd_eval expand_arg,mob program faults (all items),Mob programs are a QuickMUD add-on.
 89,,quickmud,,,do_mpremove do_mpdamage do_mpflee,mob command faults (all items),Mob programs are a QuickMUD add-on.
 92,,quickmud,,,save_rooms save_mobile save_resets do_asave,olc_save faults (all items),OLC is a QuickMUD add-on.
@@ -94,7 +94,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 100,,quickmud,,,medit_delmprog medit_shop,mob editor faults (all items),OLC is a QuickMUD add-on.
 102,1-6,quickmud,,,save_other_helps hedit_delete hedit_new do_hedit,help editor faults,OLC is a QuickMUD add-on.
 102,7,different,,,do_scan,scan never says 'Looking north'; sees through closed doors; crashes on an exit to nowhere,"Stock has the same scan.c, but no scan command in its table, so the faults can't be reached. QuickMUD added the command (doc/QuickMUD Fixes, Fix 6)."
-102,8,stock,behaviour,,do_flag,flag names resist and vuln flags from the immunity table,
+102,8,different,,,do_flag,flag names resist and vuln flags from the immunity table,"Stock has the code, but no res_flags or vuln_flags table: tables.c has imm_flags alone, and check_immune (handler.c) says the immunity, resistance and vulnerability bits must all be the same, so naming all three from imm_flags is the design. QuickMUD's OLC added the separate tables (#69)."
 102,9,stock,behaviour,#68,do_flag,flag takes the whole word a sign starts and says nothing when it works,
 104,1,stock,behaviour,#53,do_dump,dump says nothing and doesn't check its files,
 104,2,stock,behaviour,#53,get_skill check_improve,get_skill and check_improve would read before skill_table with sn -1,Latent: no caller passes -1 today.
