@@ -390,7 +390,7 @@ step 119 "trust cherub 61"
 out god "Level must be 0 (reset) or 1 to 60.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 120 "trust cherub 59"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 121 "@as cher"
 rng 53453 e32ccdfe
@@ -401,7 +401,7 @@ rng 53453 e32ccdfe
 step 123 "@as god"
 rng 53453 e32ccdfe
 step 124 "trust cherub 0"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 125 "@as ser"
 rng 53453 e32ccdfe

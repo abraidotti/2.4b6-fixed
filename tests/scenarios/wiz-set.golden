@@ -362,7 +362,7 @@ step 121 "stat room 3001"
 out god "Name: 'The Temple Of Mota'\n\rArea: 'Midgaard'\n\rVnum: 3001  Sector: 4464  Light: 1  Healing: 100  Mana: 100\n\rRoom flags: 1024.\n\rDescription:\n\rYou are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rExtra description keywords: 'plaque'.\n\rCharacters: decimus seraph smokegod hassan.\n\rObjects:   .\n\rDoor: 0.  To: 3054.  Key: -1.  Exit flags: 0.\n\rKeyword: ''.  Description: At the northern end of the temple hall is a statue and a huge altar.\n\rDoor: 2.  To: 3005.  Key: -1.  Exit flags: 0.\n\rKeyword: ''.  Description: You see the temple square.\n\rDoor: 4.  To: 3700.  Key: 0.  Exit flags: 0.\n\rKeyword: ''.  Description: You see the entrance to Mud School.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52724 dae66027
 step 122 "trust seraph 58"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52724 dae66027
 step 123 "@as ser"
 rng 52724 dae66027
@@ -372,7 +372,7 @@ rng 52724 dae66027
 step 125 "@as god"
 rng 52724 dae66027
 step 126 "trust seraph 0"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52724 dae66027
 step 127 "@as ser"
 rng 52724 dae66027

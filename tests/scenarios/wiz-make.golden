@@ -257,7 +257,7 @@ out dec "\n\rSmokegod gives Hassan's scimitar to Seraph.\n\r\n\r<29hp 102m 106mv
 out pick "\n\rSmokegod gives Hassan's scimitar to Seraph.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51974 fb1b8648
 step 67 "trust seraph 55"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51974 fb1b8648
 step 68 "@as ser"
 rng 51974 fb1b8648
@@ -282,7 +282,7 @@ rng 51978 33017d7e
 step 73 "@as god"
 rng 51978 33017d7e
 step 74 "trust seraph 0"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51978 33017d7e
 step 75 "set char decimus hp 100"
 out god "\n\r<100hp 100m 100mv> \xff\xf9"

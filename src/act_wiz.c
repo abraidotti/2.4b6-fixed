@@ -2751,6 +2751,7 @@ void do_trust( CHAR_DATA *ch, char *argument )
     }
 
     victim->trust = level;
+    send_to_char( "Ok.\n\r", ch );
     return;
 }
 
