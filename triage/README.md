@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **56 fixed so far**, and 23 left (5 wrong behaviour, 18 message).
+  **57 fixed so far**, and 22 left (5 wrong behaviour, 17 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -42,7 +42,7 @@ unexamined, not fixed.
 | [#52](https://github.com/abraidotti/QuickMUD-Python/issues/52) | tell when deaf says the message didn't get through | message | [#89](https://github.com/abraidotti/2.4b6-fixed/issues/89) | [`do_tell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L811) |  |
 | [#53](https://github.com/abraidotti/QuickMUD-Python/issues/53) (1) | follow's refusal prints an extra empty line | message | [#87](https://github.com/abraidotti/2.4b6-fixed/issues/87) | [`do_follow`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1462) |  |
 | [#53](https://github.com/abraidotti/QuickMUD-Python/issues/53) (2) | split's message prints an extra empty line | message | [#87](https://github.com/abraidotti/2.4b6-fixed/issues/87) | [`do_split`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1787) |  |
-| [#54](https://github.com/abraidotti/QuickMUD-Python/issues/54) | pmote cuts names short and drops a partial name at the end | message |  | [`do_pmote`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1027) |  |
+| [#54](https://github.com/abraidotti/QuickMUD-Python/issues/54) | pmote cuts names short and drops a partial name at the end | message | [#93](https://github.com/abraidotti/2.4b6-fixed/issues/93) | [`do_pmote`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1027) |  |
 | [#55](https://github.com/abraidotti/QuickMUD-Python/issues/55) | qui turns on quiet mode instead of warning about quit | behaviour | [#34](https://github.com/abraidotti/2.4b6-fixed/issues/34) | the command table (`src/interp.c`) | The command table (interp.c) lists quiet before qui, as stock does. |
 | [#57](https://github.com/abraidotti/QuickMUD-Python/issues/57) (1) | put all skips an object at the container's weight limit | behaviour | [#44](https://github.com/abraidotti/2.4b6-fixed/issues/44) | [`do_put`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L344) |  |
 | [#57](https://github.com/abraidotti/QuickMUD-Python/issues/57) (2) | put all says nothing when nothing goes in | message | [#91](https://github.com/abraidotti/2.4b6-fixed/issues/91) | [`do_put`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L344) |  |

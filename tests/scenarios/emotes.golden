@@ -139,7 +139,7 @@ out god "\n\rDecimus smiles at Quint\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 34 "pmote likes Quintus Quintus Quin"
 out dec "Decimus likes Quintus Quintus Quin\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rDecimus likes you you \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rDecimus likes you you Quin\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out hero "\n\rDecimus likes Quintus Quintus Quin\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out god "\n\rDecimus likes Quintus Quintus Quin\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
@@ -151,8 +151,8 @@ out god "\n\rDecimus waves to Heroic and Quin\n\r\n\r<100hp 100m 100mv> \xff\xf9
 rng 51962 a7dda492
 step 36 "pmote hugs Quintus and Heroic and Hero"
 out dec "Decimus hugs Quintus and Heroic and Hero\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rDecimus hugs yountus and Heroic and Hero\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out hero "\n\rDecimus hugs Quintus and you and \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rDecimus hugs you and Heroic and Hero\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out hero "\n\rDecimus hugs Quintus and you and Hero\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out god "\n\rDecimus hugs Quintus and Heroic and Hero\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 37 "pmote waves at quintus in lower case."
