@@ -7,7 +7,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 9,,quickmud,,,do_title,title reads before an empty argument,"The read is in QuickMUD's 2000 sanitising code; stock's do_title has none. Fixed in QuickMUD-Python (#15)."
 41,,stock,behaviour,#30,do_wake,wake stands up the waker not the sleeper,
 42,,stock,crash,#26,do_enter,a follower who uses up a portal's last charge leaves the leader reading freed memory,
-43,,stock,message,,do_pick,pick on a portal that isn't locked says it picked the lock,
+43,,stock,message,#83,do_pick,pick on a portal that isn't locked says it picked the lock,
 44,1,stock,message,,do_stand,stand from furniture you're in says 'on',
 44,2,stock,message,,do_sit,waking to sit on furniture says 'at',
 44,3,stock,message,,do_sit,sitting up in furniture prints nothing,
