@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **11 fixed so far**, and 68 left (34 wrong behaviour, 34 message).
+  **12 fixed so far**, and 67 left (33 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -37,7 +37,7 @@ unexamined, not fixed.
 | [#44](https://github.com/abraidotti/QuickMUD-Python/issues/44) (2) | waking to sit on furniture says 'at' | message |  | [`do_sit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L1110) |  |
 | [#44](https://github.com/abraidotti/QuickMUD-Python/issues/44) (3) | sitting up in furniture prints nothing | message |  | [`do_sit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_move.c#L1110) |  |
 | [#46](https://github.com/abraidotti/QuickMUD-Python/issues/46) | a description line starting with ~ takes a line off | behaviour |  | [`do_description`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_info.c#L2412) |  |
-| [#47](https://github.com/abraidotti/QuickMUD-Python/issues/47) | a word that isn't a number sets wimpy to 0 | behaviour |  | [`do_wimpy`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_info.c#L2629) |  |
+| [#47](https://github.com/abraidotti/QuickMUD-Python/issues/47) | a word that isn't a number sets wimpy to 0 | behaviour | [#32](https://github.com/abraidotti/2.4b6-fixed/issues/32) | [`do_wimpy`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_info.c#L2629) |  |
 | [#50](https://github.com/abraidotti/QuickMUD-Python/issues/50) | auction with no text sends an empty auction | behaviour |  | [`do_auction`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L269) |  |
 | [#52](https://github.com/abraidotti/QuickMUD-Python/issues/52) | tell when deaf says the message didn't get through | message |  | [`do_tell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L811) |  |
 | [#53](https://github.com/abraidotti/QuickMUD-Python/issues/53) (1) | follow's refusal prints an extra empty line | message |  | [`do_follow`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1462) |  |
