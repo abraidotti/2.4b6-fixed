@@ -1584,7 +1584,7 @@ void do_mstat( CHAR_DATA *ch, char *argument )
 	victim->hit,         victim->max_hit,
 	victim->mana,        victim->max_mana,
 	victim->move,        victim->max_move,
-	IS_NPC(ch) ? 0 : victim->practice );
+	IS_NPC(victim) ? 0 : victim->practice );
     send_to_char( buf, ch );
 	
     sprintf( buf,

@@ -1,0 +1,17 @@
+# stat mob from inside a mob. Smokegod (60) switches into Hassan (3011, in the temple) and stats Decimus (10, with 1
+# practice). stat showed Practices as 0 when the one looking was a mob, not when the one looked at was (#97): now
+# Decimus's 1. Then Smokegod returns, and stats Hassan, whose practices stay 0.
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+switch hassan
+stat decimus
+return
+stat hassan
