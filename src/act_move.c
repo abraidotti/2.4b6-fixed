@@ -959,7 +959,7 @@ void do_stand( CHAR_DATA *ch, char *argument )
 	else
 	{
 	    act("You stand in $p.",ch,obj,NULL,TO_CHAR);
-	    act("$n stands on $p.",ch,obj,NULL,TO_ROOM);
+	    act("$n stands in $p.",ch,obj,NULL,TO_ROOM);
 	}
 	ch->position = POS_STANDING;
 	break;
@@ -1176,7 +1176,7 @@ void do_sit (CHAR_DATA *ch, char *argument )
             else if (IS_SET(obj->value[2],SIT_ON))
             {
             	act_new("You wake and sit on $p.",ch,obj,NULL,TO_CHAR,POS_DEAD);
-            	act("$n wakes and sits at $p.",ch,obj,NULL,TO_ROOM);
+            	act("$n wakes and sits on $p.",ch,obj,NULL,TO_ROOM);
             }
             else
             {
@@ -1199,6 +1199,11 @@ void do_sit (CHAR_DATA *ch, char *argument )
 	    {
 		act("You sit on $p.",ch,obj,NULL,TO_CHAR);
 		act("$n sits on $p.",ch,obj,NULL,TO_ROOM);
+	    }
+	    else
+	    {
+		act("You sit in $p.",ch,obj,NULL,TO_CHAR);
+		act("$n sits in $p.",ch,obj,NULL,TO_ROOM);
 	    }
 	    ch->position = POS_SITTING;
 	    break;
