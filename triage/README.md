@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **31 fixed so far**, and 48 left (14 wrong behaviour, 34 message).
+  **33 fixed so far**, and 46 left (12 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -87,8 +87,8 @@ unexamined, not fixed.
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (2) | enchant weapon's new hitroll affect is TO_AFFECTS | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (3) | damage-table spells compare a signed level with sizeof | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_burning_hands`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L877) | Seven spells. The UMAX(0, level) comes after the UMIN, too late. |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (4) | typos: "explodeds" and "existance" | message |  | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396), [`spell_dispel_magic`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2014), [`spell_cancellation`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1015) |  |
-| [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (1) | harm rolls its die twice (UMAX) | behaviour |  | [`spell_harm`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2960) |  |
-| [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (2) | gas breath spares the mob it's fighting | behaviour |  | [`spell_gas_breath`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L4608) |  |
+| [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (1) | harm rolls its die twice (UMAX) | behaviour | [#61](https://github.com/abraidotti/2.4b6-fixed/issues/61) | [`spell_harm`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2960) |  |
+| [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (2) | gas breath spares the mob it's fighting | behaviour | [#61](https://github.com/abraidotti/2.4b6-fixed/issues/61) | [`spell_gas_breath`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L4608) |  |
 | [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (3) | recharge's partial success tells the caster twice and the room nothing | message |  | [`spell_recharge`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L3973) |  |
 | [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (4) | infravision's messages end in \n\r inside act | message |  | [`spell_infravision`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L3456) |  |
 | [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (5) | heat metal's "You and drop"; identify's lines end in a bare \n | message |  | [`spell_heat_metal`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L3035), [`spell_identify`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L3228) |  |
