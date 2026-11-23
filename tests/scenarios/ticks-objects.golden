@@ -246,9 +246,9 @@ state   affect 80 level 40 duration -1 location 0 modifier 0 bitvector 128
 state obj floor 3010 wear -1 timer 0 cost 0 values 10000 0 0 1000 100
 rng 51989 1390e204
 step 64 "@pulse 2400"
-out god "\n\rA bag crumbles into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rA floating disc flickers and vanishes, spilling its contents on the floor.\n\rHassan's scimitar crumbles into dust.\n\rA pink potion has evaporated from disuse.\n\rA magical spring dries up.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rThe corpse of the drunk decays into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rThe head of Decimus crumbles into dust.\n\rThe leg of the drunk decomposes.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
-out pupil "\n\rA bag crumbles into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rA floating disc flickers and vanishes, spilling its contents on the floor.\n\rHassan's scimitar crumbles into dust.\n\rA pink potion has evaporated from disuse.\n\rA magical spring dries up.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe corpse of the drunk decays into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe head of Decimus crumbles into dust.\n\rThe leg of the drunk decomposes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52035 d65b8b03
+out god "\n\rA bag crumbles into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rA pink potion has evaporated from disuse.\n\rA magical spring dries up.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rA floating disc flickers and vanishes, spilling its contents on the floor.\n\rHassan's scimitar crumbles into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rThe corpse of the drunk decays into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rThe head of Decimus crumbles into dust.\n\rThe leg of the drunk decomposes.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
+out pupil "\n\rA bag crumbles into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rA pink potion has evaporated from disuse.\n\rA magical spring dries up.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rA floating disc flickers and vanishes, spilling its contents on the floor.\n\rHassan's scimitar crumbles into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe corpse of the drunk decays into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe head of Decimus crumbles into dust.\n\rThe leg of the drunk decomposes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52038 694e7100
 step 65 "@state"
 state room 3700 light 1 people player player
 state exit 0 to 3757 info 0 key 0
@@ -278,14 +278,14 @@ state char Decimus 10 pos 5 hit 29/29 mana 102/102 move 106/106 wait 0 daze 0 ex
 state char mob 3012 pos 8 hit 1000/1000 mana 1000/1000 move 100/100 wait 0 daze 0 exp 0 gold 41 silver 2452 act 69271555 affected_by 168 train 0 on 0 stats 22 21 24 22 21
 state   affect 80 level 40 duration -1 location 0 modifier 0 bitvector 128
 state obj floor 3010 wear -1 timer 0 cost 0 values 10000 0 0 1000 100
-rng 52035 d65b8b03
+rng 52038 694e7100
 step 66 "@pulse 2400"
 out god "\n\rA small sword's protective aura fades.\n\r\n\r<100hp 29920m 100mv> \xff\xf9\n\rA small sword's protective aura fades.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
 out pupil "\n\rA small sword's protective aura fades.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52061 2062ef34
+rng 52060 839014b9
 step 67 "look"
 out god "Entrance to Mud School [Room 3700]\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r     An old scroll has been left here.\n\r     The corpse of Decimus is lying here.\n\r     A pit for sacrifices is in front of the altar.\n\r     A small sword lies here.\n\rPupil the Recruit is here.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
-rng 52061 2062ef34
+rng 52060 839014b9
 step 68 "@state"
 state room 3700 light 1 people player player
 state exit 0 to 3757 info 0 key 0
@@ -315,7 +315,7 @@ state char Decimus 10 pos 5 hit 29/29 mana 102/102 move 106/106 wait 0 daze 0 ex
 state char mob 3012 pos 8 hit 1000/1000 mana 1000/1000 move 100/100 wait 0 daze 0 exp 0 gold 41 silver 2452 act 69271555 affected_by 168 train 0 on 0 stats 22 21 24 22 21
 state   affect 80 level 40 duration -1 location 0 modifier 0 bitvector 128
 state obj floor 3010 wear -1 timer 0 cost 0 values 10000 0 0 1000 100
-rng 52061 2062ef34
+rng 52060 839014b9
 step 69 "@pulse 7200"
 out god "\n\rThe corpse of Decimus decays into dust.\n\r\n\r<100hp 29920m 100mv> \xff\xf9"
 out pupil "\n\rThe corpse of Decimus decays into dust.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
