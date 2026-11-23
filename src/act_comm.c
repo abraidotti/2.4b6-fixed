@@ -283,6 +283,7 @@ void do_auction( CHAR_DATA *ch, char *argument )
 	send_to_char("Auction channel is now OFF.\n\r",ch);
 	SET_BIT(ch->comm,COMM_NOAUCTION);
       }
+      return;
     }
     else  /* auction message sent, turn auction on if it is off */
     {

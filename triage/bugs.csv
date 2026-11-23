@@ -14,7 +14,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 46,,stock,behaviour,#36,do_description,a description line starting with ~ takes a line off,
 47,,stock,behaviour,#32,do_wimpy,a word that isn't a number sets wimpy to 0,
 49,,quickmud,,,do_tell,tell to an awake mob crashes the game,The note-writing check that reads victim->desc came with QuickMUD's boards.
-50,,stock,behaviour,,do_auction,auction with no text sends an empty auction,
+50,,stock,behaviour,#38,do_auction,auction with no text sends an empty auction,
 51,,quickmud,,,all_colour,colour all: red unrecognised and other faults,Colour is a QuickMUD add-on.
 52,,stock,message,,do_tell,tell when deaf says the message didn't get through,
 53,1,stock,message,,do_follow,follow's refusal prints an extra empty line,

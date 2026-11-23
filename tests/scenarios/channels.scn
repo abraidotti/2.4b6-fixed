@@ -66,7 +66,8 @@ grats
 quote
 music
 channels
-# auction with no text turns it off, then auctions nothing to everyone all the same.
+# auction with no text turns it off, and again turns it on, and says nothing to anyone else (stock went on to
+# auction an empty message to everyone, #38).
 auction
 auction
 @as quin
