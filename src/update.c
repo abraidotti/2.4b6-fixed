@@ -843,11 +843,29 @@ void char_update( void )
 
 
 /*
+ * The first object from next on that isn't x or inside it: extract_obj( x )
+ * frees x and everything it holds, and obj_update's next object may be one.
+ */
+static OBJ_DATA *next_outside( OBJ_DATA *next, OBJ_DATA *x )
+{
+    OBJ_DATA *in;
+
+    for ( ; next != NULL; next = next->next )
+    {
+	for ( in = next; in != NULL && in != x; in = in->in_obj )
+	    ;
+	if ( in == NULL )
+	    break;
+    }
+    return next;
+}
+
+/*
  * Update all objs.
  * This function is performance sensitive.
  */
 void obj_update( void )
-{   
+{
     OBJ_DATA *obj;
     OBJ_DATA *obj_next;
     AFFECT_DATA *paf, *paf_next;
@@ -964,20 +982,27 @@ void obj_update( void )
 		else if (obj->carried_by)  /* carried */
 		    if (obj->wear_loc == WEAR_FLOAT)
 			if (obj->carried_by->in_room == NULL)
+			{
+			    obj_next = next_outside( obj_next, t_obj );
 			    extract_obj(t_obj);
+			}
 			else
 			    obj_to_room(t_obj,obj->carried_by->in_room);
 		    else
 		    	obj_to_char(t_obj,obj->carried_by);
 
 		else if (obj->in_room == NULL)  /* destroy it */
+		{
+		    obj_next = next_outside( obj_next, t_obj );
 		    extract_obj(t_obj);
+		}
 
 		else /* to a room */
 		    obj_to_room(t_obj,obj->in_room);
 	    }
 	}
 
+	obj_next = next_outside( obj_next, obj );
 	extract_obj( obj );
     }
 

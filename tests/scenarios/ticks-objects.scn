@@ -5,8 +5,8 @@
 #   pays him a fifth of its cost; a floating disc, worn and carrying a scroll, flickers and vanishes and spills it
 #   on the floor
 # - a bag holding a bottle made just before it crumbles at the first tick and takes the bottle with it: the bottle
-#   is next in object_list, so the C walks off into freed objects, and the rest of the list (the swords' auras
-#   among them) waits a tick (sic, #85)
+#   is next in object_list. Stock walked off into the freed bottle, and the rest of the list waited a tick; now
+#   obj_update steps past it, and the potion and the spring go in the same tick as the bag (#24)
 # - a drunk's corpse, with the bottle he carried, decays and takes the bottle with it
 # - a fido's corpse put in a pit decays out of sight
 # - Decimus's corpse decays and leaves what he carried on the floor
