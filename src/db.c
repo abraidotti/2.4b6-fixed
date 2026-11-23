@@ -1737,6 +1737,23 @@ CHAR_DATA *create_mobile( MOB_INDEX_DATA *pMobIndex )
     return mob;
 }
 
+/*
+ * Take off what an affect adds to a character's numbers (stats, hit points,
+ * armor, hitroll and so on), for clone_mobile. Its flags are left: they're
+ * bits, and adding the affect again sets them the same.
+ */
+void	affect_modify	args( ( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd ) );
+
+static void clone_unmodify(CHAR_DATA *ch, AFFECT_DATA *paf)
+{
+    AFFECT_DATA af;
+
+    af		 = *paf;
+    af.where	 = TO_AFFECTS;
+    af.bitvector = 0;
+    affect_modify(ch,&af,FALSE);
+}
+
 /* duplicate a mobile exactly -- except inventory */
 void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
 {
@@ -1806,9 +1823,16 @@ void clone_mobile(CHAR_DATA *parent, CHAR_DATA *clone)
     for (i = 0; i < 3; i++)
 	clone->damage[i]	= parent->damage[i];
 
-    /* now add the affects */
+    /*
+     * The values copied above include what the parent's affects add to
+     * them: take that off, so the clone starts without them. Then add the
+     * affects once.
+     */
     for (paf = parent->affected; paf != NULL; paf = paf->next)
-        affect_to_char(clone,paf);
+	clone_unmodify(clone,paf);
+
+    for (paf = parent->affected; paf != NULL; paf = paf->next)
+	affect_to_char(clone,paf);
 
 }
 
