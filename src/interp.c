@@ -191,6 +191,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "pose",		do_pose,	POS_RESTING,	 0,  LOG_NORMAL, 1 },
     { "question",	do_question,	POS_SLEEPING,	 0,  LOG_NORMAL, 1 },
     { "quote",		do_quote,	POS_SLEEPING,	 0,  LOG_NORMAL, 1 },
+    { "qui",		do_qui,		POS_DEAD,	 0,  LOG_NORMAL, 0 },
     { "quiet",		do_quiet,	POS_SLEEPING, 	 0,  LOG_NORMAL, 1 },
     { "reply",		do_reply,	POS_SLEEPING,	 0,  LOG_NORMAL, 1 },
     { "replay",		do_replay,	POS_SLEEPING,	 0,  LOG_NORMAL, 1 },
@@ -260,7 +261,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "hide",		do_hide,	POS_RESTING,	 0,  LOG_NORMAL, 1 },
     { "play",		do_play,	POS_RESTING,	 0,  LOG_NORMAL, 1 },
 /*  { "practice",	do_practice,	POS_SLEEPING,	 0,  LOG_NORMAL, 1 }, */
-    { "qui",		do_qui,		POS_DEAD,	 0,  LOG_NORMAL, 0 },
     { "quit",		do_quit,	POS_DEAD,	 0,  LOG_NORMAL, 1 },
     { "recall",		do_recall,	POS_FIGHTING,	 0,  LOG_NORMAL, 1 },
     { "/",		do_recall,	POS_FIGHTING,	 0,  LOG_NORMAL, 0 },
