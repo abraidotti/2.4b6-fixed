@@ -1,0 +1,94 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect dec"
+rng 51942 dc85fa41
+step 2 "Decimus"
+out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "psswrd"
+out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 5 "@return"
+out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@connect god"
+rng 51962 a7dda492
+step 7 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 8 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 9 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 10 "@return"
+out dec "\n\rSmokegod has entered the game.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rDecimus the Recruit is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 11 "set skill smokegod all 100"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 12 "set char smokegod mana 30000"
+out god "\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 13 "restore smokegod"
+out god "Ok.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 14 "@obj 3020 3001"
+rng 51962 a7dda492
+step 15 "get dagger"
+out dec "\n\rSmokegod gets a dagger.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "You get a dagger.\n\r\n\r<100hp 30000m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 16 "cast bless dagger"
+out dec "\n\rSmokegod utters the words, 'fido'.\n\rA dagger glows with a holy aura.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "A dagger glows with a holy aura.\n\r\n\r<100hp 29989m 100mv> \xff\xf9"
+rng 51965 542a0729
+step 17 "@pulse 24"
+rng 51965 542a0729
+step 18 "cast identify dagger"
+out dec "\n\rSmokegod utters the words, 'uoculoihuyl'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "Object 'dagger' is type weapon, extra flags bless.\n\rWeight is 1, value is 157, level is 0.\n\rWeapon type is dagger.\n\rDamage is 1d4 (average 2).\n\rAffects saves by -1, 66 hours.\n\rAdds bless object flag.\n\r\n\r<100hp 29977m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 19 "@pulse 24"
+rng 51967 51b9fae8
+step 20 "@obj 3021 3001"
+rng 51967 51b9fae8
+step 21 "set char decimus hp 30000"
+out god "\n\r<100hp 29977m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 22 "restore decimus"
+out dec "\n\rSmokegod has restored you.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 29977m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 23 "@as dec"
+rng 51967 51b9fae8
+step 24 "get sword"
+out dec "You get a small sword.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+out god "\n\rDecimus gets a small sword.\n\r\n\r<100hp 29977m 100mv> \xff\xf9"
+rng 51967 51b9fae8
+step 25 "@as god"
+rng 51967 51b9fae8
+step 26 "cast 'heat metal' decimus"
+out dec "Smokegod utters the words, 'pzah wzhar'.\n\rYou drop a small sword before it burns you.\n\rYou stop using a sub issue shield.\n\rYou remove and drop a sub issue shield before it burns you.\n\rYou stop using a sub issue sword.\n\rYou throw your red-hot weapon to the ground!\n\rYour skin is seared by a sub issue vest!\n\rSmokegod's spell scratches you.\n\rSmokegod is in excellent condition. \n\r\n\r<29998hp 102m 106mv> \xff\xf9"
+out god "Decimus throws a burning hot a small sword to the ground!\n\rDecimus stops using a sub issue shield.\n\rDecimus yelps and throws a sub issue shield to the ground!\n\rDecimus stops using a sub issue sword.\n\rDecimus is burned by a sub issue sword, and throws it to the ground.\n\rYour spell scratches Decimus.\n\rDecimus has a few scratches. \n\r\n\r<100hp 29952m 100mv> \xff\xf9"
+rng 51987 e8bd03fd
+step 27 "@pulse 24"
+rng 51987 e8bd03fd
+step 28 "cast 'heat metal' decimus"
+out dec "\n\rSmokegod utters the words, 'pzah wzhar'.\n\rYou stop using a sub issue vest.\n\rYou remove and drop a sub issue vest before it burns you.\n\rSmokegod's spell misses you.\n\rSmokegod is in excellent condition. \n\r\n\r<29998hp 102m 106mv> \xff\xf9"
+out god "Decimus stops using a sub issue vest.\n\rDecimus yelps and throws a sub issue vest to the ground!\n\rYour spell misses Decimus.\n\rDecimus has a few scratches. \n\r\n\r<100hp 29927m 100mv> \xff\xf9"
+rng 52000 aa7f8b05
+step 29 "@pulse 24"
+rng 52000 aa7f8b05
+step 30 "cast 'heat metal' decimus"
+out dec "\n\rSmokegod utters the words, 'pzah wzhar'.\n\rYou feel momentarily warmer.\n\rSmokegod is in excellent condition. \n\r\n\r<29998hp 102m 106mv> \xff\xf9"
+out god "Your spell had no effect.\n\rDecimus has a few scratches. \n\r\n\r<100hp 29902m 100mv> \xff\xf9"
+rng 52010 c5482e87
+step 31 "@pulse 24"
+rng 52010 c5482e87

@@ -1,0 +1,35 @@
+# Two spells' messages. Smokegod (60) blesses a dagger (3020) and identifies it: "Adds bless object flag." ended in
+# a bare \n, where identify's other lines end in \n\r (#78; the affect and weapon-flag lines beside it were the
+# same). Then Decimus (10, given 30000 hit points) carries a small sword (3021) without wearing it, and Smokegod
+# casts heat metal at him until it burns: "You drop a small sword before it burns you." (stock said "You and drop").
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+set skill smokegod all 100
+set char smokegod mana 30000
+restore smokegod
+@obj 3020 3001
+get dagger
+cast bless dagger
+@pulse 24
+cast identify dagger
+@pulse 24
+@obj 3021 3001
+set char decimus hp 30000
+restore decimus
+@as dec
+get sword
+@as god
+cast 'heat metal' decimus
+@pulse 24
+cast 'heat metal' decimus
+@pulse 24
+cast 'heat metal' decimus
+@pulse 24
