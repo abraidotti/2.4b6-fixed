@@ -2611,6 +2611,7 @@ void spell_enchant_weapon(int sn,int level,CHAR_DATA *ch, void *vo,int target)
     {
         paf = new_affect();
  
+        paf->where      = TO_OBJECT;
         paf->type       = sn;
         paf->level      = level;
         paf->duration   = -1;

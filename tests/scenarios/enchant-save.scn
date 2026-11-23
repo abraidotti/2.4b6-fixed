@@ -1,0 +1,16 @@
+# enchant weapon's new affects, saved. Smokegod (60) enchants a sword (3021, no bonuses of its own) and saves, and his
+# player file shows each affect's where. The damroll bonus was made TO_OBJECT, but the hitroll one was left at
+# new_affect's 0, TO_AFFECTS (#58). Now both are TO_OBJECT.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+set skill smokegod all 100
+set char smokegod mana 30000
+@obj 3021 3001
+get sword
+cast 'enchant weapon' sword
+@pulse 24
+save
+@file ../player/Smokegod
