@@ -93,7 +93,7 @@ rng 51962 a7dda492
 step 29 "@as ser"
 rng 51962 a7dda492
 step 30 "nochannels"
-out ser "Nochannel whom?\n\r<100hp 100m 100mv> \xff\xf9"
+out ser "Nochannel whom?\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 31 "nochannels nobody"
 out ser "They aren't here.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
@@ -191,7 +191,7 @@ out ser "NOSHOUT removed.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out dec "\n\rYou can shout again.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 52225 4a188c22
 step 58 "notell"
-out ser "Notell whom?\n\r<100hp 100m 100mv> \xff\xf9"
+out ser "Notell whom?\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52225 4a188c22
 step 59 "notell decimus"
 out god "\n\rSeraph revokes Decimus's tells.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
@@ -390,7 +390,7 @@ step 119 "trust cherub 61"
 out god "Level must be 0 (reset) or 1 to 60.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 120 "trust cherub 59"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 121 "@as cher"
 rng 53453 e32ccdfe
@@ -401,7 +401,7 @@ rng 53453 e32ccdfe
 step 123 "@as god"
 rng 53453 e32ccdfe
 step 124 "trust cherub 0"
-out god "\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 53453 e32ccdfe
 step 125 "@as ser"
 rng 53453 e32ccdfe
@@ -438,6 +438,7 @@ out dec "\n\rYou are now a loner.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 53702 19c2fcc3
 step 135 "guild decimus rom"
 out ser "They are now a member of clan Rom.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rYou are now a member of clan Rom.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 53702 19c2fcc3
 step 136 "guild decimus none"
 out ser "They are now clanless.\n\r\n\r<100hp 100m 100mv> \xff\xf9"

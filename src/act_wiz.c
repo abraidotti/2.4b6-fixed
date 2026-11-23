@@ -223,6 +223,7 @@ void do_guild( CHAR_DATA *ch, char *argument )
 	send_to_char(buf,ch);
 	sprintf(buf,"You are now a member of clan %s.\n\r",
 	    capitalize(clan_table[clan].name));
+	send_to_char(buf,victim);
     }
 
     victim->clan = clan;
@@ -301,7 +302,7 @@ void do_nochannels( CHAR_DATA *ch, char *argument )
  
     if ( arg[0] == '\0' )
     {
-        send_to_char( "Nochannel whom?", ch );
+        send_to_char( "Nochannel whom?\n\r", ch );
         return;
     }
  
@@ -2520,7 +2521,7 @@ void do_oload( CHAR_DATA *ch, char *argument )
         level = atoi(arg2);
         if (level < 0 || level > get_trust(ch))
 	{
-	  send_to_char( "Level must be be between 0 and your level.\n\r",ch);
+	  send_to_char( "Level must be between 0 and your level.\n\r",ch);
   	  return;
 	}
     }
@@ -2750,6 +2751,7 @@ void do_trust( CHAR_DATA *ch, char *argument )
     }
 
     victim->trust = level;
+    send_to_char( "Ok.\n\r", ch );
     return;
 }
 
@@ -3066,7 +3068,7 @@ void do_notell( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Notell whom?", ch );
+	send_to_char( "Notell whom?\n\r", ch );
 	return;
     }
 
@@ -3370,7 +3372,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
 	if ( value < 3 || value > get_max_train(victim,STAT_STR) )
 	{
 	    sprintf(buf,
-		"Strength range is 3 to %d\n\r.",
+		"Strength range is 3 to %d.\n\r",
 		get_max_train(victim,STAT_STR));
 	    send_to_char(buf,ch);
 	    return;
@@ -3650,7 +3652,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
  
         if ( value < -1 || value > 100 )
         {
-            send_to_char( "Full range is -1 to 100.\n\r", ch );
+            send_to_char( "Hunger range is -1 to 100.\n\r", ch );
             return;
         }
  
