@@ -1,0 +1,15 @@
+# force with a $ code in the command. Smokegod (60) forces Decimus (10) to say "$n rocks". force built its "forces
+# you to" message with the command in it and passed it through act, which expanded the $n: Decimus was told
+# "Smokegod forces you to 'say Smokegod rocks'.", then said "$n rocks" (#65). Now the message shows the command as
+# it was typed.
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+force decimus say $n rocks

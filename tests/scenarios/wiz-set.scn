@@ -3,7 +3,7 @@
 # string (each field of a character and an object, and extra descriptions). stat, score and look show the results.
 # In the temple (3001), with Hassan: Smokegod (60), Seraph (56) and Decimus (10). The C's small faults show here:
 # strength's range ends ".", after its newline; hunger's range is called Full's; hours has no newline; and a spec
-# that isn't one takes Hassan's away (#71).
+# that isn't one leaves Hassan's spec_cast_mage alone (stock took it away, #65).
 @connect god
 Smokegod
 smoke123

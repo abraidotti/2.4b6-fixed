@@ -3782,18 +3782,22 @@ void do_string( CHAR_DATA *ch, char *argument )
 
     	if ( !str_prefix( arg2, "spec" ) )
     	{
+	    SPEC_FUN *spec;
+
 	    if ( !IS_NPC(victim) )
 	    {
 	    	send_to_char( "Not on PC's.\n\r", ch );
 	    	return;
 	    }
 
-	    if ( ( victim->spec_fun = spec_lookup( arg3 ) ) == 0 )
+	    /* looked up first: a bad name leaves the mob's own alone */
+	    if ( ( spec = spec_lookup( arg3 ) ) == 0 )
 	    {
 	    	send_to_char( "No such spec fun.\n\r", ch );
 	    	return;
 	    }
 
+	    victim->spec_fun = spec;
 	    return;
     	}
     }
@@ -4108,7 +4112,8 @@ void do_force( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    sprintf( buf, "$n forces you to '%s'.", argument );
+    /* the command goes in as $t, so act doesn't expand $ codes in it */
+    strcpy( buf, "$n forces you to '$t'." );
 
     if ( !str_cmp( arg, "all" ) )
     {
@@ -4130,7 +4135,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 
 	    if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) )
 	    {
-		act( buf, ch, NULL, vch, TO_VICT );
+		act( buf, ch, argument, vch, TO_VICT );
 		interpret( vch, argument );
 	    }
 	}
@@ -4156,7 +4161,7 @@ void do_force( CHAR_DATA *ch, char *argument )
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch ) 
 	    &&	 vch->level < LEVEL_HERO)
             {
-                act( buf, ch, NULL, vch, TO_VICT );
+                act( buf, ch, argument, vch, TO_VICT );
                 interpret( vch, argument );
             }
         }
@@ -4182,7 +4187,7 @@ void do_force( CHAR_DATA *ch, char *argument )
             if ( !IS_NPC(vch) && get_trust( vch ) < get_trust( ch )
             &&   vch->level >= LEVEL_HERO)
             {
-                act( buf, ch, NULL, vch, TO_VICT );
+                act( buf, ch, argument, vch, TO_VICT );
                 interpret( vch, argument );
             }
         }
@@ -4223,7 +4228,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 	    return;
 	}
 
-	act( buf, ch, NULL, victim, TO_VICT );
+	act( buf, ch, argument, victim, TO_VICT );
 	interpret( victim, argument );
     }
 

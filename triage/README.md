@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **37 fixed so far**, and 42 left (8 wrong behaviour, 34 message).
+  **39 fixed so far**, and 40 left (6 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -72,8 +72,8 @@ unexamined, not fixed.
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (7) | typo: "must be be between" | message |  | [`do_oload`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2493) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (8) | clone gives a mob's clone objects 'worn' without equipping them | behaviour |  | [`do_clone`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2312) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (9) | clone_mobile applies a mob's affects twice | behaviour |  | [`clone_mobile`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L1744) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (10) | string char spec with a bad name removes the mob's own | behaviour |  | [`do_string`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3700) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (11) | force passes the command through act and expands its $ codes | behaviour |  | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (10) | string char spec with a bad name removes the mob's own | behaviour | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) | [`do_string`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3700) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (11) | force passes the command through act and expands its $ codes | behaviour | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) |  |
 | [#72](https://github.com/abraidotti/QuickMUD-Python/issues/72) | force players and force gods walk freed memory past a quitting player's pet | crash | [#22](https://github.com/abraidotti/2.4b6-fixed/issues/22) | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) | Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all. |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (2) | check_assist picks a target from all of char_list | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_assist`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L98) |  |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (3) | mob_hit's area attack walks char_list | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`mob_hit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L250) |  |
