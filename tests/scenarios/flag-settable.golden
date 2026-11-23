@@ -1,0 +1,58 @@
+2.4b6-fixed
+boot seed 20261117 clock 1763400000 updates area
+rng 51942 dc85fa41
+step 1 "@connect god"
+rng 51942 dc85fa41
+step 2 "Smokegod"
+out god "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 3 "smoke123"
+out god "\n\r\xff\xfc\x01Welcome Immortal!\n\r\n\rYou are responsible for following the laws of immortal behavior. These can\n\rbe found by typing 'help laws' or 'help commandments'.\n\r\n\r* Excessive loading is not allowed, and is grounds for deletion.\n\r\n\r* Asking for promotion is grounds for instant deletion.\n\r\n\r* Type 'help jobs' to get some idea of what you should be doing.\n\r\n\r [Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 4 "@return"
+out god "\n\r* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 5 "@return"
+out god "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 6 "@connect dec"
+rng 51962 a7dda492
+step 7 "Decimus"
+out dec "\n\r\n\rTHIS IS A MUD BASED ON.....\n\r\n\r                                ROM Version 2.4 beta\n\r\n\r               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,\n\r               Tom Madsen, Michael Seifert, and Sebastian Hammer\n\r               Based on MERC 2.1 code by Hatchet, Furey, and Kahn\n\r               ROM 2.4 copyright (c) 1993-1998 Russ Taylor\n\r\n\rBy what name do you wish to be known? Password: \xff\xfb\x01"
+rng 51962 a7dda492
+step 8 "psswrd"
+out dec "\n\r\xff\xfc\x01* You are responsible for knowing the rules (type 'rules').  Ignorance of \n\r  the rules is no excuse.\n\r* Important commands: help, commands, news, notes\n\r* Use the delete command to erase unwanted characters\n\r  \n\r[Hit Return to continue]\n\r"
+rng 51962 a7dda492
+step 9 "@return"
+out god "\n\rDecimus has entered the game.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rWelcome to ROM 2.4.  Please do not feed the mobiles.\n\rThe Temple Of Mota\n\r  You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\rSmokegod the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rYou have no unread notes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 10 "@return"
+out dec "\n\r<29hp 102m 106mv> \xff\xf9"
+rng 51962 a7dda492
+step 11 "@as god"
+rng 51962 a7dda492
+step 12 "flag char decimus plr +holylight"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 13 "stat decimus"
+out god "Name: Decimus\n\rVnum: 0  Format: pc  Race: human  Group: 0  Sex: male  Room: 3001\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rHp: 29/29  Mana: 102/102  Move: 106/106  Practices: 1\n\rLv: 10  Class: warrior  Align: 750  Gold: 0  Silver: 0  Exp: 2088\n\rArmor: pierce: 95  bash: 95  slash: 95  magic: 99\n\rHit: 4  Dam: 4  Saves: -1  Size: medium  Position: standing  Wimpy: 0\n\rFighting: (none)\n\rThirst: 45  Hunger: 45  Full: 42  Drunk: 0\n\rCarry number: 5  Carry weight: 14\n\rAge: 17  Played: 0  Last Level: 0  Timer: 0\n\rAct: player holy_light no_summon\n\rComm: prompt combine\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: \n\rLong  description: (none)\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 14 "flag char decimus plr -holylight"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 15 "stat decimus"
+out god "Name: Decimus\n\rVnum: 0  Format: pc  Race: human  Group: 0  Sex: male  Room: 3001\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rHp: 29/29  Mana: 102/102  Move: 106/106  Practices: 1\n\rLv: 10  Class: warrior  Align: 750  Gold: 0  Silver: 0  Exp: 2088\n\rArmor: pierce: 95  bash: 95  slash: 95  magic: 99\n\rHit: 4  Dam: 4  Saves: -1  Size: medium  Position: standing  Wimpy: 0\n\rFighting: (none)\n\rThirst: 45  Hunger: 45  Full: 42  Drunk: 0\n\rCarry number: 5  Carry weight: 14\n\rAge: 17  Played: 0  Last Level: 0  Timer: 0\n\rAct: player holy_light no_summon\n\rComm: prompt combine\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: \n\rLong  description: (none)\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 16 "flag char decimus comm +brief"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 17 "stat decimus"
+out god "Name: Decimus\n\rVnum: 0  Format: pc  Race: human  Group: 0  Sex: male  Room: 3001\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rHp: 29/29  Mana: 102/102  Move: 106/106  Practices: 1\n\rLv: 10  Class: warrior  Align: 750  Gold: 0  Silver: 0  Exp: 2088\n\rArmor: pierce: 95  bash: 95  slash: 95  magic: 99\n\rHit: 4  Dam: 4  Saves: -1  Size: medium  Position: standing  Wimpy: 0\n\rFighting: (none)\n\rThirst: 45  Hunger: 45  Full: 42  Drunk: 0\n\rCarry number: 5  Carry weight: 14\n\rAge: 17  Played: 0  Last Level: 0  Timer: 0\n\rAct: player holy_light no_summon\n\rComm: brief prompt combine\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: \n\rLong  description: (none)\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 18 "flag char decimus comm -brief"
+out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
+step 19 "stat decimus"
+out god "Name: Decimus\n\rVnum: 0  Format: pc  Race: human  Group: 0  Sex: male  Room: 3001\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rHp: 29/29  Mana: 102/102  Move: 106/106  Practices: 1\n\rLv: 10  Class: warrior  Align: 750  Gold: 0  Silver: 0  Exp: 2088\n\rArmor: pierce: 95  bash: 95  slash: 95  magic: 99\n\rHit: 4  Dam: 4  Saves: -1  Size: medium  Position: standing  Wimpy: 0\n\rFighting: (none)\n\rThirst: 45  Hunger: 45  Full: 42  Drunk: 0\n\rCarry number: 5  Carry weight: 14\n\rAge: 17  Played: 0  Last Level: 0  Timer: 0\n\rAct: player holy_light no_summon\n\rComm: prompt combine\n\rForm: edible sentient biped mammal\n\rParts: head arms legs heart brains guts hands feet fingers ears eyes\n\rMaster: (none)  Leader: (none)  Pet: (none)\n\rShort description: \n\rLong  description: (none)\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+rng 51962 a7dda492
