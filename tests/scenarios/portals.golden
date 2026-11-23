@@ -115,8 +115,7 @@ step 42 "close gate"
 out lock "It's already closed.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51969 8619d420
 step 43 "pick gate"
-out lock "You pick the lock on a shimmering gate.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out cursed "\n\rLocksmith picks the lock on a shimmering gate.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out lock "It's already unlocked.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51970 efe4cb7b
 step 44 "@pulse 12"
 rng 51970 efe4cb7b

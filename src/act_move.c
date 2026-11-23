@@ -795,6 +795,12 @@ void do_pick( CHAR_DATA *ch, char *argument )
 		return;
 	    }
 
+	    if (!IS_SET(obj->value[1],EX_LOCKED))
+	    {
+		send_to_char("It's already unlocked.\n\r",ch);
+		return;
+	    }
+
 	    if (IS_SET(obj->value[1],EX_PICKPROOF))
 	    {
 		send_to_char("You failed.\n\r",ch);

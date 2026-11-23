@@ -47,7 +47,7 @@ pick gate
 @obj 25 3110 0 3 0 3001 3120
 enter gate
 close gate
-# Closed and not locked, yet pick "picks the lock" (the C doesn't check EX_LOCKED for portals).
+# Closed and not locked: pick says it's already unlocked (stock didn't check EX_LOCKED for portals, and "picked" it, #83).
 pick gate
 @pulse 12
 open gate
