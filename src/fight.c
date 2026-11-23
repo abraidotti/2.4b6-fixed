@@ -2895,6 +2895,12 @@ void do_rescue( CHAR_DATA *ch, char *argument )
 	return;
     }
 
+    if ( ch->fighting != NULL )
+    {
+	send_to_char( "You're busy fighting!\n\r", ch );
+	return;
+    }
+
     if ( ( fch = victim->fighting ) == NULL )
     {
 	send_to_char( "That person is not fighting right now.\n\r", ch );
