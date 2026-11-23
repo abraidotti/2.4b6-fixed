@@ -1420,6 +1420,9 @@ void do_ostat( CHAR_DATA *ch, char *argument )
 	    	send_to_char( " ", ch );
 	}
 
+	if ( obj->extra_descr != NULL && obj->pIndexData->extra_descr != NULL )
+	    send_to_char( " ", ch );	/* between the object's and the prototype's */
+
 	for ( ed = obj->pIndexData->extra_descr; ed != NULL; ed = ed->next )
 	{
 	    send_to_char( ed->keyword, ch );
@@ -1445,19 +1448,19 @@ void do_ostat( CHAR_DATA *ch, char *argument )
 	    switch(paf->where)
 	    {
 		case TO_AFFECTS:
-		    sprintf(buf,"Adds %s affect.\n",
+		    sprintf(buf,"Adds %s affect.\n\r",
 			affect_bit_name(paf->bitvector));
 		    break;
                 case TO_WEAPON:
-                    sprintf(buf,"Adds %s weapon flags.\n",
+                    sprintf(buf,"Adds %s weapon flags.\n\r",
                         weapon_bit_name(paf->bitvector));
 		    break;
 		case TO_OBJECT:
-		    sprintf(buf,"Adds %s object flag.\n",
+		    sprintf(buf,"Adds %s object flag.\n\r",
 			extra_bit_name(paf->bitvector));
 		    break;
 		case TO_IMMUNE:
-		    sprintf(buf,"Adds immunity to %s.\n",
+		    sprintf(buf,"Adds immunity to %s.\n\r",
 			imm_bit_name(paf->bitvector));
 		    break;
 		case TO_RESIST:
@@ -1488,15 +1491,15 @@ void do_ostat( CHAR_DATA *ch, char *argument )
             switch(paf->where)
             {
                 case TO_AFFECTS:
-                    sprintf(buf,"Adds %s affect.\n",
+                    sprintf(buf,"Adds %s affect.\n\r",
                         affect_bit_name(paf->bitvector));
                     break;
                 case TO_OBJECT:
-                    sprintf(buf,"Adds %s object flag.\n",
+                    sprintf(buf,"Adds %s object flag.\n\r",
                         extra_bit_name(paf->bitvector));
                     break;
                 case TO_IMMUNE:
-                    sprintf(buf,"Adds immunity to %s.\n",
+                    sprintf(buf,"Adds immunity to %s.\n\r",
                         imm_bit_name(paf->bitvector));
                     break;
                 case TO_RESIST:
@@ -1581,7 +1584,7 @@ void do_mstat( CHAR_DATA *ch, char *argument )
 	victim->hit,         victim->max_hit,
 	victim->mana,        victim->max_mana,
 	victim->move,        victim->max_move,
-	IS_NPC(ch) ? 0 : victim->practice );
+	IS_NPC(victim) ? 0 : victim->practice );
     send_to_char( buf, ch );
 	
     sprintf( buf,
@@ -4355,7 +4358,7 @@ void do_holylight( CHAR_DATA *ch, char *argument )
 
 void do_prefi (CHAR_DATA *ch, char *argument)
 {
-    send_to_char("You cannot abbreviate the prefix command.\r\n",ch);
+    send_to_char("You cannot abbreviate the prefix command.\n\r",ch);
     return;
 }
 
@@ -4367,11 +4370,11 @@ void do_prefix (CHAR_DATA *ch, char *argument)
     {
 	if (ch->prefix[0] == '\0')
 	{
-	    send_to_char("You have no prefix to clear.\r\n",ch);
+	    send_to_char("You have no prefix to clear.\n\r",ch);
 	    return;
 	}
 
-	send_to_char("Prefix removed.\r\n",ch);
+	send_to_char("Prefix removed.\n\r",ch);
 	free_string(ch->prefix);
 	ch->prefix = str_dup("");
 	return;
@@ -4379,13 +4382,14 @@ void do_prefix (CHAR_DATA *ch, char *argument)
 
     if (ch->prefix[0] != '\0')
     {
-	sprintf(buf,"Prefix changed to %s.\r\n",argument);
+	sprintf(buf,"Prefix changed to %s.\n\r",argument);
 	free_string(ch->prefix);
     }
     else
     {
-	sprintf(buf,"Prefix set to %s.\r\n",argument);
+	sprintf(buf,"Prefix set to %s.\n\r",argument);
     }
 
     ch->prefix = str_dup(argument);
+    send_to_char(buf,ch);
 }

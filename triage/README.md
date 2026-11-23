@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **63 fixed so far**, and 16 left (5 wrong behaviour, 11 message).
+  **68 fixed so far**, and 11 left (5 wrong behaviour, 6 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -58,11 +58,11 @@ unexamined, not fixed.
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (2) | *name* bans are tested the wrong way round | behaviour | [#48](https://github.com/abraidotti/2.4b6-fixed/issues/48) | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (4) | banning a site already banned walks freed memory | crash | [#20](https://github.com/abraidotti/2.4b6-fixed/issues/20) | [`ban_site`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L135) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (5) | save_bans writes to a NULL file when fopen fails | crash | [#18](https://github.com/abraidotti/2.4b6-fixed/issues/18) | [`save_bans`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L43) |  |
-| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (1) | prefix never says it's set or changed | message |  | [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
-| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (2) | prefi and prefix end their messages in \r\n | message |  | [`do_prefi`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4343), [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
-| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (3) | stat obj ends four 'Adds ...' lines in a bare \n | message |  | [`do_ostat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1204) |  |
-| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (4) | stat obj runs two keyword lists together | message |  | [`do_ostat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1204) |  |
-| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (5) | stat mob tests IS_NPC(ch) for Practices where it means the victim | message |  | [`do_mstat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1524) |  |
+| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (1) | prefix never says it's set or changed | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
+| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (2) | prefi and prefix end their messages in \r\n | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_prefi`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4343), [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
+| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (3) | stat obj ends four 'Adds ...' lines in a bare \n | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_ostat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1204) |  |
+| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (4) | stat obj runs two keyword lists together | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_ostat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1204) |  |
+| [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (5) | stat mob tests IS_NPC(ch) for Practices where it means the victim | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_mstat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1524) |  |
 | [#69](https://github.com/abraidotti/QuickMUD-Python/issues/69) | a long prefix overflows a 256-byte buffer and crashes | crash | [#7](https://github.com/abraidotti/2.4b6-fixed/issues/7) | [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (1) | guild doesn't tell the victim they've joined a clan | message |  | [`do_guild`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L177) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (2) | 'Nochannel whom?' and 'Notell whom?' have no newline | message |  | [`do_nochannels`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L295), [`do_notell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3058) |  |

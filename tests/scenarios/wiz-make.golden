@@ -227,7 +227,7 @@ out dec "\n\rSmokegod has created a dagger.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out pick "\n\rSmokegod has created a dagger.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51974 fb1b8648
 step 61 "stat obj dagger"
-out god "Name(s): dagger\n\rVnum: 3020  Format: new  Type: weapon  Resets: 2\n\rShort description: a dagger\n\rLong description: A dagger with a long thin blade is here.\n\rWear bits: take wield\n\rExtra bits: none\n\rNumber: 1/1  Weight: 10/10/10 (10th pounds)\n\rLevel: 0  Cost: 157  Condition: 0  Timer: 0\n\rIn room: 0  In object: (none)  Carried by: Smokegod  Wear_loc: -1\n\rValues: 2 1 4 2 128\n\rWeapon type is dagger\n\rDamage is 1d4 (average 2)\n\rDamage noun is stab.\n\rWeapons flags: poison\n\rExtra description keywords: 'note'\n\rAffects none by 0, level 8, 4 hours.\n\rAdds poison weapon flags.\n\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Name(s): dagger\n\rVnum: 3020  Format: new  Type: weapon  Resets: 2\n\rShort description: a dagger\n\rLong description: A dagger with a long thin blade is here.\n\rWear bits: take wield\n\rExtra bits: none\n\rNumber: 1/1  Weight: 10/10/10 (10th pounds)\n\rLevel: 0  Cost: 157  Condition: 0  Timer: 0\n\rIn room: 0  In object: (none)  Carried by: Smokegod  Wear_loc: -1\n\rValues: 2 1 4 2 128\n\rWeapon type is dagger\n\rDamage is 1d4 (average 2)\n\rDamage noun is stab.\n\rWeapons flags: poison\n\rExtra description keywords: 'note'\n\rAffects none by 0, level 8, 4 hours.\n\rAdds poison weapon flags.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51974 fb1b8648
 step 62 "look note"
 out god "A tiny note is tied to it.\n\r\n\r<100hp 100m 100mv> \xff\xf9"

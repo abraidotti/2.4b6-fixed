@@ -1,0 +1,11 @@
+# stat obj's extra description keywords, the object's own and its prototype's. Smokegod (60) gives a scimitar
+# (3005, whose prototype's extra description is "scimitar blade") one of its own, "engraving", and stats it. The
+# two lists ran together with no space ("engravingscimitar blade", #97); now "engraving scimitar blade".
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@obj 3005 3001
+string obj scimitar ed engraving A small engraving runs along the blade.
+stat obj scimitar
