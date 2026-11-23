@@ -2138,7 +2138,7 @@ void do_berserk( CHAR_DATA *ch, char *argument)
 
     if (IS_AFFECTED(ch,AFF_CALM))
     {
-	send_to_char("You're feeling to mellow to berserk.\n\r",ch);
+	send_to_char("You're feeling too mellow to berserk.\n\r",ch);
 	return;
     }
 

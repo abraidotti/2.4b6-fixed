@@ -1,0 +1,10 @@
+# berserk while calm. Smokegod (60), with every skill, is flagged calm, and tries to berserk: "You're feeling too
+# mellow to berserk." (stock said "to mellow", #72).
+@connect god
+Smokegod
+smoke123
+@return
+@return
+set skill smokegod all 100
+flag char smokegod aff +calm
+berserk
