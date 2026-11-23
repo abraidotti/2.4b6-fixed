@@ -261,7 +261,7 @@ void mob_hit (CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     {
 	for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
 	{
-	    vch_next = vch->next;
+	    vch_next = vch->next_in_room;
 	    if ((vch != victim && vch->fighting == ch))
 		one_hit(ch,vch,dt);
 	}
