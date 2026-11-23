@@ -318,7 +318,7 @@ rng 52507 857040b6
 step 89 "@mob 3707 3700"
 rng 52507 857040b6
 step 90 "@spec 60"
-spec 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0
+spec 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0
 rng 52752 4e9fcc5d
 step 91 "purge"
 out god "The adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"

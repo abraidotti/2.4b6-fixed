@@ -9,7 +9,8 @@
 # - a thief (8) works the room 100 times, taking coins or caught at it
 # - the nasty thief (30) finds no one between 31 and 39; set to level 10, it backstabs Outlaw, with no weapon, so
 #   murders him, then robs him or flees
-# - the adept (30) casts at the players under 11 it can see
+# - the adept (30) casts at the players under 11 it can see, and @spec says each cast was a turn (stock's cure
+#   disease fell through to return FALSE, #63)
 @connect god
 Smokegod
 smoke123

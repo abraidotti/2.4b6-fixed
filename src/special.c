@@ -530,6 +530,7 @@ bool spec_cast_adept( CHAR_DATA *ch )
 	act("$n utters the words 'judicandus eugzagz'.",ch,NULL,NULL,TO_ROOM);
 	spell_cure_disease(skill_lookup("cure disease"),
 	    ch->level,ch,victim,TARGET_CHAR);
+	return TRUE;
     }
 
     return FALSE;
