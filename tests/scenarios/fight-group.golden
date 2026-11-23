@@ -168,84 +168,30 @@ out yeo "\n\rRambler's slash misses the lizard.\n\r\n\r<29hp 102m 106mv> \xff\xf
 out ram "Your slash misses the lizard.\n\rThe lizard is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51979 8fd201c6
 step 50 "@pulse until 400 is DEAD!!"
-pulses 18
-out god "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard screams and attacks!\n\rRambler's slash grazes the lizard.\n\rThe duck's peck scratches the lizard.\n\rYeoman's slash scratches the lizard.\n\rYeoman's slash grazes the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe duck's peck scratches the lizard.\n\rThe lizard is DEAD!!\n\rYou hear the lizard's death cry.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+pulses 54
+out god "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard screams and attacks!\n\rThe lizard's bite misses the duck.\n\rThe lizard screams and attacks!\n\rThe lizard's bite scratches Yeoman.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash misses the lizard.\n\rYeoman's slash grazes the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite misses Yeoman.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash grazes the lizard.\n\rYeoman's slash grazes the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rYeoman's slash misses the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash scratches the lizard.\n\rYeoman's slash scratches the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rYeoman is zapped by wild flowers.\n\rThe lizard's head is shattered, and his brains splash all over you.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out dec "\n\rYou hear something's death cry.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out yeo "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard screams and attacks!\n\rRambler's slash grazes the lizard.\n\rThe duck's peck scratches the lizard.\n\rYour slash scratches the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard is in awful condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe duck's peck scratches the lizard.\n\rThe lizard is DEAD!!\n\rYou receive 29 experience points.\n\rYou hear the lizard's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe lizard's bite scratches you.\n\rThe lizard screams and attacks!\n\rYour slash grazes the lizard.\n\rThe duck's peck scratches the lizard.\n\rYeoman's slash scratches the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard is in awful condition. \n\r\n\r<26hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches you.\n\rThe duck's peck scratches the lizard.\n\rThe lizard is DEAD!!\n\rYou receive 39 experience points.\n\rYou hear the lizard's death cry.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-rng 52316 cbc54005
+out yeo "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard screams and attacks!\n\rThe lizard's bite misses the duck.\n\rThe lizard screams and attacks!\n\rThe lizard's bite scratches you.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches you.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash misses the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard has quite a few wounds. \n\r\n\r<24hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite misses you.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash grazes the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard has quite a few wounds. \n\r\n\r<24hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rYou parry the lizard's attack.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rYour slash misses the lizard.\n\rThe lizard has quite a few wounds. \n\r\n\r<24hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches you.\n\rThe duck's peck scratches the lizard.\n\rRambler's slash scratches the lizard.\n\rYour slash scratches the lizard.\n\rThe lizard has some big nasty wounds and scratches. \n\r\n\r<23hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe lizard's bite scratches you.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rYou are zapped by wild flowers.\n\rYou receive 30 experience points.\n\rThe lizard's head is shattered, and his brains splash all over you.\n\r\n\r<21hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe lizard's bite scratches you.\n\rThe lizard screams and attacks!\n\rThe lizard's bite misses the duck.\n\rThe lizard screams and attacks!\n\rThe lizard's bite scratches Yeoman.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck scratches the lizard.\n\rYour slash misses the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard is in excellent condition. \n\r\n\r<26hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches you.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite misses Yeoman.\n\rThe duck's peck scratches the lizard.\n\rYour slash grazes the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard has quite a few wounds. \n\r\n\r<22hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches you.\n\rThe lizard's bite misses the duck.\n\rThe duck's peck misses the lizard.\n\rYour slash grazes the lizard.\n\rYeoman's slash misses the lizard.\n\rThe lizard has some big nasty wounds and scratches. \n\r\n\r<19hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches you.\n\rThe lizard's bite misses the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck scratches the lizard.\n\rYour slash scratches the lizard.\n\rYeoman's slash scratches the lizard.\n\rThe lizard looks pretty hurt. \n\r\n\r<15hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses you.\n\rThe lizard's bite scratches the duck.\n\rThe lizard's bite scratches Yeoman.\n\rThe duck's peck misses the lizard.\n\rYour slash grazes the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rYou receive 61 experience points.\n\rYeoman is zapped by wild flowers.\n\rThe lizard's head is shattered, and his brains splash all over you.\n\rThe lizard is in awful condition. \n\r\n\r<15hp 102m 106mv> \xff\xf9"
+rng 52323 b0195d5a
 step 51 "@state"
 state room 3001 light 2 people mob mob mob player player player mob
 state exit 0 to 3054 info 0 key -1
 state exit 2 to 3005 info 0 key -1
 state exit 4 to 3700 info 0 key 0
-state char mob 3710 pos 8 hit 23/23 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
-state char mob 3710 pos 8 hit 22/22 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
-state char mob 3124 pos 8 hit 16/16 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 135004160 train 0 on 0 stats 10 11 11 11 11
-state char Rambler 2 pos 8 hit 22/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2127 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char mob 3710 pos 7 hit 1/22 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
+state char mob 3710 pos 7 hit 18/23 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 7 hit 15/16 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 135004160 train 0 on 0 stats 10 11 11 11 11
+state char Rambler 2 pos 7 hit 15/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2149 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 304 wear 6 timer 0 cost 0 values 0 0 0 0 0
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Yeoman 5 pos 8 hit 29/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2117 gold 0 silver 0 act 589828 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Yeoman 5 pos 8 hit 21/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2118 gold 0 silver 0 act 589828 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   affect 3 level 20 duration 26 location 24 modifier -2 bitvector 0
 state   affect 3 level 20 duration 26 location 18 modifier 2 bitvector 0
-state   obj carried 304 wear 6 timer 0 cost 0 values 0 0 0 0 0
-state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
-state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
-state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
-state char mob 3011 pos 8 hit 4000/4000 mana 500/500 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 2621443 affected_by 35652140 train 0 on 0 stats 27 21 22 24 25
-state   affect 56 level 45 duration -1 location 2 modifier 4 bitvector 2097152
-state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
-state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
-state room 3005 light 1 people player
-state exit 0 to 3001 info 0 key -1
-state exit 1 to 3006 info 0 key -1
-state exit 2 to 3014 info 0 key -1
-state exit 3 to 3004 info 0 key -1
-state exit 4 to 3057 info 0 key -1
-state char Decimus 10 pos 8 hit 29/29 mana 102/102 move 105/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
-state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
-state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
-state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state obj floor 3135 wear -1 timer 0 cost 0 values 0 0 0 0 0
-rng 52316 cbc54005
-step 52 "kill lizard"
-out god "\n\rRambler's slash grazes the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out yeo "\n\rRambler's slash grazes the lizard.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out ram "Your slash grazes the lizard.\n\rThe lizard has some small wounds and bruises. \n\r\n\r<22hp 102m 106mv> \xff\xf9"
-rng 52325 fac2135f
-step 53 "@pulse until 400 is DEAD!!"
-pulses 23
-out god "\n\rThe lizard's bite misses Rambler.\n\rThe lizard screams and attacks!\n\rRambler's slash grazes the lizard.\n\rThe duck's peck misses the lizard.\n\rYeoman's slash grazes the lizard.\n\rYeoman's slash misses the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard screams and attacks!\n\rThe duck's peck scratches the lizard.\n\rRambler's slash scratches the lizard.\n\rThe lizard is DEAD!!\n\rRambler is zapped by wild flowers.\n\rYou hear the lizard's death cry.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rYou hear something's death cry.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
-out yeo "\n\rThe lizard's bite misses Rambler.\n\rThe lizard screams and attacks!\n\rRambler's slash grazes the lizard.\n\rThe duck's peck misses the lizard.\n\rYour slash grazes the lizard.\n\rYour slash misses the lizard.\n\rThe lizard looks pretty hurt. \n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard screams and attacks!\n\rThe duck's peck scratches the lizard.\n\rRambler's slash scratches the lizard.\n\rThe lizard is DEAD!!\n\rRambler is zapped by wild flowers.\n\rYou receive 29 experience points.\n\rYou hear the lizard's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe lizard's bite misses you.\n\rThe lizard screams and attacks!\n\rYour slash grazes the lizard.\n\rThe duck's peck misses the lizard.\n\rYeoman's slash grazes the lizard.\n\rYeoman's slash misses the lizard.\n\rThe lizard looks pretty hurt. \n\r\n\r<22hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses you.\n\rThe lizard screams and attacks!\n\rThe duck's peck scratches the lizard.\n\rYour slash scratches the lizard.\n\rThe lizard is DEAD!!\n\rYou receive 60 experience points.\n\rYou are zapped by wild flowers.\n\rYou hear the lizard's death cry.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-rng 52912 fca6109b
-step 54 "@state"
-state room 3001 light 2 people mob mob player player player mob
-state exit 0 to 3054 info 0 key -1
-state exit 2 to 3005 info 0 key -1
-state exit 4 to 3700 info 0 key 0
-state char mob 3710 pos 8 hit 22/22 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
-state char mob 3124 pos 8 hit 16/16 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 135004160 train 0 on 0 stats 10 11 11 11 11
-state char Rambler 2 pos 8 hit 22/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2187 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
-state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
-state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
-state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
-state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Yeoman 5 pos 8 hit 29/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2146 gold 0 silver 0 act 589828 affected_by 0 train 1 on 0 stats 19 13 13 13 13
-state   affect 3 level 20 duration 26 location 24 modifier -2 bitvector 0
-state   affect 3 level 20 duration 26 location 18 modifier 2 bitvector 0
-state   obj carried 304 wear 6 timer 0 cost 0 values 0 0 0 0 0
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
@@ -256,8 +202,8 @@ state char mob 3011 pos 8 hit 4000/4000 mana 500/500 move 100/100 wait 0 daze 0 
 state   affect 56 level 45 duration -1 location 2 modifier 4 bitvector 2097152
 state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
 state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 17 wear -1 timer 7 cost 0 values 10 10 0 0 0
 state obj floor 304 wear -1 timer 0 cost 0 values 0 0 0 0 0
-state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
 state room 3005 light 1 people player
 state exit 0 to 3001 info 0 key -1
 state exit 1 to 3006 info 0 key -1
@@ -271,7 +217,61 @@ state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
 state obj floor 3135 wear -1 timer 0 cost 0 values 0 0 0 0 0
-rng 52912 fca6109b
+rng 52323 b0195d5a
+step 52 "kill lizard"
+out ram "You do the best you can!\n\rThe lizard is in awful condition. \n\r\n\r<15hp 102m 106mv> \xff\xf9"
+rng 52323 b0195d5a
+step 53 "@pulse until 400 is DEAD!!"
+pulses 35
+out god "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rYeoman's slash scratches the lizard.\n\rRambler's slash misses the lizard.\n\rYeoman's slash misses the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rRambler's slash misses the lizard.\n\rYeoman's slash grazes the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rRambler is zapped by wild flowers.\n\rThe lizard hits the ground ... DEAD.\n\rYeoman's slash scratches the lizard.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rYou hear something's death cry.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out yeo "\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rYour slash scratches the lizard.\n\rRambler's slash misses the lizard.\n\rYour slash misses the lizard.\n\rThe lizard has quite a few wounds. \n\r\n\r<21hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rRambler's slash misses the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard has some big nasty wounds and scratches. \n\r\n\r<21hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches Rambler.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rRambler's slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rRambler is zapped by wild flowers.\n\rYou receive 26 experience points.\n\rThe lizard hits the ground ... DEAD.\n\rYour slash scratches the lizard.\n\rThe lizard looks pretty hurt. \n\r\n\r<21hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe lizard's bite scratches you.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rYeoman's slash scratches the lizard.\n\rYour slash misses the lizard.\n\rYeoman's slash misses the lizard.\n\rThe lizard is in awful condition. \n\r\n\r<13hp 102m 106mv> \xff\xf9\n\rThe lizard's bite misses you.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rYour slash misses the lizard.\n\rYeoman's slash grazes the lizard.\n\rThe lizard is in awful condition. \n\r\n\r<13hp 102m 106mv> \xff\xf9\n\rThe lizard's bite scratches you.\n\rThe lizard's bite scratches the duck.\n\rThe duck's peck misses the lizard.\n\rYour slash grazes the lizard.\n\rThe lizard is DEAD!!\n\rYou receive 56 experience points.\n\rYou are zapped by wild flowers.\n\rThe lizard hits the ground ... DEAD.\n\rYeoman's slash scratches the lizard.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+rng 52488 ad957260
+step 54 "@state"
+state room 3001 light 2 people mob mob player player player mob
+state exit 0 to 3054 info 0 key -1
+state exit 2 to 3005 info 0 key -1
+state exit 4 to 3700 info 0 key 0
+state char mob 3710 pos 7 hit 6/23 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 0 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 7 hit 5/16 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 135004160 train 0 on 0 stats 10 11 11 11 11
+state char Rambler 2 pos 8 hit 10/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2205 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
+state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state char Yeoman 5 pos 7 hit 21/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2144 gold 0 silver 0 act 589828 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   affect 3 level 20 duration 26 location 24 modifier -2 bitvector 0
+state   affect 3 level 20 duration 26 location 18 modifier 2 bitvector 0
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
+state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 589824 affected_by 0 train 0 on 0 stats 13 13 13 13 13
+state char mob 3011 pos 8 hit 4000/4000 mana 500/500 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 2621443 affected_by 35652140 train 0 on 0 stats 27 21 22 24 25
+state   affect 56 level 45 duration -1 location 2 modifier 4 bitvector 2097152
+state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
+state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 304 wear -1 timer 0 cost 0 values 0 0 0 0 0
+state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
+state obj floor 17 wear -1 timer 7 cost 0 values 10 10 0 0 0
+state obj floor 304 wear -1 timer 0 cost 0 values 0 0 0 0 0
+state room 3005 light 1 people player
+state exit 0 to 3001 info 0 key -1
+state exit 1 to 3006 info 0 key -1
+state exit 2 to 3014 info 0 key -1
+state exit 3 to 3004 info 0 key -1
+state exit 4 to 3057 info 0 key -1
+state char Decimus 10 pos 8 hit 29/29 mana 102/102 move 105/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
+state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
+state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
+state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
+state obj floor 3135 wear -1 timer 0 cost 0 values 0 0 0 0 0
+rng 52488 ad957260
 step 55 "score"
-out ram "You are Rambler the Recruit, level 2, 17 years old (0 hours).\n\rRace: human  Sex: male  Class: warrior\n\rYou have 22/29 hit, 102/102 mana, 106/106 movement.\n\rYou have 1 practices and 1 training sessions.\n\rYou are carrying 5/47 items with weight 14/230 pounds.\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rYou have scored 2187 exp, and have 0 gold and 0 silver coins.\n\rYou need 813 exp to level.\n\rWimpy set to 0 hit points.\n\rYou are standing.\n\rYou are defenseless against piercing.\n\rYou are defenseless against bashing.\n\rYou are defenseless against slashing.\n\rYou are defenseless against magic.\n\rYou are demonic.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-rng 52912 fca6109b
+out ram "You are Rambler the Recruit, level 2, 17 years old (0 hours).\n\rRace: human  Sex: male  Class: warrior\n\rYou have 10/29 hit, 102/102 mana, 106/106 movement.\n\rYou have 1 practices and 1 training sessions.\n\rYou are carrying 5/47 items with weight 14/230 pounds.\n\rStr: 19(19)  Int: 13(13)  Wis: 13(13)  Dex: 13(13)  Con: 13(13)\n\rYou have scored 2205 exp, and have 0 gold and 0 silver coins.\n\rYou need 795 exp to level.\n\rWimpy set to 0 hit points.\n\rYou are standing.\n\rYou are defenseless against piercing.\n\rYou are defenseless against bashing.\n\rYou are defenseless against slashing.\n\rYou are defenseless against magic.\n\rYou are demonic.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+rng 52488 ad957260

@@ -156,7 +156,7 @@ void check_assist(CHAR_DATA *ch,CHAR_DATA *victim)
 		
 		    target = NULL;
 		    number = 0;
-		    for (vch = ch->in_room->people; vch; vch = vch->next)
+		    for (vch = ch->in_room->people; vch; vch = vch->next_in_room)
 		    {
 			if (can_see(rch,vch)
 			&&  is_same_group(vch,victim)
