@@ -7,7 +7,8 @@ port, and plays a scripted session as a new character (creation, then look, scor
 equipment and quit). What's compared with the reference:
   - the boot log, without its timestamps
   - the session, byte for byte
-  - the saved player file, without Id and LogO (the times it was made and last left)
+  - the saved player file, without Id and LogO (the times it was made and last left) and Plyd (the seconds played,
+    which a slow container can push by one)
 
 The reference is stock ROM 2.4b6 (the stock-2.4b6 tag) with only this tree's src/tables.h, built with gcc 4.9 and
 stock's own Makefile.linux. Stock as released doesn't build on any compiler there's an image for: gcc 4.9 already
@@ -36,7 +37,7 @@ BUILDS = [
     ("clang", "tree", "gcc:15", "clang", "Makefile", CLANG),
 ]
 STAMP = re.compile(rb"^[A-Z][a-z]{2} [A-Z][a-z]{2} +\d+ \d\d:\d\d:\d\d \d{4} :: ", re.M)
-TIMES = re.compile(rb"^(Id|LogO) +\d+\r?\n", re.M)
+TIMES = re.compile(rb"^(Id|LogO|Plyd) +\d+\r?\n", re.M)
 
 
 def trees(work):
