@@ -95,7 +95,8 @@ sit nothing
 rest nothing
 sleep nothing
 stand nothing
-# Waking: Sleeper can't wake up or be woken; Quintus is woken, but the C stands the waker up instead.
+# Waking: Sleeper can't wake up or be woken; Quintus is woken and stands up (stock stood the waker up instead,
+# #30).
 @as sleeper
 stand
 rest

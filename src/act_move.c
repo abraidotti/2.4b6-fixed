@@ -1326,7 +1326,7 @@ void do_wake( CHAR_DATA *ch, char *argument )
 	{ act( "You can't wake $M!",   ch, NULL, victim, TO_CHAR );  return; }
 
     act_new( "$n wakes you.", ch, NULL, victim, TO_VICT,POS_SLEEPING );
-    do_function(ch, &do_stand, "");
+    do_function(victim, &do_stand, "");
     return;
 }
 
