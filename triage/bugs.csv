@@ -80,7 +80,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 83,3,stock,crash,#9,load_songs,no music.txt crashes the boot (fclose NULL),
 83,4,stock,behaviour,#63,load_songs,a song over 100 lines breaks the rest of the file,
 83,5,stock,behaviour,#63,spec_cast_adept,the adept's cure disease falls through to return FALSE,
-83,6,stock,message,,spec_ogre_member spec_patrolman spec_nasty,"stray and missing quotes, and 'his gold' for anyone",
+83,6,stock,message,#81,spec_ogre_member spec_patrolman spec_nasty,"stray and missing quotes, and 'his gold' for anyone",
 85,1,stock,crash,#24,obj_update,obj_update stops at a freed object,
 85,2,stock,behaviour,#50,weather_update,dawn's sunlight is out of order,
 85,3,quickmud,,,char_update,mobs never wander home: nothing sets zone,"Stock's reset_room sets mob->zone (db.c); QuickMUD's OLC resets dropped it, so this works in stock."

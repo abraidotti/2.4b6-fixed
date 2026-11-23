@@ -151,8 +151,8 @@ step 50 "@spec"
 spec 1
 rng 52080 5b5133e5
 step 51 "peace"
-out god "With a scream of rage, an ogre gang member attacks a troll gang member.'\n\rAn ogre gang member's punch misses a troll gang member.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rWith a scream of rage, an ogre gang member attacks a troll gang member.'\n\rAn ogre gang member's punch misses a troll gang member.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+out god "With a scream of rage, an ogre gang member attacks a troll gang member.\n\rAn ogre gang member's punch misses a troll gang member.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rWith a scream of rage, an ogre gang member attacks a troll gang member.\n\rAn ogre gang member's punch misses a troll gang member.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
 rng 52080 5b5133e5
 step 52 "purge"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
