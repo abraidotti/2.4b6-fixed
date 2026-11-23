@@ -64,7 +64,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 75,5,stock,message,,one_hit,poison message has no line end,
 75,6,stock,message,,make_corpse,"typo: ""evaporates,scattering""",
 75,8,stock,behaviour,#56,check_immune,check_immune's vulnerable cases never see immune,
-77,1,stock,message,,do_berserk,"typo: ""to mellow""",
+77,1,stock,message,#72,do_berserk,"typo: ""to mellow""",
 77,2,stock,behaviour,,do_rescue,rescue while already fighting,
 79,1,stock,behaviour,#58,spell_dispel_evil spell_dispel_good,dispel evil and good roll their damage twice (UMAX),
 79,2,stock,behaviour,#58,spell_enchant_weapon,enchant weapon's new hitroll affect is TO_AFFECTS,
