@@ -1176,7 +1176,7 @@ void do_sit (CHAR_DATA *ch, char *argument )
             else if (IS_SET(obj->value[2],SIT_ON))
             {
             	act_new("You wake and sit on $p.",ch,obj,NULL,TO_CHAR,POS_DEAD);
-            	act("$n wakes and sits at $p.",ch,obj,NULL,TO_ROOM);
+            	act("$n wakes and sits on $p.",ch,obj,NULL,TO_ROOM);
             }
             else
             {

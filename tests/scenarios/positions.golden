@@ -210,7 +210,7 @@ out quin "\n\rDecimus goes to sleep on the Bench.\n\r\n\r<29hp 102m 106mv> \xff\
 rng 51962 a7dda492
 step 62 "sit 2.bench"
 out dec "You wake and sit on the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out quin "\n\rDecimus wakes and sits at the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out quin "\n\rDecimus wakes and sits on the Bench.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 63 "stand"
 out dec "You stand up.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
