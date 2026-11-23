@@ -2521,7 +2521,7 @@ void do_oload( CHAR_DATA *ch, char *argument )
         level = atoi(arg2);
         if (level < 0 || level > get_trust(ch))
 	{
-	  send_to_char( "Level must be be between 0 and your level.\n\r",ch);
+	  send_to_char( "Level must be between 0 and your level.\n\r",ch);
   	  return;
 	}
     }

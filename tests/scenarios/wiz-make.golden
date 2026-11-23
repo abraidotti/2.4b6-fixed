@@ -101,10 +101,10 @@ step 31 "load obj 3032 x"
 out god "Syntax: oload <vnum> <level>.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51968 b7a8be27
 step 32 "load obj 3032 61"
-out god "Level must be be between 0 and your level.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Level must be between 0 and your level.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51968 b7a8be27
 step 33 "load obj 3032 -1"
-out god "Level must be be between 0 and your level.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out god "Level must be between 0 and your level.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51968 b7a8be27
 step 34 "load obj 99999"
 out god "No object has that vnum.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
