@@ -105,8 +105,9 @@ def render(rows, index):
         f"**{len(rows)} bugs from {len(issues)} issues:**",
         "",
         f"- **{count['stock']} in stock ROM 2.4b6**, from {len(stock_issues)} issues. These are what this repo fixes:",
-        f"  **{len(fixed)} fixed so far**, and {sum(left.values())} left"
-        f" ({', '.join(f'{left[k]} {v}' for k, v in KINDS.items() if left[k])}).",
+        (f"  **{len(fixed)} fixed so far**, and {sum(left.values())} left"
+         f" ({', '.join(f'{left[k]} {v}' for k, v in KINDS.items() if left[k])})."
+         if sum(left.values()) else f"  **All {len(fixed)} fixed.**"),
         f"- **{count['different']} stock, but different:** stock has the code, but the bug can't happen the same way.",
         f"- **{count['quickmud']} QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.",
         "",
