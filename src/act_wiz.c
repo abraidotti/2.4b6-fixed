@@ -3651,7 +3651,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
  
         if ( value < -1 || value > 100 )
         {
-            send_to_char( "Full range is -1 to 100.\n\r", ch );
+            send_to_char( "Hunger range is -1 to 100.\n\r", ch );
             return;
         }
  

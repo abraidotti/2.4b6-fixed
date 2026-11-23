@@ -2,8 +2,9 @@
 # obj (each value, and the fields that wrap into a short), set room (and a private room refused, at trust 58) and
 # string (each field of a character and an object, and extra descriptions). stat, score and look show the results.
 # In the temple (3001), with Hassan: Smokegod (60), Seraph (56) and Decimus (10). The C's small faults show here:
-# strength's range ends "." before its newline (stock: after, #99); hunger's range is called Full's; hours has no newline; and a spec
-# that isn't one leaves Hassan's spec_cast_mage alone (stock took it away, #65).
+# strength's range ends "." before its newline (stock: after, #99); hunger's range is called Hunger's (stock:
+# Full's); hours isn't a field in stock (QuickMUD's set char has one), so it gets the syntax; and a spec that isn't
+# one leaves Hassan's spec_cast_mage alone (stock took it away, #65).
 @connect god
 Smokegod
 smoke123
