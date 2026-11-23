@@ -24,12 +24,12 @@ issue,item,verdict,kind,fixed,function,summary,note
 57,1,stock,behaviour,#44,do_put,put all skips an object at the container's weight limit,
 57,2,stock,message,#91,do_put,put all says nothing when nothing goes in,
 58,,stock,behaviour,#42,do_put,put all into the donation pit never sets a timer,
-60,1,stock,message,,do_buy do_sell,four shopkeeper tells miss their closing quote,
-60,2,stock,message,,do_brandish do_zap,'Your $p' gives 'Your a burnt staff',
-60,3,stock,message,,do_steal,steal's failure message prints an extra empty line,
-60,4,stock,message,,do_pour,'They aren't holding anything.' has no line end,
-60,5,stock,message,,do_sell,sell's 'piece' or 'pieces' goes by the whole price,
-60,6,stock,message,,obj_cast_spell,"typo: ""Somehting isn't right""","Also #75, item 7: the same line."
+60,1,stock,message,#95,do_buy do_sell,four shopkeeper tells miss their closing quote,
+60,2,stock,message,#95,do_brandish do_zap,'Your $p' gives 'Your a burnt staff',
+60,3,stock,message,#95,do_steal,steal's failure message prints an extra empty line,
+60,4,stock,message,#95,do_pour,'They aren't holding anything.' has no line end,
+60,5,stock,message,#95,do_sell,sell's 'piece' or 'pieces' goes by the whole price,
+60,6,stock,message,#95,obj_cast_spell,"typo: ""Somehting isn't right""","Also #75, item 7: the same line."
 61,,stock,behaviour,#46,do_sacrifice,sacrifice's autosplit counts charmed followers,
 63,,quickmud,,,find_note show_note_to_char handle_con_note_to,three ways the note commands crash the game,The boards are a QuickMUD add-on; stock has note.c instead.
 64,,quickmud,,,do_nread do_board,note messages: read again does nothing and smaller faults,The boards are a QuickMUD add-on.
