@@ -86,7 +86,7 @@ step 29 "time"
 out dec "It is 1 o'clock am, Day of the Bull, 1st the Month of Winter.\n\rROM started up at \n\rThe system time is Wed Nov 26 17:05:20 2025\n.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 51988 d9c02521
 step 30 "@pulse 1920"
-out dec "\n\rThe sky is getting cloudy.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out dec "\n\rThe sky is getting cloudy.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 52049 b0ba0cdf
 step 31 "time"
 out dec "It is 9 o'clock am, Day of the Bull, 1st the Month of Winter.\n\rROM started up at \n\rThe system time is Wed Nov 26 17:13:20 2025\n.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
@@ -104,7 +104,7 @@ step 35 "weather"
 out dec "The sky is cloudy and a cold northern gust blows.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 52160 711120b3
 step 36 "@pulse 1440"
-out dec "\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out dec "\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 52453 205a4b7f
 step 37 "time"
 out dec "It is 6 o'clock am, Day of Deception, 2nd the Month of Winter.\n\rROM started up at \n\rThe system time is Wed Nov 26 17:34:21 2025\n.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
@@ -113,7 +113,7 @@ step 38 "weather"
 out dec "The sky is cloudy and a cold northern gust blows.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 52453 205a4b7f
 step 39 "@pulse 9600"
-out dec "\n\rThe sun slowly disappears in the west.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe night has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe clouds disappear.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun slowly disappears in the west.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe night has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
+out dec "\n\rThe sun slowly disappears in the west.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe night has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun rises in the east.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe day has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe clouds disappear.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe sun slowly disappears in the west.\n\r\n\r<29hp 102m 105mv> \xff\xf9\n\rThe night has begun.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 59685 5b4ec32f
 step 40 "time"
 out dec "It is 10 o'clock pm, Day of Thunder, 3rd the Month of Winter.\n\rROM started up at \n\rThe system time is Wed Nov 26 18:14:22 2025\n.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
