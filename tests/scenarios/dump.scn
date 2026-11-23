@@ -1,0 +1,9 @@
+# dump, an implementor's command, writes the memory, mob and object reports to mem.dmp, mob.dmp and obj.dmp. It
+# said nothing when it worked (#53); now it says where it wrote. dump-unwritable is the file that won't open.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+dump
+@file mem.dmp

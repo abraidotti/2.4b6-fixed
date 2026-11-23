@@ -1,0 +1,11 @@
+# dump when a report can't be written: mob.dmp is a directory, so fopen fails even as root. dump didn't check its
+# files, and wrote the mob report to the NULL fopen gave, a segfault (#53). Now it says which file it couldn't open,
+# and stops there.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@mkdir mob.dmp
+dump
+say still here
