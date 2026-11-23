@@ -2420,7 +2420,6 @@ void do_description( CHAR_DATA *ch, char *argument )
     if ( argument[0] != '\0' )
     {
 	buf[0] = '\0';
-	smash_tilde( argument );
 
     	if (argument[0] == '-')
     	{
@@ -2463,6 +2462,8 @@ void do_description( CHAR_DATA *ch, char *argument )
 	    send_to_char("Description cleared.\n\r",ch);
 	    return;
         }
+	/* after the '-' test: a leading '~' would become a '-' */
+	smash_tilde( argument );
 	if ( argument[0] == '+' )
 	{
 	    if ( ch->description != NULL )

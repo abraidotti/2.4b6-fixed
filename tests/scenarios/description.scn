@@ -1,5 +1,6 @@
-# description: set, add lines with "+", take them off with "-" until it's cleared, then a tilde (smash_tilde makes
-# it a "-", which takes a line off), and the 1024-byte limit. Weary has no description; Decimus looks at Weary's.
+# description: set, add lines with "+", take them off with "-" until it's cleared, then a line starting with a
+# tilde, which replaces the description with the tilde made a "-" (stock smashed it before testing for "-", so it
+# took a line off, #36), and the 1024-byte limit. Weary has no description; Decimus looks at Weary's.
 @connect weary
 Weary
 psswrd
