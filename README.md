@@ -7,9 +7,9 @@ top of it, one commit per bug, so anyone starting a ROM-based MUD can see each c
 This isn't ROM, and it isn't released by ROM's authors. ROM's licence lets anyone release derivatives of ROM 2.4,
 labelled as such, with all of its credits; only Russ Taylor releases ROM itself (see [Licence](#licence)).
 
-**Status:** the stock release is at the `stock-2.4b6` tag, and [the triage](triage/README.md) lists the bugs to fix.
-It builds on current compilers (see [Building](#building)), and [FIXES.md](FIXES.md) lists every change made
-since the stock release, one commit each.
+**Status:** [`v1.0`](https://github.com/abraidotti/2.4b6-fixed/releases/tag/v1.0) fixes every stock bug in
+[the triage](triage/README.md), and a few more found along the way. It builds on current compilers (see
+[Building](#building)), and [FIXES.md](FIXES.md) lists every change made since the stock release, one commit each.
 
 ## What's here
 
@@ -20,8 +20,9 @@ since the stock release, one commit each.
 - **The bugs:** [triage/README.md](triage/README.md) takes the bugs found while porting QuickMUD (a ROM derivative)
   to Python, in [abraidotti/QuickMUD-Python](https://github.com/abraidotti/QuickMUD-Python), and checks each one
   against the stock code. The ones in stock are what this repo fixes.
-- **Tools:** [tools/](tools/) holds the script that keeps the triage table in step with its data, and the build
-  check ([Building](#building)). They're MIT ([tools/LICENSE](tools/LICENSE)), separate from the game's licences.
+- **Tools:** [tools/](tools/) holds the scripts that write the triage table and FIXES.md, the build check
+  ([Building](#building)) and the scenarios ([Testing](#testing)). They're MIT ([tools/LICENSE](tools/LICENSE)),
+  separate from the game's licences.
 
 ## Building
 
@@ -78,5 +79,16 @@ MUD running it:
 
 ROM's licence also asks you to email Russ Taylor before opening a ROM-based MUD. The address it gives
 (rtaylor@efn.org) no longer works.
+
+**The stock release in this repository.** ROM's licence says only Russ Taylor releases ROM itself. The first
+commit is his release, unmodified and labelled as his, so that every fix can be read against it, as other sites
+have long hosted it. ftp.game.org, the MUD archive that mirrored the ROM releases, said of them on its ROM page
+([archived 16 January 2002](https://web.archive.org/web/20020116144842/http://ftp.game.org/cgi-bin/directory?/pub/mud/diku/merc/rom)):
+
+> FTP.GAME.ORG has permission from Russ Taylor to mirror the ROM distributions, and make them publically
+> available from our site.
+
+That permission was ftp.game.org's, not this repository's. It's quoted here for what it shows: that Russ Taylor
+let his releases be republished unmodified.
 
 These fixes keep every credit and notice. A fix never changes a licence, a credit or a copyright line.
