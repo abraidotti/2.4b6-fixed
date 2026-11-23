@@ -11,7 +11,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 44,1,stock,message,,do_stand,stand from furniture you're in says 'on',
 44,2,stock,message,,do_sit,waking to sit on furniture says 'at',
 44,3,stock,message,,do_sit,sitting up in furniture prints nothing,
-46,,stock,behaviour,,do_description,a description line starting with ~ takes a line off,
+46,,stock,behaviour,#36,do_description,a description line starting with ~ takes a line off,
 47,,stock,behaviour,#32,do_wimpy,a word that isn't a number sets wimpy to 0,
 49,,quickmud,,,do_tell,tell to an awake mob crashes the game,The note-writing check that reads victim->desc came with QuickMUD's boards.
 50,,stock,behaviour,,do_auction,auction with no text sends an empty auction,
