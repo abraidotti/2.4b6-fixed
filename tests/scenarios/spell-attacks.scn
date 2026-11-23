@@ -6,6 +6,7 @@
 # - chain lightning arcing through a room of mobs and back to Cherub
 # - demonfire turning on a caster who isn't evil, then cast by an evil Smokegod
 # - dispel evil on a goblin (3501, evil), a drunk (good: Mota protects it) and a fido (neutral); dispel good the same
+#   (the goblin's damage is rolled once: stock rolled dice twice when it beat the goblin's hit points, #58)
 # - energy drain on a duck (3124, level 1: drains its life whole) and on a septon (its mana and moves)
 # - earthquake, which a flying pet dragon (350) rides out; call lightning indoors, and outdoors under a clear sky
 @connect cher

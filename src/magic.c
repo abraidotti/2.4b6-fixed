@@ -1972,7 +1972,10 @@ void spell_dispel_evil( int sn, int level, CHAR_DATA *ch, void *vo,int target)
     if (victim->hit > (ch->level * 4))
       dam = dice( level, 4 );
     else
-      dam = UMAX(victim->hit, dice(level,4));
+    {
+      dam = dice( level, 4 );	/* once: UMAX would roll it twice */
+      dam = UMAX(victim->hit, dam);
+    }
     if ( saves_spell( level, victim,DAM_HOLY) )
 	dam /= 2;
     damage( ch, victim, dam, sn, DAM_HOLY ,TRUE);
@@ -2003,7 +2006,10 @@ void spell_dispel_good( int sn, int level, CHAR_DATA *ch, void *vo,int target )
     if (victim->hit > (ch->level * 4))
       dam = dice( level, 4 );
     else
-      dam = UMAX(victim->hit, dice(level,4));
+    {
+      dam = dice( level, 4 );	/* once: UMAX would roll it twice */
+      dam = UMAX(victim->hit, dam);
+    }
     if ( saves_spell( level, victim,DAM_NEGATIVE) )
         dam /= 2;
     damage( ch, victim, dam, sn, DAM_NEGATIVE ,TRUE);
