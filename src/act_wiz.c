@@ -2020,7 +2020,7 @@ void do_reboot( CHAR_DATA *ch, char *argument )
     {
 	d_next = d->next;
 	vch = d->original ? d->original : d->character;
-	if (vch != NULL)
+	if (vch != NULL && d->connected == CON_PLAYING)
 	    save_char_obj(vch);
     	close_socket(d);
     }
@@ -2053,7 +2053,7 @@ void do_shutdown( CHAR_DATA *ch, char *argument )
     {
 	d_next = d->next;
 	vch = d->original ? d->original : d->character;
-	if (vch != NULL)
+	if (vch != NULL && d->connected == CON_PLAYING)
 	    save_char_obj(vch);
 	close_socket(d);
     }
