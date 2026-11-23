@@ -1,0 +1,16 @@
+# shutdown while a character is being created. Halfway, a new name, has chosen a password and stopped at the race
+# prompt; Smokegod (60) types shutdown. It saved every connection with a character, so Halfway's player file was
+# written at level 0, taking the name (#40). Now only players in the game are saved: there's no file.
+@connect new
+Halfway
+y
+secret12
+secret12
+@connect god
+Smokegod
+smoke123
+@return
+@return
+shutdown
+@file ../player/Halfway
+@file ../player/Smokegod
