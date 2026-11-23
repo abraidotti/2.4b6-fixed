@@ -30,7 +30,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 60,4,stock,message,,do_pour,'They aren't holding anything.' has no line end,
 60,5,stock,message,,do_sell,sell's 'piece' or 'pieces' goes by the whole price,
 60,6,stock,message,,obj_cast_spell,"typo: ""Somehting isn't right""","Also #75, item 7: the same line."
-61,,stock,behaviour,,do_sacrifice,sacrifice's autosplit counts charmed followers,
+61,,stock,behaviour,#46,do_sacrifice,sacrifice's autosplit counts charmed followers,
 63,,quickmud,,,find_note show_note_to_char handle_con_note_to,three ways the note commands crash the game,The boards are a QuickMUD add-on; stock has note.c instead.
 64,,quickmud,,,do_nread do_board,note messages: read again does nothing and smaller faults,The boards are a QuickMUD add-on.
 65,1,stock,behaviour,,check_ban,a ban with no * never matches,

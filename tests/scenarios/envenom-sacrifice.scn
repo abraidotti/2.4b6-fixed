@@ -1,12 +1,13 @@
 # envenom and sacrifice. In the temple (3001): Pickpocket (13, a thief with envenom at 85%), Decimus (10, a warrior,
-# who has no envenom) and Clansman (20). Envenom lags 36 pulses. Objects to poison: a bread (3011) and a bottle of ale
-# (3002); daggers (3020, which stab); one with a negative attack (-1) and one with attack 40, the closing row of
+# who has no envenom) and Clansman (20). Envenom lags 36 pulses. Objects to poison: a bread (3011) and a bottle of
+# ale (3002); daggers (3020, which stab); one with a negative attack (-1) and one with attack 40, the closing row of
 # attack_table, whose damage is 0; a mace (3024, which pounds: bash), a meat cleaver (1355, sharp), a sparking
 # lightning sword (9207, already poisoned) and a box (3033), with enough tries for some to fail. Then sacrifice: the
-# fountain (3135, no take), a rope (5011) that someone sits on, wild flowers (304: level 0 and worth nothing, so Mota
-# gives 0 silver), leather pants (3062: one silver coin), a battle axe (3026: level 5, so 15 silver) and a mob's
-# corpse (10). With autosplit, Pickpocket splits with Decimus; then, with only a charmed fido following, the split
-# says "Just keep it all" (#61). Fresh breads at the end of the envenoming, so one can fail before it's poisoned.
+# fountain (3135, no take), a rope (5011) that someone sits on, wild flowers (304: level 0 and worth nothing, so
+# Mota gives 0 silver), leather pants (3062: one silver coin), a battle axe (3026: level 5, so 15 silver) and a
+# mob's corpse (10). With autosplit, Pickpocket splits with Decimus; then, with only a charmed fido following,
+# there's no split (stock counted the fido and said "Just keep it all", #46). Fresh breads at the end of the
+# envenoming, so one can fail before it's poisoned.
 @connect pick
 Pickpocket
 psswrd

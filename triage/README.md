@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **18 fixed so far**, and 61 left (27 wrong behaviour, 34 message).
+  **19 fixed so far**, and 60 left (26 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -53,7 +53,7 @@ unexamined, not fixed.
 | [#60](https://github.com/abraidotti/QuickMUD-Python/issues/60) (4) | 'They aren't holding anything.' has no line end | message |  | [`do_pour`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L1008) |  |
 | [#60](https://github.com/abraidotti/QuickMUD-Python/issues/60) (5) | sell's 'piece' or 'pieces' goes by the whole price | message |  | [`do_sell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L2843) |  |
 | [#60](https://github.com/abraidotti/QuickMUD-Python/issues/60) (6) | typo: "Somehting isn't right" | message |  | [`obj_cast_spell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L583) | Also #75, item 7: the same line. |
-| [#61](https://github.com/abraidotti/QuickMUD-Python/issues/61) | sacrifice's autosplit counts charmed followers | behaviour |  | [`do_sacrifice`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L1738) |  |
+| [#61](https://github.com/abraidotti/QuickMUD-Python/issues/61) | sacrifice's autosplit counts charmed followers | behaviour | [#46](https://github.com/abraidotti/2.4b6-fixed/issues/46) | [`do_sacrifice`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L1738) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (1) | a ban with no * never matches | behaviour |  | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (2) | *name* bans are tested the wrong way round | behaviour |  | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (4) | banning a site already banned walks freed memory | crash | [#20](https://github.com/abraidotti/2.4b6-fixed/issues/20) | [`ban_site`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L135) |  |
