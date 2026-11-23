@@ -1,6 +1,7 @@
 # say, emote, pmote and pose, and typo, rent, qui and delet. In the temple (3001): Decimus (10, a warrior),
 # Quintus (25, a warrior), Heroic (51, a warrior) and Smokegod (60, a mage). pmote shows each player their own
-# name as "you" and "Name's" as "your"; its match count carries over from one player to the next.
+# name as "you" and "Name's" as "your", matching each player's name afresh, and keeps a name the text ends in the
+# middle of (stock carried its match count over from one player to the next, and dropped that last part, #93).
 # qui says to spell quit out: the command table listed quiet before it, so stock turned on quiet mode (#34).
 @connect dec
 Decimus

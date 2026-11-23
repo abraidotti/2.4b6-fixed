@@ -1061,7 +1061,8 @@ void do_pmote( CHAR_DATA *ch, char *argument )
 	temp[strlen(argument) - strlen(letter)] = '\0';
    	last[0] = '\0';
  	name = vch->name;
-	
+	matches = 0;	/* each player's name is matched afresh */
+
 	for (; *letter != '\0'; letter++)
 	{ 
 	    if (*letter == '\'' && matches == strlen(vch->name))
@@ -1102,6 +1103,7 @@ void do_pmote( CHAR_DATA *ch, char *argument )
 	    last[0] = '\0';
 	    name = vch->name;
 	}
+	strcat(temp,last);	/* a name cut short by the end of the text */
 
 	act("$N $t",vch,temp,ch,TO_CHAR);
     }
