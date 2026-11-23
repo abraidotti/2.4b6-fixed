@@ -3782,18 +3782,22 @@ void do_string( CHAR_DATA *ch, char *argument )
 
     	if ( !str_prefix( arg2, "spec" ) )
     	{
+	    SPEC_FUN *spec;
+
 	    if ( !IS_NPC(victim) )
 	    {
 	    	send_to_char( "Not on PC's.\n\r", ch );
 	    	return;
 	    }
 
-	    if ( ( victim->spec_fun = spec_lookup( arg3 ) ) == 0 )
+	    /* looked up first: a bad name leaves the mob's own alone */
+	    if ( ( spec = spec_lookup( arg3 ) ) == 0 )
 	    {
 	    	send_to_char( "No such spec fun.\n\r", ch );
 	    	return;
 	    }
 
+	    victim->spec_fun = spec;
 	    return;
     	}
     }
