@@ -2203,8 +2203,8 @@ void do_steal( CHAR_DATA *ch, char *argument )
 	affect_strip(ch,gsn_sneak);
 	REMOVE_BIT(ch->affected_by,AFF_SNEAK);
 
-	act( "$n tried to steal from you.\n\r", ch, NULL, victim, TO_VICT    );
-	act( "$n tried to steal from $N.\n\r",  ch, NULL, victim, TO_NOTVICT );
+	act( "$n tried to steal from you.", ch, NULL, victim, TO_VICT    );
+	act( "$n tried to steal from $N.",  ch, NULL, victim, TO_NOTVICT );
 	switch(number_range(0,3))
 	{
 	case 0 :
