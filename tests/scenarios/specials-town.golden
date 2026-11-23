@@ -239,11 +239,11 @@ step 70 "@spec"
 spec 1
 rng 52103 a772aac9
 step 71 "peace"
-out god "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out out "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<4834hp 102m 106mv> \xff\xf9"
-out purse "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out god "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!'\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out out "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!'\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<4834hp 102m 106mv> \xff\xf9"
+out purse "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!'\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rYou hear something's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out hero "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+out hero "\n\rThe cityguard screams 'PROTECT THE INNOCENT!!  BANZAI!!'\n\rThe cityguard's punch hits the beastly fido.\n\rThe beastly fido is DEAD!!\n\rThe beastly fido's leg is sliced from his dead body.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
 rng 52103 a772aac9
 step 72 "@pulse 12"
 rng 52103 a772aac9

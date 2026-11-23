@@ -220,7 +220,7 @@ bool spec_ogre_member( CHAR_DATA *ch)
 	default: message = NULL;	break;
         case 0: message = "$n yells 'I've been looking for you, punk!'";
                 break;
-        case 1: message = "With a scream of rage, $n attacks $N.'";
+        case 1: message = "With a scream of rage, $n attacks $N.";
                 break;
         case 2: message =
                 "$n says 'What's Troll filth like you doing around here?'";
@@ -358,7 +358,7 @@ bool spec_nasty( CHAR_DATA *ch )
     {
         case 0:  act( "$n rips apart your coin purse, spilling your gold!",
                      ch, NULL, victim, TO_VICT);
-                 act( "You slash apart $N's coin purse and gather his gold.",
+                 act( "You slash apart $N's coin purse and gather $S gold.",
                      ch, NULL, victim, TO_CHAR);
                  act( "$N's coin purse is ripped apart!",
                      ch, NULL, victim, TO_NOTVICT);
@@ -837,7 +837,7 @@ bool spec_guard( CHAR_DATA *ch )
 
     if ( ech != NULL )
     {
-	act( "$n screams 'PROTECT THE INNOCENT!!  BANZAI!!",
+	act( "$n screams 'PROTECT THE INNOCENT!!  BANZAI!!'",
 	    ch, NULL, NULL, TO_ROOM );
 	multi_hit( ch, ech, TYPE_UNDEFINED );
 	return TRUE;
