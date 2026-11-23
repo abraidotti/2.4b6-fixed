@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **21 fixed so far**, and 58 left (24 wrong behaviour, 34 message).
+  **22 fixed so far**, and 57 left (23 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -99,7 +99,7 @@ unexamined, not fixed.
 | [#83](https://github.com/abraidotti/QuickMUD-Python/issues/83) (5) | the adept's cure disease falls through to return FALSE | behaviour |  | [`spec_cast_adept`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L475) |  |
 | [#83](https://github.com/abraidotti/QuickMUD-Python/issues/83) (6) | stray and missing quotes, and 'his gold' for anyone | message |  | [`spec_ogre_member`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L185), [`spec_patrolman`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L244), [`spec_nasty`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L323) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (1) | obj_update stops at a freed object | crash | [#24](https://github.com/abraidotti/2.4b6-fixed/issues/24) | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
-| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (2) | dawn's sunlight is out of order | behaviour |  | [`weather_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L467) |  |
+| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (2) | dawn's sunlight is out of order | behaviour | [#50](https://github.com/abraidotti/2.4b6-fixed/issues/50) | [`weather_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L467) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (4) | the pit's check in obj_update can't apply | behaviour |  | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
 | [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (8) | flag names resist and vuln flags from the immunity table | behaviour |  | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) |  |
 | [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (9) | flag takes the whole word a sign starts and says nothing when it works | behaviour |  | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) |  |
