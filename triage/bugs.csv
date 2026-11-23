@@ -94,7 +94,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 100,,quickmud,,,medit_delmprog medit_shop,mob editor faults (all items),OLC is a QuickMUD add-on.
 102,1-6,quickmud,,,save_other_helps hedit_delete hedit_new do_hedit,help editor faults,OLC is a QuickMUD add-on.
 102,7,different,,,do_scan,scan never says 'Looking north'; sees through closed doors; crashes on an exit to nowhere,"Stock has the same scan.c, but no scan command in its table, so the faults can't be reached. QuickMUD added the command (doc/QuickMUD Fixes, Fix 6)."
-102,8,stock,behaviour,,do_flag,flag names resist and vuln flags from the immunity table,
+102,8,different,,,do_flag,flag names resist and vuln flags from the immunity table,"Stock has the code, but no res_flags or vuln_flags table: tables.c has imm_flags alone, and check_immune (handler.c) says the immunity, resistance and vulnerability bits must all be the same, so naming all three from imm_flags is the design. QuickMUD's OLC added the separate tables (#69)."
 102,9,stock,behaviour,#68,do_flag,flag takes the whole word a sign starts and says nothing when it works,
 104,1,stock,behaviour,#53,do_dump,dump says nothing and doesn't check its files,
 104,2,stock,behaviour,#53,get_skill check_improve,get_skill and check_improve would read before skill_table with sn -1,Latent: no caller passes -1 today.
