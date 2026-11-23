@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **24 fixed so far**, and 55 left (21 wrong behaviour, 34 message).
+  **28 fixed so far**, and 51 left (17 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -75,12 +75,12 @@ unexamined, not fixed.
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (10) | string char spec with a bad name removes the mob's own | behaviour |  | [`do_string`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3700) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (11) | force passes the command through act and expands its $ codes | behaviour |  | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) |  |
 | [#72](https://github.com/abraidotti/QuickMUD-Python/issues/72) | force players and force gods walk freed memory past a quitting player's pet | crash | [#22](https://github.com/abraidotti/2.4b6-fixed/issues/22) | [`do_force`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4090) | Wider in stock: its force all walks char_list the same way. QuickMUD's 2000 fix (Edwin's) reached only force all. |
-| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (2) | check_assist picks a target from all of char_list | behaviour |  | [`check_assist`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L98) |  |
-| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (3) | mob_hit's area attack walks char_list | behaviour |  | [`mob_hit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L250) |  |
-| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (4) | group_gain checks the killer's equipment once per member | behaviour |  | [`group_gain`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L1692) |  |
+| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (2) | check_assist picks a target from all of char_list | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_assist`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L98) |  |
+| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (3) | mob_hit's area attack walks char_list | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`mob_hit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L250) |  |
+| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (4) | group_gain checks the killer's equipment once per member | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`group_gain`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L1692) |  |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (5) | poison message has no line end | message |  | [`one_hit`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L385) |  |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (6) | typo: "evaporates,scattering" | message |  | [`make_corpse`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L1427) |  |
-| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (8) | check_immune's vulnerable cases never see immune | behaviour |  | [`check_immune`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L255) |  |
+| [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (8) | check_immune's vulnerable cases never see immune | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_immune`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L255) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (1) | typo: "to mellow" | message |  | [`do_berserk`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2121) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour |  | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (1) | dispel evil and good roll their damage twice (UMAX) | behaviour |  | [`spell_dispel_evil`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1950), [`spell_dispel_good`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1981) |  |

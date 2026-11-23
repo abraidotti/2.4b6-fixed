@@ -479,59 +479,60 @@ out seer "Your slash grazes the duck.\n\rThe duck has quite a few wounds. \n\r\n
 out sot "\n\rSeer's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 52335 dce64678
 step 95 "@pulse 12"
-out god "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out yeo "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out clan "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe duck's peck misses you.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches you.\n\rYou parry the duck's attack.\n\rYour slash scratches the duck.\n\rThe duck looks pretty hurt. \n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rSeer's slash scratches the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52635 af69b81f
+out god "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out yeo "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out clan "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rThe duck's peck misses you.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches you.\n\rThe duck's peck scratches you.\n\rYour slash grazes the duck.\n\rThe duck looks pretty hurt. \n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rThe duck's peck misses Seer.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Seer.\n\rThe duck's peck scratches Seer.\n\rSeer's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+rng 52382 7531b87a
 step 96 "@as god"
-rng 52635 af69b81f
+rng 52382 7531b87a
 step 97 "peace"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52635 af69b81f
+rng 52382 7531b87a
 step 98 "@mob 3124 3001"
-rng 52638 3601902c
+rng 52386 0022a116
 step 99 "force duck kill sot"
-out god "The duck's peck misses Sot.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe duck's peck misses Sot.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out yeo "\n\rThe duck's peck misses Sot.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe duck's peck misses Sot.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out clan "\n\rThe duck's peck misses Sot.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe duck's peck misses Sot.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe duck's peck misses Sot.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe duck's peck misses you.\n\rThe duck is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 52649 ae20763a
+out god "The duck's peck scratches Sot.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rThe duck's peck scratches Sot.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out yeo "\n\rThe duck's peck scratches Sot.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe duck's peck scratches Sot.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out clan "\n\rThe duck's peck scratches Sot.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rThe duck's peck scratches Sot.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rThe duck's peck scratches Sot.\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rThe duck's peck scratches you.\n\rThe duck is in excellent condition. \n\r\n\r<27hp 102m 106mv> \xff\xf9"
+rng 52399 b40f79f9
 step 100 "@pulse 24"
-out god "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out yeo "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<22hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out clan "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe duck's peck misses Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<28hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches Sot.\n\rThe duck's peck scratches Sot.\n\rSot's slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou hear the duck's death cry.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe duck's peck misses you.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches you.\n\rThe duck's peck misses you.\n\rYour slash grazes the duck.\n\rThe duck looks pretty hurt. \n\r\n\r<28hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches you.\n\rThe duck screams and attacks!\n\rThe duck's peck scratches you.\n\rThe duck's peck scratches you.\n\rYou block the duck's attack with your shield.\n\rYour slash scratches the duck.\n\rThe duck is DEAD!!\n\rYou receive 0 experience points.\n\rYou hear the duck's death cry.\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53256 cdc3d7f9
+out god "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<100hp 100m 100mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out yeo "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<22hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out clan "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<25hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches Sot.\n\rThe duck screams and attacks!\n\rThe duck's peck misses Sot.\n\rThe duck's peck misses Sot.\n\rSot's slash grazes the duck.\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rThe duck's peck misses you.\n\rYour slash grazes the duck.\n\rThe duck has quite a few wounds. \n\r\n\r<27hp 102m 106mv> \xff\xf9\n\rThe duck's peck scratches you.\n\rThe duck screams and attacks!\n\rThe duck's peck misses you.\n\rThe duck's peck misses you.\n\rYour slash grazes the duck.\n\rThe duck is in awful condition. \n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52472 7a191579
 step 101 "peace"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 53256 cdc3d7f9
+rng 52472 7a191579
 step 102 "@state"
-state room 3001 light 7 people mob mob player player player player player player player player mob
+state room 3001 light 7 people mob mob mob player player player player player player player player mob
 state exit 0 to 3054 info 0 key -1
 state exit 2 to 3005 info 0 key -1
 state exit 4 to 3700 info 0 key 0
-state char mob 3124 pos 8 hit 4/14 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 8 hit 1/12 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 8 hit 3/14 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
 state char mob 3124 pos 8 hit 3/12 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
-state char Sot 10 pos 8 hit 24/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Sot 10 pos 8 hit 26/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Seer 20 pos 8 hit 28/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 8 train 1 on 0 stats 19 13 13 13 13
+state char Seer 20 pos 8 hit 25/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 8 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
@@ -578,102 +579,95 @@ state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0
 state char mob 3011 pos 8 hit 4000/4000 mana 500/500 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 2621443 affected_by 35652140 train 0 on 0 stats 27 21 22 24 25
 state   affect 56 level 45 duration -1 location 2 modifier 4 bitvector 2097152
 state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
-state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
 state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
 state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
 state   obj in 5 wear -1 timer 0 cost 327 values 227 1 0 0 0
 state obj floor 16 wear -1 timer 4 cost 0 values 5 5 0 1 0
 state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
 state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
-rng 53256 cdc3d7f9
+rng 52472 7a191579
 step 103 "@as ram"
-rng 53256 cdc3d7f9
+rng 52472 7a191579
 step 104 "wimpy 14"
 out ram "Wimpy set to 14 hit points.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-rng 53256 cdc3d7f9
+rng 52472 7a191579
 step 105 "@as god"
-rng 53256 cdc3d7f9
+rng 52472 7a191579
 step 106 "@mob 9006 3001"
-rng 53335 92191a6b
+rng 52560 a9ef69de
 step 107 "force septon kill rambler"
-out god "The septon's beating misses Rambler.\n\rOk.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out yeo "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-out ram "\n\rThe septon's beating misses you.\n\rThe septon's beating mauls you.\n\rThat really did HURT!\n\rYou sure are BLEEDING!\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r\n\r[Exits: north down]\n\rYou flee from combat!\n\rYou lost 10 exp.\n\r\n\r<6hp 102m 105mv> \xff\xf9"
-out clan "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe septon's beating misses Rambler.\n\rThe septon's beating mauls Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53363 437ea4b3
+out god "The septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out yeo "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<22hp 102m 106mv> \xff\xf9"
+out ram "\n\rThe septon's beating wounds you.\n\rThat really did HURT!\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\r\n\r[Exits: north down]\n\rYou flee from combat!\n\rYou lost 10 exp.\n\r\n\r<9hp 102m 105mv> \xff\xf9"
+out clan "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rThe septon's beating wounds Rambler.\n\rRambler leaves up.\n\rRambler has fled!\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52576 32a6aa0a
 step 108 "@pulse 12"
-rng 53363 437ea4b3
+rng 52576 32a6aa0a
 step 109 "peace"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 53363 437ea4b3
+rng 52576 32a6aa0a
 step 110 "slay septon"
-out god "You slay it in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out yeo "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
-out ram "\n\rYou hear something's death cry.\n\r\n\r<6hp 102m 105mv> \xff\xf9"
-out clan "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rSmokegod slays the septon in cold blood!\n\rThe septon's leg is sliced from its dead body.\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53366 6b12a869
+out god "You slay it in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out yeo "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
+out ram "\n\rYou hear something's death cry.\n\r\n\r<9hp 102m 105mv> \xff\xf9"
+out clan "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rSmokegod slays the septon in cold blood!\n\rYou hear the septon's death cry.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52578 60db78e5
 step 111 "@as yeo"
-rng 53366 6b12a869
+rng 52578 60db78e5
 step 112 "@mob 3124 3001"
-rng 53369 5d489ce7
+rng 52584 55b5cc20
 step 113 "@charm"
-rng 53369 5d489ce7
+rng 52584 55b5cc20
 step 114 "@as god"
-rng 53369 5d489ce7
+rng 52584 55b5cc20
 step 115 "transfer yeoman 3005"
 out god "Yeoman disappears in a mushroom cloud.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out dec "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
 out yeo "\n\rThe duck now follows you.\n\rSmokegod has transferred you.\n\rThe Temple Square\n\r  You are standing on the temple square.  Huge marble steps lead up to the\n\rtemple gate.  The entrance to the Clerics Guild is to the west, and the old\n\rGrunting Boar Inn, is to the east.  Just south of here you see the market\n\rsquare, the center of Midgaard.\n\r     A small white fountain gushes forth here.\n\r\n\r<22hp 102m 106mv> \xff\xf9"
 out clan "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
 out uns "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53369 5d489ce7
+out seer "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rYeoman disappears in a mushroom cloud.\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52584 55b5cc20
 step 116 "@mob 3062 3001"
-rng 53371 ab5a067e
+rng 52586 06604e94
 step 117 "force fido kill duck"
-out god "The beastly fido's bite misses the duck.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe beastly fido's bite misses the duck.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out clan "\n\rThe beastly fido's bite misses the duck.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe beastly fido's bite misses the duck.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe beastly fido's bite misses the duck.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe beastly fido's bite misses the duck.\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53380 bb2d1754
+out god "The beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rThe beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\r\n\r<6hp 102m 106mv> \xff\xf9"
+out clan "\n\rThe beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\r\n\r<10hp 102m 106mv> \xff\xf9"
+out uns "\n\rThe beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out seer "\n\rThe beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\r\n\r<25hp 102m 106mv> \xff\xf9"
+out sot "\n\rThe beastly fido's bite scratches the duck.\n\rThe duck leaves north.\n\rThe duck has fled!\n\r\n\r<26hp 102m 106mv> \xff\xf9"
+rng 52592 148eb0f6
 step 118 "@pulse 12"
-out god "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out dec "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<6hp 102m 106mv> \xff\xf9"
-out clan "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<10hp 102m 106mv> \xff\xf9"
-out uns "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out seer "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<28hp 102m 106mv> \xff\xf9"
-out sot "\n\rThe beastly fido's bite misses the duck.\n\rThe duck's peck misses the beastly fido.\n\r\n\r<24hp 102m 106mv> \xff\xf9"
-rng 53396 d3a65d2d
+rng 52592 148eb0f6
 step 119 "peace"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-rng 53396 d3a65d2d
+rng 52592 148eb0f6
 step 120 "@state"
 state room 3001 light 5 people mob mob mob mob player player player player player player mob
 state exit 0 to 3054 info 0 key -1
 state exit 2 to 3005 info 0 key -1
 state exit 4 to 3700 info 0 key 0
 state char mob 3062 pos 8 hit 5/5 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048769 affected_by 0 train 0 on 0 stats 10 11 11 11 11
-state char mob 3124 pos 8 hit 12/12 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 135004160 train 0 on 0 stats 10 11 11 11 11
-state char mob 3124 pos 8 hit 4/14 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 8 hit 1/12 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
+state char mob 3124 pos 8 hit 3/14 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
 state char mob 3124 pos 8 hit 3/12 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048641 affected_by 134742016 train 0 on 0 stats 10 11 11 11 11
-state char Sot 10 pos 8 hit 24/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Sot 10 pos 8 hit 26/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Seer 20 pos 8 hit 28/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 8 train 1 on 0 stats 19 13 13 13 13
+state char Seer 20 pos 8 hit 25/29 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 8 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
@@ -704,9 +698,7 @@ state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0
 state char mob 3011 pos 8 hit 4000/4000 mana 500/500 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 2621443 affected_by 35652140 train 0 on 0 stats 27 21 22 24 25
 state   affect 56 level 45 duration -1 location 2 modifier 4 bitvector 2097152
 state   obj carried 3005 wear 16 timer 0 cost 5600 values 1 4 10 21 48
-state obj floor 10 wear -1 timer 4 cost 0 values 0 0 0 1 0
-state obj floor 15 wear -1 timer 7 cost 0 values 20 20 0 0 0
-state obj floor 10 wear -1 timer 6 cost 0 values 0 0 0 1 0
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
 state obj floor 10 wear -1 timer 5 cost 0 values 0 0 0 1 0
 state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
 state   obj in 5 wear -1 timer 0 cost 327 values 227 1 0 0 0
@@ -733,11 +725,11 @@ state room 3700 light 1 people player
 state exit 0 to 3757 info 0 key 0
 state exit 2 to 3744 info 3 key -1
 state exit 5 to 3001 info 0 key 0
-state char Rambler 2 pos 8 hit 6/29 mana 102/102 move 105/106 wait 0 daze 0 exp 2078 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Rambler 2 pos 8 hit 9/29 mana 102/102 move 105/106 wait 0 daze 0 exp 2078 gold 0 silver 0 act 589832 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3023 wear -1 timer 0 cost 220 values 4 1 7 7 0
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-rng 53396 d3a65d2d
+rng 52592 148eb0f6
