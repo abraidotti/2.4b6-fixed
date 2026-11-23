@@ -1077,7 +1077,7 @@ void do_pour (CHAR_DATA *ch, char *argument)
 
 	if (in == NULL)
 	{
-	    send_to_char("They aren't holding anything.",ch);
+	    send_to_char("They aren't holding anything.\n\r",ch);
  	    return;
 	}
     }

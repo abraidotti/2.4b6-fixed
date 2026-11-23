@@ -232,7 +232,7 @@ rng 51962 a7dda492
 step 60 "@as pick"
 rng 51962 a7dda492
 step 61 "pour skin decimus"
-out pick "They aren't holding anything.\n\r<29hp 102m 105mv> \xff\xf9"
+out pick "They aren't holding anything.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 rng 51962 a7dda492
 step 62 "@obj 3417 3005 20 0 0 0 0"
 rng 51962 a7dda492
