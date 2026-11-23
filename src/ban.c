@@ -118,7 +118,7 @@ bool check_ban(char *site,int type)
 
 	if (IS_SET(pban->ban_flags,BAN_PREFIX) 
 	&&  IS_SET(pban->ban_flags,BAN_SUFFIX)  
-	&&  strstr(pban->name,host) != NULL)
+	&&  !str_infix(pban->name,host))
 	    return TRUE;
 
 	if (IS_SET(pban->ban_flags,BAN_PREFIX)
