@@ -1200,6 +1200,11 @@ void do_sit (CHAR_DATA *ch, char *argument )
 		act("You sit on $p.",ch,obj,NULL,TO_CHAR);
 		act("$n sits on $p.",ch,obj,NULL,TO_ROOM);
 	    }
+	    else
+	    {
+		act("You sit in $p.",ch,obj,NULL,TO_CHAR);
+		act("$n sits in $p.",ch,obj,NULL,TO_ROOM);
+	    }
 	    ch->position = POS_SITTING;
 	    break;
 	case POS_SITTING:
