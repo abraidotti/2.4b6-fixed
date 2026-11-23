@@ -475,13 +475,13 @@ void weather_update( void )
     switch ( ++time_info.hour )
     {
     case  5:
-	weather_info.sunlight = SUN_LIGHT;
-	strcat( buf, "The day has begun.\n\r" );
+	weather_info.sunlight = SUN_RISE;
+	strcat( buf, "The sun rises in the east.\n\r" );
 	break;
 
     case  6:
-	weather_info.sunlight = SUN_RISE;
-	strcat( buf, "The sun rises in the east.\n\r" );
+	weather_info.sunlight = SUN_LIGHT;
+	strcat( buf, "The day has begun.\n\r" );
 	break;
 
     case 19:
