@@ -6,7 +6,8 @@
 #   (lightning, 30)
 # - the green dragon (gas, 41) fighting Heroic, with a drunk and a fido standing by: is_safe_spell spares them, as
 #   a mob's area spell spares mobs not grouped with the one it's fighting
-# - the green dragon fighting the drunk, with the fido by: the gas spares the drunk too (#81), so it hits no one
+# - the green dragon fighting the drunk, with the fido by: the gas hits the drunk and spares the fido, as fire and
+#   frost do (stock's test was inverted, so it spared the drunk too and hit no one, #61)
 # - each of them, not fighting, does nothing
 @connect god
 Smokegod

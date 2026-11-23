@@ -249,24 +249,24 @@ out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 54052 0be59c8a
 step 88 "@spec 2"
 spec 1 1
-rng 54164 c552c088
+rng 54191 119eb895
 step 89 "peace"
-out god "The Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out hero "\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 54164 c552c088
+out god "The Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe drunk looks very ill.\n\rThe Ancient Green Dragon's blast of gas does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === Heroic!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === Heroic!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out hero "\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe drunk looks very ill.\n\rThe Ancient Green Dragon's blast of gas does UNSPEAKABLE things to the drunk!\n\rThe drunk is DEAD!!\n\rYou hear the drunk's death cry.\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === you!\n\rThe Ancient Green Dragon breathes out a cloud of poisonous gas!\n\rThe Ancient Green Dragon's blast of gas === OBLITERATES === you!\n\r\n\r<29831hp 102m 106mv> \xff\xf9"
+rng 54191 119eb895
 step 90 "@state"
-state room 3700 light 1 people mob mob mob player player
+state room 3700 light 1 people mob mob player player
 state exit 0 to 3757 info 0 key 0
 state exit 2 to 3744 info 3 key -1
 state exit 5 to 3001 info 0 key 0
 state char mob 2225 pos 8 hit 2158/2158 mana 186/186 move 100/100 wait 0 daze 0 exp 0 gold 7 silver 313 act 7 affected_by 524840 train 0 on 0 stats 21 21 21 21 21
 state char mob 3062 pos 8 hit 9/9 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 1048769 affected_by 0 train 0 on 0 stats 10 11 11 11 11
-state char mob 3064 pos 8 hit 32/32 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 68 act 65 affected_by 0 train 0 on 0 stats 11 11 11 11 11
-state char Heroic 51 pos 8 hit 30000/30000 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Heroic 51 pos 8 hit 29831/30000 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 0 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
 state char Smokegod 60 pos 8 hit 100/100 mana 100/100 move 100/100 wait 0 daze 0 exp 0 gold 0 silver 0 act 598016 affected_by 0 train 0 on 0 stats 13 13 13 13 13
-rng 54164 c552c088
+state obj floor 10 wear -1 timer 3 cost 0 values 0 0 0 1 0
+rng 54191 119eb895

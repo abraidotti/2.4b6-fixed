@@ -4639,7 +4639,7 @@ void spell_gas_breath( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 
 	if (is_safe_spell(ch,vch,TRUE)
 	||  (IS_NPC(ch) && IS_NPC(vch) 
-	&&   (ch->fighting == vch || vch->fighting == ch)))
+	&&   (ch->fighting != vch || vch->fighting != ch)))
 	    continue;
 
 	if (saves_spell(level,vch,DAM_POISON))
