@@ -46,5 +46,5 @@ rng 51984 5d83a697
 step 17 "@pulse 24"
 rng 51984 5d83a697
 step 18 "zap fido"
-out pick "You zap the beastly fido with a small wand.\n\rYour efforts with a small wand produce only smoke and sparks.\n\rYour a small wand explodes into fragments.\n\rThe beastly fido is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap the beastly fido with a small wand.\n\rYour efforts with a small wand produce only smoke and sparks.\n\rA small wand explodes into fragments.\n\rThe beastly fido is in excellent condition. \n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51986 f5128765

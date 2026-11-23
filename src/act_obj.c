@@ -1077,7 +1077,7 @@ void do_pour (CHAR_DATA *ch, char *argument)
 
 	if (in == NULL)
 	{
-	    send_to_char("They aren't holding anything.",ch);
+	    send_to_char("They aren't holding anything.\n\r",ch);
  	    return;
 	}
     }
@@ -2037,8 +2037,8 @@ void do_brandish( CHAR_DATA *ch, char *argument )
 
     if ( --staff->value[2] <= 0 )
     {
-	act( "$n's $p blazes bright and is gone.", ch, staff, NULL, TO_ROOM );
-	act( "Your $p blazes bright and is gone.", ch, staff, NULL, TO_CHAR );
+	act( "$p blazes bright and is gone.", ch, staff, NULL, TO_ROOM );
+	act( "$p blazes bright and is gone.", ch, staff, NULL, TO_CHAR );
 	extract_obj( staff );
     }
 
@@ -2130,8 +2130,8 @@ void do_zap( CHAR_DATA *ch, char *argument )
 
     if ( --wand->value[2] <= 0 )
     {
-	act( "$n's $p explodes into fragments.", ch, wand, NULL, TO_ROOM );
-	act( "Your $p explodes into fragments.", ch, wand, NULL, TO_CHAR );
+	act( "$p explodes into fragments.", ch, wand, NULL, TO_ROOM );
+	act( "$p explodes into fragments.", ch, wand, NULL, TO_CHAR );
 	extract_obj( wand );
     }
 
@@ -2203,8 +2203,8 @@ void do_steal( CHAR_DATA *ch, char *argument )
 	affect_strip(ch,gsn_sneak);
 	REMOVE_BIT(ch->affected_by,AFF_SNEAK);
 
-	act( "$n tried to steal from you.\n\r", ch, NULL, victim, TO_VICT    );
-	act( "$n tried to steal from $N.\n\r",  ch, NULL, victim, TO_NOTVICT );
+	act( "$n tried to steal from you.", ch, NULL, victim, TO_VICT    );
+	act( "$n tried to steal from $N.",  ch, NULL, victim, TO_NOTVICT );
 	switch(number_range(0,3))
 	{
 	case 0 :
@@ -2635,7 +2635,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 
 	if (number < 1 || number > 99)
 	{
-	    act("$n tells you 'Get real!",keeper,NULL,ch,TO_VICT);
+	    act("$n tells you 'Get real!'",keeper,NULL,ch,TO_VICT);
 	    return;
 	}
 
@@ -2662,7 +2662,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 
 	    if (count < number)
 	    {
-	    	act("$n tells you 'I don't have that many in stock.",
+	    	act("$n tells you 'I don't have that many in stock.'",
 		    keeper,NULL,ch,TO_VICT);
 	    	ch->reply = keeper;
 	    	return;
@@ -2672,7 +2672,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
 	if ( (ch->silver + ch->gold * 100) < cost * number )
 	{
 	    if (number > 1)
-		act("$n tells you 'You can't afford to buy that many.",
+		act("$n tells you 'You can't afford to buy that many.'",
 		    keeper,obj,ch,TO_VICT);
 	    else
 	    	act( "$n tells you 'You can't afford to buy $p'.",
@@ -2898,7 +2898,7 @@ void do_sell( CHAR_DATA *ch, char *argument )
     }
     if ( cost > (keeper-> silver + 100 * keeper->gold) )
     {
-	act("$n tells you 'I'm afraid I don't have enough wealth to buy $p.",
+	act("$n tells you 'I'm afraid I don't have enough wealth to buy $p.'",
 	    keeper,obj,ch,TO_VICT);
 	return;
     }
@@ -2915,7 +2915,7 @@ void do_sell( CHAR_DATA *ch, char *argument )
         check_improve(ch,gsn_haggle,TRUE,4);
     }
     sprintf( buf, "You sell $p for %d silver and %d gold piece%s.",
-	cost - (cost/100) * 100, cost/100, cost == 1 ? "" : "s" );
+	cost - (cost/100) * 100, cost/100, cost/100 == 1 ? "" : "s" );
     act( buf, ch, obj, NULL, TO_CHAR );
     ch->gold     += cost/100;
     ch->silver 	 += cost - (cost/100) * 100;

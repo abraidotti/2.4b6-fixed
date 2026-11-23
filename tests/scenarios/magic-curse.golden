@@ -40,7 +40,7 @@ out pick "You hold a small wand in your hand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rPickpocket holds a small wand in his hand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 14 "zap decimus"
-out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap Decimus with a small wand.\n\rSomething isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rPickpocket zaps you with a small wand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51966 0d812d7f
 step 15 "@pulse 24"
@@ -52,18 +52,18 @@ rng 51968 b7a8be27
 step 17 "@pulse 24"
 rng 51968 b7a8be27
 step 18 "zap decimus"
-out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap Decimus with a small wand.\n\rSomething isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rPickpocket zaps you with a small wand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51970 efe4cb7b
 step 19 "@pulse 24"
 rng 51970 efe4cb7b
 step 20 "zap decimus"
-out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap Decimus with a small wand.\n\rSomething isn't right...\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rPickpocket zaps you with a small wand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51973 a400b2cc
 step 21 "@pulse 24"
 rng 51973 a400b2cc
 step 22 "zap decimus"
-out pick "You zap Decimus with a small wand.\n\rSomehting isn't right...\n\rYour a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPickpocket zaps you with a small wand.\n\rPickpocket's a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You zap Decimus with a small wand.\n\rSomething isn't right...\n\rA small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rPickpocket zaps you with a small wand.\n\rA small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51975 09ccb864

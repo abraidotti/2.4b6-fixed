@@ -84,5 +84,5 @@ rng 51979 8fd201c6
 step 32 "@pulse 24"
 rng 51979 8fd201c6
 step 33 "brandish"
-out pick "You brandish a burnt staff.\n\rA warm feeling fills your body.\n\rYour a burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
+out pick "You brandish a burnt staff.\n\rA warm feeling fills your body.\n\rA burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 100mv> \xff\xf9"
 rng 51982 3923dba2

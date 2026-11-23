@@ -142,8 +142,8 @@ step 46 "brandish"
 out pick "You can brandish only with a staff.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51973 a400b2cc
 step 47 "zap decimus"
-out pick "Your a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPickpocket's a small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "A small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rA small wand explodes into fragments.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51973 a400b2cc
 step 48 "@pulse 24"
 rng 51973 a400b2cc
@@ -161,8 +161,8 @@ step 52 "zap decimus"
 out pick "You can zap only with a wand.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51973 a400b2cc
 step 53 "brandish"
-out pick "Your a burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPickpocket's a burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "A burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rA burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51973 a400b2cc
 step 54 "@pulse 24"
 rng 51973 a400b2cc
@@ -236,8 +236,8 @@ rng 51982 3923dba2
 step 76 "@pulse 24"
 rng 51982 3923dba2
 step 77 "brandish"
-out pick "You brandish a burnt staff.\n\rThat's not a spell!\n\rYour a burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rPickpocket brandishes a burnt staff.\n\rPickpocket's a burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out pick "You brandish a burnt staff.\n\rThat's not a spell!\n\rA burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rPickpocket brandishes a burnt staff.\n\rA burnt staff blazes bright and is gone.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51984 5d83a697
 step 78 "@pulse 24"
 rng 51984 5d83a697
