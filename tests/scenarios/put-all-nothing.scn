@@ -1,0 +1,14 @@
+# put all when nothing goes in. Decimus (10), in the temple (3001), carries a leather vest (616, weight 100) and has
+# a box (3033: holds 100, nothing over 50) at his feet. put all.vest box finds the vest too heavy, and put
+# all.nothing box finds nothing by that name: stock said nothing at all (#91); now "You aren't carrying anything
+# that fits."
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@obj 616 3001
+@obj 3033 3001
+get vest
+put all.vest box
+put all.nothing box
