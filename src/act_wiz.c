@@ -4388,4 +4388,5 @@ void do_prefix (CHAR_DATA *ch, char *argument)
     }
 
     ch->prefix = str_dup(argument);
+    send_to_char(buf,ch);
 }

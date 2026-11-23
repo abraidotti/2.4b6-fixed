@@ -95,14 +95,14 @@ step 32 "prefi"
 out ser "You cannot abbreviate the prefix command.\r\n\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 33 "prefix say"
-out ser "\n\r<100hp 100m 100mv> say\xff\xf9"
+out ser "Prefix set to say.\r\n\n\r<100hp 100m 100mv> say\xff\xf9"
 rng 51962 a7dda492
 step 34 "hello there"
 out ser "You say 'hello there'\n\r\n\r<100hp 100m 100mv> say\xff\xf9"
 out dec "\n\rSeraph says 'hello there'\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 35 "prefix tell decimus"
-out ser "\n\r<100hp 100m 100mv> tell decimus\xff\xf9"
+out ser "Prefix changed to tell decimus.\r\n\n\r<100hp 100m 100mv> tell decimus\xff\xf9"
 rng 51962 a7dda492
 step 36 "hello there"
 out ser "You tell Decimus 'hello there'\n\r\n\r<100hp 100m 100mv> tell decimus\xff\xf9"
