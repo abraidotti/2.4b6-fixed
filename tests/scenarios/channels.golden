@@ -514,7 +514,7 @@ step 131 "channels"
 out dec "   channel     status\n\r---------------------\n\rgossip         ON\n\rauction        ON\n\rmusic          ON\n\rQ/A            ON\n\rQuote          ON\n\rgrats          ON\n\rshouts         ON\n\rtells          OFF\n\rquiet mode     OFF\n\rYour current prompt is: <%hhp %mm %vmv> \n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 132 "tell quintus hi"
-out dec "Your message didn't get through.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "You must turn off deaf mode first.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 133 "deaf"
 out dec "You can now hear tells again.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
