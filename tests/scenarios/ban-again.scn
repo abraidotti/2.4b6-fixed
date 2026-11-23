@@ -1,0 +1,19 @@
+# Banning a site that's banned already. Smokegod (60) bans two sites and lifts both, so ROM's free list holds two
+# recycled bans; then bans one site three times, each replacing the last, and lists the bans. ban_site freed the
+# old ban and then followed its next pointer, now into the free list, comparing the site with the recycled bans'
+# stale names (#20). That memory is still allocated, and free_mem overwrites a stale name's first bytes, so in
+# practice nothing matched and nothing showed: this golden is the same before and after the fix, which stops the
+# loop at the ban it replaces.
+@connect god
+Smokegod
+smoke123
+@return
+@return
+ban first.example
+ban second.example
+allow first.example
+allow second.example
+ban again.example
+ban again.example newbies
+ban again.example permit
+ban
