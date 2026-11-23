@@ -205,6 +205,17 @@ void load_songs(void)
 	    if (lines >= MAX_LINES)
    	    {
 		bug("Too many lines in a song -- limit is  %d.",MAX_LINES);
+		song_table[count].lines = lines;
+		/* skip the rest of its lyrics, to the song's closing ~ */
+		for ( ; ; )
+		{
+		    int c;
+
+		    if (fread_letter(fp) == '~' || feof(fp))
+			break;
+		    while ((c = getc(fp)) != '\n' && c != EOF)
+			;
+		}
 		break;
 	    }
 
