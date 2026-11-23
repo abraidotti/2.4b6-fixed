@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **28 fixed so far**, and 51 left (17 wrong behaviour, 34 message).
+  **31 fixed so far**, and 48 left (14 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -83,9 +83,9 @@ unexamined, not fixed.
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (8) | check_immune's vulnerable cases never see immune | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_immune`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L255) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (1) | typo: "to mellow" | message |  | [`do_berserk`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2121) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour |  | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
-| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (1) | dispel evil and good roll their damage twice (UMAX) | behaviour |  | [`spell_dispel_evil`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1950), [`spell_dispel_good`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1981) |  |
-| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (2) | enchant weapon's new hitroll affect is TO_AFFECTS | behaviour |  | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396) |  |
-| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (3) | damage-table spells compare a signed level with sizeof | behaviour |  | [`spell_burning_hands`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L877) | Seven spells. The UMAX(0, level) comes after the UMIN, too late. |
+| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (1) | dispel evil and good roll their damage twice (UMAX) | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_dispel_evil`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1950), [`spell_dispel_good`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1981) |  |
+| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (2) | enchant weapon's new hitroll affect is TO_AFFECTS | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396) |  |
+| [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (3) | damage-table spells compare a signed level with sizeof | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_burning_hands`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L877) | Seven spells. The UMAX(0, level) comes after the UMIN, too late. |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (4) | typos: "explodeds" and "existance" | message |  | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396), [`spell_dispel_magic`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2014), [`spell_cancellation`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1015) |  |
 | [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (1) | harm rolls its die twice (UMAX) | behaviour |  | [`spell_harm`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2960) |  |
 | [#81](https://github.com/abraidotti/QuickMUD-Python/issues/81) (2) | gas breath spares the mob it's fighting | behaviour |  | [`spell_gas_breath`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L4608) |  |
