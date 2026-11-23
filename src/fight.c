@@ -1751,20 +1751,20 @@ void group_gain( CHAR_DATA *ch, CHAR_DATA *victim )
 	send_to_char( buf, gch );
 	gain_exp( gch, xp );
 
-	for ( obj = ch->carrying; obj != NULL; obj = obj_next )
+	for ( obj = gch->carrying; obj != NULL; obj = obj_next )
 	{
 	    obj_next = obj->next_content;
 	    if ( obj->wear_loc == WEAR_NONE )
 		continue;
 
-	    if ( ( IS_OBJ_STAT(obj, ITEM_ANTI_EVIL)    && IS_EVIL(ch)    )
-	    ||   ( IS_OBJ_STAT(obj, ITEM_ANTI_GOOD)    && IS_GOOD(ch)    )
-	    ||   ( IS_OBJ_STAT(obj, ITEM_ANTI_NEUTRAL) && IS_NEUTRAL(ch) ) )
+	    if ( ( IS_OBJ_STAT(obj, ITEM_ANTI_EVIL)    && IS_EVIL(gch)    )
+	    ||   ( IS_OBJ_STAT(obj, ITEM_ANTI_GOOD)    && IS_GOOD(gch)    )
+	    ||   ( IS_OBJ_STAT(obj, ITEM_ANTI_NEUTRAL) && IS_NEUTRAL(gch) ) )
 	    {
-		act( "You are zapped by $p.", ch, obj, NULL, TO_CHAR );
-		act( "$n is zapped by $p.",   ch, obj, NULL, TO_ROOM );
+		act( "You are zapped by $p.", gch, obj, NULL, TO_CHAR );
+		act( "$n is zapped by $p.",   gch, obj, NULL, TO_ROOM );
 		obj_from_char( obj );
-		obj_to_room( obj, ch->in_room );
+		obj_to_room( obj, gch->in_room );
 	    }
 	}
     }

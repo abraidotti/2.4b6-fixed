@@ -6,8 +6,8 @@
 #   against a random member of Rambler's group in the room. Stock picked it from the room's first character on
 #   through char_list (vch->next), so Decimus next door could be picked, and the lizard screamed at no one (#56)
 # - the kill shares experience among the group in the room (the duck counts half its level), and each member's share
-#   checks Rambler's gear for the flowers' zap, not the member's own: Yeoman, also wearing flowers and made evil,
-#   keeps them (#75)
+#   checks their own gear for the flowers' zap: at the first kill Rambler and Yeoman, both evil and wearing flowers,
+#   are both zapped (stock checked the killer's gear once for each member, so only the killer was, #56)
 @updates area,violence
 @connect god
 Smokegod
