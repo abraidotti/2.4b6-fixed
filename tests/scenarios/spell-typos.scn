@@ -1,0 +1,210 @@
+# Two misspellings in magic.c, seen by Cherub (52), who watches. Smokegod (60, with holylight on, so he sees the
+# invisible) makes Decimus (10) invisible, and
+# casts cancellation at him, then again with dispel magic: "Decimus fades into existence." (stock said
+# "existance", #76). Then Smokegod enchants a sword (3021) until it explodes: Cherub sees "A small sword shivers
+# violently and explodes!" (stock said "explodeds").
+@connect dec
+Decimus
+psswrd
+@return
+@return
+@connect cher
+Cherub
+smoke123
+@return
+@return
+@connect god
+Smokegod
+smoke123
+@return
+@return
+set skill smokegod all 100
+set char smokegod mana 30000
+restore smokegod
+holylight
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast cancellation decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+cast invis decimus
+@pulse 24
+cast 'dispel magic' decimus
+@pulse 24
+@obj 3021 3001
+get sword
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24
+cast 'enchant weapon' sword
+@pulse 24

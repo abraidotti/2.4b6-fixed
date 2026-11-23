@@ -69,7 +69,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 79,1,stock,behaviour,#58,spell_dispel_evil spell_dispel_good,dispel evil and good roll their damage twice (UMAX),
 79,2,stock,behaviour,#58,spell_enchant_weapon,enchant weapon's new hitroll affect is TO_AFFECTS,
 79,3,stock,behaviour,#58,spell_burning_hands,damage-table spells compare a signed level with sizeof,"Seven spells. The UMAX(0, level) comes after the UMIN, too late."
-79,4,stock,message,,spell_enchant_weapon spell_dispel_magic spell_cancellation,"typos: ""explodeds"" and ""existance""",
+79,4,stock,message,#76,spell_enchant_weapon spell_dispel_magic spell_cancellation,"typos: ""explodeds"" and ""existance""",
 81,1,stock,behaviour,#61,spell_harm,harm rolls its die twice (UMAX),
 81,2,stock,behaviour,#61,spell_gas_breath,gas breath spares the mob it's fighting,
 81,3,stock,message,,spell_recharge,recharge's partial success tells the caster twice and the room nothing,

@@ -1122,13 +1122,13 @@ void spell_cancellation( int sn, int level, CHAR_DATA *ch, void *vo,int target )
  
     if (check_dispel(level,victim,skill_lookup("invis")))
     {
-        act("$n fades into existance.",victim,NULL,NULL,TO_ROOM);
+        act("$n fades into existence.",victim,NULL,NULL,TO_ROOM);
         found = TRUE;
     }
  
     if (check_dispel(level,victim,skill_lookup("mass invis")))
     {
-        act("$n fades into existance.",victim,NULL,NULL,TO_ROOM);
+        act("$n fades into existence.",victim,NULL,NULL,TO_ROOM);
         found = TRUE;
     }
  
@@ -2122,13 +2122,13 @@ void spell_dispel_magic( int sn, int level, CHAR_DATA *ch, void *vo,int target )
  
     if (check_dispel(level,victim,skill_lookup("invis")))
     {
-        act("$n fades into existance.",victim,NULL,NULL,TO_ROOM);
+        act("$n fades into existence.",victim,NULL,NULL,TO_ROOM);
         found = TRUE;
     }
  
     if (check_dispel(level,victim,skill_lookup("mass invis")))
     {
-        act("$n fades into existance.",victim,NULL,NULL,TO_ROOM);
+        act("$n fades into existence.",victim,NULL,NULL,TO_ROOM);
         found = TRUE;
     }
  
@@ -2487,7 +2487,7 @@ void spell_enchant_weapon(int sn,int level,CHAR_DATA *ch, void *vo,int target)
     if (result < (fail / 5))  /* item destroyed */
     {
 	act("$p shivers violently and explodes!",ch,obj,NULL,TO_CHAR);
-	act("$p shivers violently and explodeds!",ch,obj,NULL,TO_ROOM);
+	act("$p shivers violently and explodes!",ch,obj,NULL,TO_ROOM);
 	extract_obj(obj);
 	return;
     }
