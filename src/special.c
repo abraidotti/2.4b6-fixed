@@ -530,6 +530,7 @@ bool spec_cast_adept( CHAR_DATA *ch )
 	act("$n utters the words 'judicandus eugzagz'.",ch,NULL,NULL,TO_ROOM);
 	spell_cure_disease(skill_lookup("cure disease"),
 	    ch->level,ch,victim,TARGET_CHAR);
+	return TRUE;
     }
 
     return FALSE;
@@ -1025,11 +1026,15 @@ bool spec_thief( CHAR_DATA *ch )
 	}
 	else
 	{
-	    gold = victim->gold * UMIN(number_range(1,20),ch->level / 2) / 100;
+	    int share;	/* rolled once each: UMIN would roll it twice */
+
+	    share = number_range(1,20);
+	    gold = victim->gold * UMIN(share,ch->level / 2) / 100;
 	    gold = UMIN(gold, ch->level * ch->level * 10 );
 	    ch->gold     += gold;
 	    victim->gold -= gold;
-	    silver = victim->silver * UMIN(number_range(1,20),ch->level/2)/100;
+	    share = number_range(1,20);
+	    silver = victim->silver * UMIN(share,ch->level/2)/100;
 	    silver = UMIN(silver,ch->level*ch->level * 25);
 	    ch->silver	+= silver;
 	    victim->silver -= silver;

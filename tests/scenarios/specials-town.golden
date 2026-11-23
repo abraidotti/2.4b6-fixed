@@ -264,69 +264,69 @@ rng 52103 a772aac9
 step 76 "@mob 3005 3700"
 rng 52111 039a9554
 step 77 "@spec 100"
-spec 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0
-rng 52452 484d98a0
+spec 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+rng 52446 cbb8fa7b
 step 78 "purge"
 out god "Outlaw discovers the thief's hands in his wallet!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out out "\n\rYou discover someone's hands in your wallet!\n\rSmokegod purges the room!\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
 out purse "\n\rOutlaw discovers someone's hands in his wallet!\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out hero "\n\rOutlaw discovers someone's hands in his wallet!\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52452 484d98a0
+rng 52446 cbb8fa7b
 step 79 "set char outlaw gold 100"
 out god "\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52452 484d98a0
+rng 52446 cbb8fa7b
 step 80 "@mob 3163 3700"
-rng 52460 f81be957
+rng 52455 956050ca
 step 81 "@spec"
 spec 0
-rng 52460 f81be957
+rng 52455 956050ca
 step 82 "set char thief level 10"
 out god "\n\r<100hp 100m 100mv> \xff\xf9"
-rng 52460 f81be957
+rng 52455 956050ca
 step 83 "@spec 12"
-spec 1 0 0 0 0 1 0 0 1 0 1 0
-rng 52509 fc9934d5
+spec 1 0 1 1 0 0 1 0 0 1 0 0
+rng 52507 857040b6
 step 84 "purge"
-out god "Outlaw yells 'Help! I am being attacked by the thief!'\n\rThe thief's stab wounds Outlaw.\n\rOutlaw's coin purse is ripped apart!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out out "\n\rYou yell 'Help! I am being attacked by the thief!'\n\rThe thief's stab wounds you.\n\rThe thief rips apart your coin purse, spilling your gold!\n\rSmokegod purges the room!\n\r\n\r<4983hp 102m 106mv> \xff\xf9"
-out purse "\n\rOutlaw yells 'Help! I am being attacked by the thief!'\n\rThe thief's stab wounds Outlaw.\n\rOutlaw's coin purse is ripped apart!\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out hero "\n\rOutlaw yells 'Help! I am being attacked by the thief!'\n\rThe thief's stab wounds Outlaw.\n\rOutlaw's coin purse is ripped apart!\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52509 fc9934d5
+out god "Outlaw yells 'Help! I am being attacked by the thief!'\n\rOutlaw's coin purse is ripped apart!\n\rOutlaw's coin purse is ripped apart!\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out out "\n\rYou yell 'Help! I am being attacked by the thief!'\n\rYou dodge the thief's attack.\n\rThe thief rips apart your coin purse, spilling your gold!\n\rThe thief rips apart your coin purse, spilling your gold!\n\rSmokegod purges the room!\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
+out purse "\n\rOutlaw yells 'Help! I am being attacked by the thief!'\n\rOutlaw's coin purse is ripped apart!\n\rOutlaw's coin purse is ripped apart!\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out hero "\n\rOutlaw yells 'Help! I am being attacked by the thief!'\n\rOutlaw's coin purse is ripped apart!\n\rOutlaw's coin purse is ripped apart!\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 52507 857040b6
 step 85 "goto 3700"
 out god "Entrance to Mud School [Room 3700]\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rHassan is here, waiting to dispense some justice.\n\rHeroic the Recruit is here.\n\rPurser the Recruit is here.\n\rOutlaw the Recruit is here.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out out "\n\rSmokegod leaves in a swirling mist.\n\rSmokegod appears in a swirling mist.\n\r\n\r<4983hp 102m 106mv> \xff\xf9"
+out out "\n\rSmokegod leaves in a swirling mist.\n\rSmokegod appears in a swirling mist.\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
 out purse "\n\rSmokegod leaves in a swirling mist.\n\rSmokegod appears in a swirling mist.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out hero "\n\rSmokegod leaves in a swirling mist.\n\rSmokegod appears in a swirling mist.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52509 fc9934d5
+rng 52507 857040b6
 step 86 "transfer outlaw 3700"
 out god "Outlaw disappears in a mushroom cloud.\n\rOutlaw arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out out "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rSmokegod the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rHeroic the Recruit is here.\n\rPurser the Recruit is here.\n\r\n\r<4983hp 102m 106mv> \xff\xf9"
+out out "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rSmokegod the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rHeroic the Recruit is here.\n\rPurser the Recruit is here.\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
 out purse "\n\rOutlaw disappears in a mushroom cloud.\n\rOutlaw arrives from a puff of smoke.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out hero "\n\rOutlaw disappears in a mushroom cloud.\n\rOutlaw arrives from a puff of smoke.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52509 fc9934d5
+rng 52507 857040b6
 step 87 "restore outlaw"
 out god "Ok.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out out "\n\rSmokegod has restored you.\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
-rng 52509 fc9934d5
+rng 52507 857040b6
 step 88 "transfer decimus 3700"
 out god "Decimus arrives from a puff of smoke.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out out "\n\rDecimus arrives from a puff of smoke.\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
 out purse "\n\rDecimus arrives from a puff of smoke.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out dec "\n\rSmokegod has transferred you.\n\rEntrance to Mud School\n\r  This is the entrance to the Merc Mud School.  Go north to go through mud\n\rschool.  If you have been here before and want to go directly to the arena,\n\rgo south.\n\r\n\rA sign warns 'You may not pass these doors once you have passed level 5.'\n\rOutlaw the Recruit is here.\n\rSmokegod the Smoke Test is here.\n\rHassan is here, waiting to dispense some justice.\n\rHeroic the Recruit is here.\n\rPurser the Recruit is here.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out hero "\n\rDecimus arrives from a puff of smoke.\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52509 fc9934d5
+rng 52507 857040b6
 step 89 "@mob 3707 3700"
-rng 52509 fc9934d5
+rng 52507 857040b6
 step 90 "@spec 60"
-spec 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0 0
-rng 52754 15e2a5be
+spec 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0
+rng 52752 4e9fcc5d
 step 91 "purge"
-out god "The adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
-out out "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rSmokegod purges the room!\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
-out purse "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rYou feel righteous.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rYou feel someone protecting you.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out dec "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rYou feel someone protecting you.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rThe adept of Satin utters the word 'fido'.\n\rYou feel righteous.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out hero "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
-rng 52754 15e2a5be
+out god "The adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rOk.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out out "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rSmokegod purges the room!\n\r\n\r<5000hp 102m 106mv> \xff\xf9"
+out purse "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rYou feel righteous.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rYou feel someone protecting you.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rYou feel someone protecting you.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rThe adept of Satin utters the word 'fido'.\n\rYou feel righteous.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rYou feel fully refreshed!\n\rSmokegod purges the room!\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out hero "\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the words 'judicandus sausabru'.\n\rThe adept of Satin utters the words 'judicandus eugzagz'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'fido'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the words 'judicandus noselacri'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rThe adept of Satin utters the word 'abrazak'.\n\rThe adept of Satin utters the word 'candusima'.\n\rSmokegod purges the room!\n\r\n\r<30000hp 102m 106mv> \xff\xf9"
+rng 52752 4e9fcc5d
 step 92 "@state"
 state room 3700 light 4 people mob player player player mob player player
 state exit 0 to 3757 info 0 key 0
@@ -343,7 +343,7 @@ state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-state char Outlaw 18 pos 8 hit 5000/5000 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 90 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
+state char Outlaw 18 pos 8 hit 5000/5000 mana 102/102 move 106/106 wait 0 daze 0 exp 2088 gold 81 silver 0 act 589824 affected_by 0 train 1 on 0 stats 19 13 13 13 13
 state   obj carried 3162 wear -1 timer 0 cost 500 values 1 0 0 0 0
 state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
@@ -367,4 +367,4 @@ state   obj carried 3704 wear 11 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3702 wear 16 timer 0 cost 360 values 1 1 6 3 0
 state   obj carried 3703 wear 5 timer 0 cost 0 values 1 1 1 0 0
 state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
-rng 52754 15e2a5be
+rng 52752 4e9fcc5d

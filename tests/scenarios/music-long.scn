@@ -1,0 +1,17 @@
+# A song over the 100-line limit. music.txt is tests/files/music-long: a song of 103 lines, then a short one.
+# load_songs logged the long one and stopped reading it without setting its line count, so it never played, and
+# read the rest of its lyrics as the next songs' artists and names (#63). Now it keeps the first 100 lines, skips
+# to the song's closing ~, and reads the short song as it is. Smokegod lists the jukebox's songs, by name and by
+# artist, and plays the long one.
+@updates area,song
+@place music-long music.txt
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@obj 3200 3001
+play list
+play list artist
+play long
+@pulse 72

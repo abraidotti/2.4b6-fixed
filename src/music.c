@@ -205,6 +205,17 @@ void load_songs(void)
 	    if (lines >= MAX_LINES)
    	    {
 		bug("Too many lines in a song -- limit is  %d.",MAX_LINES);
+		song_table[count].lines = lines;
+		/* skip the rest of its lyrics, to the song's closing ~ */
+		for ( ; ; )
+		{
+		    int c;
+
+		    if (fread_letter(fp) == '~' || feof(fp))
+			break;
+		    while ((c = getc(fp)) != '\n' && c != EOF)
+			;
+		}
 		break;
 	    }
 
@@ -248,10 +259,13 @@ void do_play(CHAR_DATA *ch, char *argument)
 
 	buffer = new_buf();
 	argument = str;
-	argument = one_argument(argument,arg);
+	str = one_argument(argument,arg);
 
-	if (!str_cmp(arg,"artist"))
+	if (!str_cmp(arg,"artist"))	/* else the word is part of the match */
+	{
 	    artist = TRUE;
+	    argument = str;
+	}
 
 	if (argument[0] != '\0')
 	    match = TRUE;
