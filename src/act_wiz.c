@@ -4355,7 +4355,7 @@ void do_holylight( CHAR_DATA *ch, char *argument )
 
 void do_prefi (CHAR_DATA *ch, char *argument)
 {
-    send_to_char("You cannot abbreviate the prefix command.\r\n",ch);
+    send_to_char("You cannot abbreviate the prefix command.\n\r",ch);
     return;
 }
 
@@ -4367,11 +4367,11 @@ void do_prefix (CHAR_DATA *ch, char *argument)
     {
 	if (ch->prefix[0] == '\0')
 	{
-	    send_to_char("You have no prefix to clear.\r\n",ch);
+	    send_to_char("You have no prefix to clear.\n\r",ch);
 	    return;
 	}
 
-	send_to_char("Prefix removed.\r\n",ch);
+	send_to_char("Prefix removed.\n\r",ch);
 	free_string(ch->prefix);
 	ch->prefix = str_dup("");
 	return;
@@ -4379,12 +4379,12 @@ void do_prefix (CHAR_DATA *ch, char *argument)
 
     if (ch->prefix[0] != '\0')
     {
-	sprintf(buf,"Prefix changed to %s.\r\n",argument);
+	sprintf(buf,"Prefix changed to %s.\n\r",argument);
 	free_string(ch->prefix);
     }
     else
     {
-	sprintf(buf,"Prefix set to %s.\r\n",argument);
+	sprintf(buf,"Prefix set to %s.\n\r",argument);
     }
 
     ch->prefix = str_dup(argument);
