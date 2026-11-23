@@ -84,7 +84,7 @@ issue,item,verdict,kind,fixed,function,summary,note
 85,1,stock,crash,#24,obj_update,obj_update stops at a freed object,
 85,2,stock,behaviour,#50,weather_update,dawn's sunlight is out of order,
 85,3,quickmud,,,char_update,mobs never wander home: nothing sets zone,"Stock's reset_room sets mob->zone (db.c); QuickMUD's OLC resets dropped it, so this works in stock."
-85,4,stock,behaviour,,obj_update,the pit's check in obj_update can't apply,
+85,4,stock,behaviour,#51,obj_update,the pit's check in obj_update can't apply,
 87,,quickmud,,,program_flow cmd_eval expand_arg,mob program faults (all items),Mob programs are a QuickMUD add-on.
 89,,quickmud,,,do_mpremove do_mpdamage do_mpflee,mob command faults (all items),Mob programs are a QuickMUD add-on.
 92,,quickmud,,,save_rooms save_mobile save_resets do_asave,olc_save faults (all items),OLC is a QuickMUD add-on.

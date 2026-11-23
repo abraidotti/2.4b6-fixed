@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **78 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **74 fixed so far**, and 4 left (4 wrong behaviour).
+  **75 fixed so far**, and 3 left (3 wrong behaviour).
 - **2 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -100,7 +100,7 @@ unexamined, not fixed.
 | [#83](https://github.com/abraidotti/QuickMUD-Python/issues/83) (6) | stray and missing quotes, and 'his gold' for anyone | message | [#81](https://github.com/abraidotti/2.4b6-fixed/issues/81) | [`spec_ogre_member`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L185), [`spec_patrolman`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L244), [`spec_nasty`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/special.c#L323) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (1) | obj_update stops at a freed object | crash | [#24](https://github.com/abraidotti/2.4b6-fixed/issues/24) | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
 | [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (2) | dawn's sunlight is out of order | behaviour | [#50](https://github.com/abraidotti/2.4b6-fixed/issues/50) | [`weather_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L467) |  |
-| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (4) | the pit's check in obj_update can't apply | behaviour |  | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
+| [#85](https://github.com/abraidotti/QuickMUD-Python/issues/85) (4) | the pit's check in obj_update can't apply | behaviour | [#51](https://github.com/abraidotti/2.4b6-fixed/issues/51) | [`obj_update`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/update.c#L849) |  |
 | [#102](https://github.com/abraidotti/QuickMUD-Python/issues/102) (9) | flag takes the whole word a sign starts and says nothing when it works | behaviour | [#68](https://github.com/abraidotti/2.4b6-fixed/issues/68) | [`do_flag`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/flags.c#L43) |  |
 | [#104](https://github.com/abraidotti/QuickMUD-Python/issues/104) (1) | dump says nothing and doesn't check its files | behaviour | [#53](https://github.com/abraidotti/2.4b6-fixed/issues/53) | [`do_dump`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L2790) |  |
 | [#104](https://github.com/abraidotti/QuickMUD-Python/issues/104) (2) | get_skill and check_improve would read before skill_table with sn -1 | behaviour | [#53](https://github.com/abraidotti/2.4b6-fixed/issues/53) | [`get_skill`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L352), [`check_improve`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/skills.c#L908) | Latent: no caller passes -1 today. |
