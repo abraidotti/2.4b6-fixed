@@ -302,7 +302,7 @@ void do_nochannels( CHAR_DATA *ch, char *argument )
  
     if ( arg[0] == '\0' )
     {
-        send_to_char( "Nochannel whom?", ch );
+        send_to_char( "Nochannel whom?\n\r", ch );
         return;
     }
  
@@ -3067,7 +3067,7 @@ void do_notell( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Notell whom?", ch );
+	send_to_char( "Notell whom?\n\r", ch );
 	return;
     }
 

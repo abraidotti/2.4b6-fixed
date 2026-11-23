@@ -93,7 +93,7 @@ rng 51962 a7dda492
 step 29 "@as ser"
 rng 51962 a7dda492
 step 30 "nochannels"
-out ser "Nochannel whom?\n\r<100hp 100m 100mv> \xff\xf9"
+out ser "Nochannel whom?\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51962 a7dda492
 step 31 "nochannels nobody"
 out ser "They aren't here.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
@@ -191,7 +191,7 @@ out ser "NOSHOUT removed.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 out dec "\n\rYou can shout again.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 52225 4a188c22
 step 58 "notell"
-out ser "Notell whom?\n\r<100hp 100m 100mv> \xff\xf9"
+out ser "Notell whom?\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 52225 4a188c22
 step 59 "notell decimus"
 out god "\n\rSeraph revokes Decimus's tells.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
