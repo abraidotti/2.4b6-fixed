@@ -2,7 +2,8 @@
 # box (3200) put at the entrance to Mud School (3700); Smokegod (60) is there too; Purser (10), in quiet mode, and
 # Cherub (52), with the music channel off, are in the temple (3001).
 # - play with nothing to play on; with nothing named; the list, by song and by artist, all and matching
-# - "play list comfortably" lists every song: the word that should match is taken as the list's own option
+# - "play list comfortably" lists just that song, and "play list x comf" none: only "artist" is the list's own
+#   option (stock took any word there as one, so the first listed every song and the second matched "comf", #63)
 # - a song that isn't there; examine lists the songs too
 # - four songs queued, the fifth refused; the first plays its title and lines, then the next starts
 # - play loud: a song on the global channel, heard by everyone not quiet and not with music off; the queue of

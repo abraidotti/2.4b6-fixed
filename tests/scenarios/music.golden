@@ -102,10 +102,10 @@ step 33 "play list artist pink"
 out dec "The juke has the following songs available:\n\rPink Floyd                              Comfortably Numb                       \n\rPink Floyd                              One Of My Turns                        \n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 34 "play list comfortably"
-out dec "The juke has the following songs available:\n\rBullet the Blue Sky                 Camarillo Brillo                    \n\rComfortably Numb                    Empire                              \n\rImagine                             I Still Haven't Found What I'm...   \n\rJack the Ripper                     The Joker                           \n\rOne Of My Turns                     Red Hill Mining Town                \n\rRock of Ages                        Silent Lucidity                     \n\rSweet Child O' Mine                 Welcome to the Jungle               \n\rWhere the Streets Have No Name      With or Without You                 \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "The juke has the following songs available:\n\rComfortably Numb                    \n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 35 "play list x comf"
-out dec "The juke has the following songs available:\n\rComfortably Numb                    \n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "The juke has the following songs available:\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 36 "play nosuchsong"
 out dec "That song isn't available.\n\r\n\r<29hp 102m 106mv> \xff\xf9"

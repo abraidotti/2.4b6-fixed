@@ -248,10 +248,13 @@ void do_play(CHAR_DATA *ch, char *argument)
 
 	buffer = new_buf();
 	argument = str;
-	argument = one_argument(argument,arg);
+	str = one_argument(argument,arg);
 
-	if (!str_cmp(arg,"artist"))
+	if (!str_cmp(arg,"artist"))	/* else the word is part of the match */
+	{
 	    artist = TRUE;
+	    argument = str;
+	}
 
 	if (argument[0] != '\0')
 	    match = TRUE;
