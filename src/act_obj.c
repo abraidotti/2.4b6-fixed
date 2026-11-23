@@ -461,7 +461,7 @@ void do_put( CHAR_DATA *ch, char *argument )
 	    &&   get_obj_weight(obj) < (container->value[3] * 10))
 	    {
 	    	if (container->pIndexData->vnum == OBJ_VNUM_PIT
-	    	&&  !CAN_WEAR(obj, ITEM_TAKE) )
+	    	&&  !CAN_WEAR(container, ITEM_TAKE) )
 	    	{
 	    	    if (obj->timer)
 			SET_BIT(obj->extra_flags,ITEM_HAD_TIMER);

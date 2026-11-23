@@ -591,7 +591,7 @@ step 129 "put all pit"
 out dec "\n\rSmokegod puts a pair of leather pants in the donation pit.\n\rSmokegod puts a pair of leather boots in the donation pit.\n\rSmokegod puts the One Ring in the donation pit.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 out quin "\n\rSmokegod puts a pair of leather pants in the donation pit.\n\rSmokegod puts a pair of leather boots in the donation pit.\n\rSmokegod puts the One Ring in the donation pit.\n\r\n\r<29hp 102m 105mv> \xff\xf9"
 out god "You put a pair of leather pants in the donation pit.\n\rYou put a pair of leather boots in the donation pit.\n\rYou put the One Ring in the donation pit.\n\r\n\r<100hp 100m 99mv> \xff\xf9"
-rng 51968 b7a8be27
+rng 51972 73ead2f2
 step 130 "@state"
 state room 3054 light 2 people player player player mob
 state exit 2 to 3001 info 0 key -1
@@ -612,7 +612,7 @@ state   obj carried 3716 wear 0 timer 0 cost 0 values 0 0 197 0 0
 state char mob 3012 pos 8 hit 1000/1000 mana 1000/1000 move 100/100 wait 0 daze 0 exp 0 gold 41 silver 2452 act 69271555 affected_by 168 train 0 on 0 stats 22 21 24 22 21
 state   affect 80 level 40 duration -1 location 0 modifier 0 bitvector 128
 state obj floor 3010 wear -1 timer 0 cost 0 values 10000 0 0 1000 100
-state   obj in 1105 wear -1 timer 0 cost 0 values 0 0 0 0 0
-state   obj in 3063 wear -1 timer 0 cost 0 values 1 2 2 0 0
-state   obj in 3062 wear -1 timer 0 cost 0 values 1 2 2 0 0
-rng 51968 b7a8be27
+state   obj in 1105 wear -1 timer 110 cost 0 values 0 0 0 0 0
+state   obj in 3063 wear -1 timer 181 cost 0 values 1 2 2 0 0
+state   obj in 3062 wear -1 timer 170 cost 0 values 1 2 2 0 0
+rng 51972 73ead2f2
