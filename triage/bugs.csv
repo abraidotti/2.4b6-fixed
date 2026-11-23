@@ -33,8 +33,8 @@ issue,item,verdict,kind,fixed,function,summary,note
 61,,stock,behaviour,#46,do_sacrifice,sacrifice's autosplit counts charmed followers,
 63,,quickmud,,,find_note show_note_to_char handle_con_note_to,three ways the note commands crash the game,The boards are a QuickMUD add-on; stock has note.c instead.
 64,,quickmud,,,do_nread do_board,note messages: read again does nothing and smaller faults,The boards are a QuickMUD add-on.
-65,1,stock,behaviour,,check_ban,a ban with no * never matches,
-65,2,stock,behaviour,,check_ban,*name* bans are tested the wrong way round,
+65,1,stock,behaviour,#48,check_ban,a ban with no * never matches,
+65,2,stock,behaviour,#48,check_ban,*name* bans are tested the wrong way round,
 65,3,quickmud,,,nanny,a banned newbie isn't told why,"Stock sends the message with write_to_buffer(d, ...); QuickMUD's colour change to send_to_desc lost the connection."
 65,4,stock,crash,#20,ban_site,banning a site already banned walks freed memory,
 65,5,stock,crash,#18,save_bans,save_bans writes to a NULL file when fopen fails,

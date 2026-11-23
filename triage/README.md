@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **19 fixed so far**, and 60 left (26 wrong behaviour, 34 message).
+  **21 fixed so far**, and 58 left (24 wrong behaviour, 34 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -54,8 +54,8 @@ unexamined, not fixed.
 | [#60](https://github.com/abraidotti/QuickMUD-Python/issues/60) (5) | sell's 'piece' or 'pieces' goes by the whole price | message |  | [`do_sell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L2843) |  |
 | [#60](https://github.com/abraidotti/QuickMUD-Python/issues/60) (6) | typo: "Somehting isn't right" | message |  | [`obj_cast_spell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L583) | Also #75, item 7: the same line. |
 | [#61](https://github.com/abraidotti/QuickMUD-Python/issues/61) | sacrifice's autosplit counts charmed followers | behaviour | [#46](https://github.com/abraidotti/2.4b6-fixed/issues/46) | [`do_sacrifice`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_obj.c#L1738) |  |
-| [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (1) | a ban with no * never matches | behaviour |  | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
-| [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (2) | *name* bans are tested the wrong way round | behaviour |  | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
+| [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (1) | a ban with no * never matches | behaviour | [#48](https://github.com/abraidotti/2.4b6-fixed/issues/48) | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
+| [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (2) | *name* bans are tested the wrong way round | behaviour | [#48](https://github.com/abraidotti/2.4b6-fixed/issues/48) | [`check_ban`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L104) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (4) | banning a site already banned walks freed memory | crash | [#20](https://github.com/abraidotti/2.4b6-fixed/issues/20) | [`ban_site`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L135) |  |
 | [#65](https://github.com/abraidotti/QuickMUD-Python/issues/65) (5) | save_bans writes to a NULL file when fopen fails | crash | [#18](https://github.com/abraidotti/2.4b6-fixed/issues/18) | [`save_bans`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/ban.c#L43) |  |
 | [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (1) | prefix never says it's set or changed | message |  | [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
