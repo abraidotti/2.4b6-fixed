@@ -260,7 +260,7 @@ step 58 "rent"
 out dec "There is no rent here.  Just save and quit.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51984 5d83a697
 step 59 "qui"
-out dec "From now on, you will only hear says and emotes.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out dec "If you want to QUIT, you have to spell it out.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51984 5d83a697
 step 60 "delet"
 out dec "You must type the full command to delete yourself.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
