@@ -228,6 +228,7 @@ void ban_site(CHAR_DATA *ch, char *argument, bool fPerm)
 		else
 		    prev->next = pban->next;
 		free_ban(pban);
+		break;
 	    }
         }
     }
