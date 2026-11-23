@@ -50,6 +50,8 @@ void save_bans(void)
     if ( ( fp = fopen( BAN_FILE, "w" ) ) == NULL )
     {
         perror( BAN_FILE );
+        fpReserve = fopen( NULL_FILE, "r" );
+        return;
     }
 
     for (pban = ban_list; pban != NULL; pban = pban->next)
