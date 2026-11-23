@@ -121,7 +121,7 @@ rng 51962 a7dda492
 step 38 "@as weary"
 rng 51962 a7dda492
 step 39 "follow purser"
-out weary "Purser doesn't seem to want any followers.\n\r\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out weary "Purser doesn't seem to want any followers.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 rng 51962 a7dda492
 step 40 "@as purse"
 rng 51962 a7dda492

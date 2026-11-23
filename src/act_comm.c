@@ -1499,7 +1499,7 @@ void do_follow( CHAR_DATA *ch, char *argument )
 
     if (!IS_NPC(victim) && IS_SET(victim->act,PLR_NOFOLLOW) && !IS_IMMORTAL(ch))
     {
-	act("$N doesn't seem to want any followers.\n\r",
+	act("$N doesn't seem to want any followers.",
              ch,NULL,victim, TO_CHAR);
         return;
     }
