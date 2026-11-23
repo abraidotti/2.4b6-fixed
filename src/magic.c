@@ -3475,10 +3475,10 @@ void spell_infravision( int sn, int level, CHAR_DATA *ch, void *vo,int target )
 	if (victim == ch)
 	  send_to_char("You can already see in the dark.\n\r",ch);
 	else
-	  act("$N already has infravision.\n\r",ch,NULL,victim,TO_CHAR);
+	  act("$N already has infravision.",ch,NULL,victim,TO_CHAR);
 	return;
     }
-    act( "$n's eyes glow red.\n\r", ch, NULL, NULL, TO_ROOM );
+    act( "$n's eyes glow red.", ch, NULL, NULL, TO_ROOM );
 
     af.where	 = TO_AFFECTS;
     af.type      = sn;

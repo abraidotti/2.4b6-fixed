@@ -145,13 +145,13 @@ step 43 "@pulse 24"
 rng 51993 04c2ec02
 step 44 "cast infravision decimus"
 out god "\n\r<100hp 29800m 100mv> \xff\xf9"
-out dec "\n\rSmokegod utters the words, 'uiygruzuguai'.\n\rSmokegod's eyes glow red.\n\r\n\rYour eyes glow red.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
-out cher "\n\rSmokegod utters the words, 'infravision'.\n\rSmokegod's eyes glow red.\n\r\n\r\n\r<100hp 100m 100mv> \xff\xf9"
+out dec "\n\rSmokegod utters the words, 'uiygruzuguai'.\n\rSmokegod's eyes glow red.\n\rYour eyes glow red.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
+out cher "\n\rSmokegod utters the words, 'infravision'.\n\rSmokegod's eyes glow red.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51995 fa6cc523
 step 45 "@pulse 24"
 rng 51995 fa6cc523
 step 46 "cast infravision decimus"
-out god "Decimus already has infravision.\n\r\n\r\n\r<100hp 29795m 100mv> \xff\xf9"
+out god "Decimus already has infravision.\n\r\n\r<100hp 29795m 100mv> \xff\xf9"
 out dec "\n\rSmokegod utters the words, 'uiygruzuguai'.\n\r\n\r<29hp 102m 106mv> \xff\xf9"
 out cher "\n\rSmokegod utters the words, 'infravision'.\n\r\n\r<100hp 100m 100mv> \xff\xf9"
 rng 51996 b3427f82
