@@ -445,6 +445,8 @@ void do_put( CHAR_DATA *ch, char *argument )
     }
     else
     {
+	bool found = FALSE;
+
 	/* 'put all container' or 'put all.obj container' */
 	for ( obj = ch->carrying; obj != NULL; obj = obj_next )
 	{
@@ -470,6 +472,7 @@ void do_put( CHAR_DATA *ch, char *argument )
 	    	}
 		obj_from_char( obj );
 		obj_to_obj( obj, container );
+		found = TRUE;
 
         	if (IS_SET(container->value[1],CONT_PUT_ON))
         	{
@@ -483,6 +486,9 @@ void do_put( CHAR_DATA *ch, char *argument )
 		}
 	    }
 	}
+
+	if ( !found )
+	    send_to_char( "You aren't carrying anything that fits.\n\r", ch );
     }
 
     return;
