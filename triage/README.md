@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **74 fixed so far**, and 5 left (5 wrong behaviour).
+  **75 fixed so far**, and 4 left (4 wrong behaviour).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -82,7 +82,7 @@ unexamined, not fixed.
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (6) | typo: "evaporates,scattering" | message | [#74](https://github.com/abraidotti/2.4b6-fixed/issues/74) | [`make_corpse`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L1427) |  |
 | [#75](https://github.com/abraidotti/QuickMUD-Python/issues/75) (8) | check_immune's vulnerable cases never see immune | behaviour | [#56](https://github.com/abraidotti/2.4b6-fixed/issues/56) | [`check_immune`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/handler.c#L255) |  |
 | [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (1) | typo: "to mellow" | message | [#72](https://github.com/abraidotti/2.4b6-fixed/issues/72) | [`do_berserk`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2121) |  |
-| [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour |  | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
+| [#77](https://github.com/abraidotti/QuickMUD-Python/issues/77) (2) | rescue while already fighting | behaviour | [#55](https://github.com/abraidotti/2.4b6-fixed/issues/55) | [`do_rescue`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/fight.c#L2863) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (1) | dispel evil and good roll their damage twice (UMAX) | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_dispel_evil`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1950), [`spell_dispel_good`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L1981) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (2) | enchant weapon's new hitroll affect is TO_AFFECTS | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_enchant_weapon`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L2396) |  |
 | [#79](https://github.com/abraidotti/QuickMUD-Python/issues/79) (3) | damage-table spells compare a signed level with sizeof | behaviour | [#58](https://github.com/abraidotti/2.4b6-fixed/issues/58) | [`spell_burning_hands`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/magic.c#L877) | Seven spells. The UMAX(0, level) comes after the UMIN, too late. |
