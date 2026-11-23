@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **68 fixed so far**, and 11 left (5 wrong behaviour, 6 message).
+  **74 fixed so far**, and 5 left (5 wrong behaviour).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -64,12 +64,12 @@ unexamined, not fixed.
 | [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (4) | stat obj runs two keyword lists together | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_ostat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1204) |  |
 | [#68](https://github.com/abraidotti/QuickMUD-Python/issues/68) (5) | stat mob tests IS_NPC(ch) for Practices where it means the victim | message | [#97](https://github.com/abraidotti/2.4b6-fixed/issues/97) | [`do_mstat`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L1524) |  |
 | [#69](https://github.com/abraidotti/QuickMUD-Python/issues/69) | a long prefix overflows a 256-byte buffer and crashes | crash | [#7](https://github.com/abraidotti/2.4b6-fixed/issues/7) | [`do_prefix`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L4349) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (1) | guild doesn't tell the victim they've joined a clan | message |  | [`do_guild`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L177) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (2) | 'Nochannel whom?' and 'Notell whom?' have no newline | message |  | [`do_nochannels`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L295), [`do_notell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3058) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (3) | set char str puts its full stop after the newline | message |  | [`do_mset`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3324) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (4) | set char hunger calls its range Full's | message |  | [`do_mset`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3324) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (6) | trust sends nothing when it works | message |  | [`do_trust`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2714) |  |
-| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (7) | typo: "must be be between" | message |  | [`do_oload`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2493) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (1) | guild doesn't tell the victim they've joined a clan | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_guild`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L177) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (2) | 'Nochannel whom?' and 'Notell whom?' have no newline | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_nochannels`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L295), [`do_notell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3058) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (3) | set char str puts its full stop after the newline | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_mset`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3324) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (4) | set char hunger calls its range Full's | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_mset`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3324) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (6) | trust sends nothing when it works | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_trust`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2714) |  |
+| [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (7) | typo: "must be be between" | message | [#99](https://github.com/abraidotti/2.4b6-fixed/issues/99) | [`do_oload`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2493) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (8) | clone gives a mob's clone objects 'worn' without equipping them | behaviour |  | [`do_clone`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L2312) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (9) | clone_mobile applies a mob's affects twice | behaviour |  | [`clone_mobile`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/db.c#L1744) |  |
 | [#71](https://github.com/abraidotti/QuickMUD-Python/issues/71) (10) | string char spec with a bad name removes the mob's own | behaviour | [#65](https://github.com/abraidotti/2.4b6-fixed/issues/65) | [`do_string`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_wiz.c#L3700) |  |
