@@ -1,0 +1,17 @@
+# The ban list can't be saved: ban.txt is a directory, made after boot, so fopen fails even as root. Smokegod (60)
+# bans a site permanently, which saves the list. save_bans logged the error with perror and then wrote to the
+# NULL it got, a segfault (#18). Now it logs the error and returns: the ban stands until the game stops, it's
+# listed, and the game goes on; allow saves the list again, and fails the same way. @log shows the perror
+# line among the steps.
+@log
+@connect god
+Smokegod
+smoke123
+@return
+@return
+@mkdir ban.txt
+permban badsite.example all
+ban
+allow badsite.example
+ban
+say still here
