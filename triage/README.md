@@ -10,7 +10,7 @@ there, with the same faulty lines?
 **102 bugs from 49 issues:**
 
 - **79 in stock ROM 2.4b6**, from 32 issues. These are what this repo fixes:
-  **54 fixed so far**, and 25 left (5 wrong behaviour, 20 message).
+  **55 fixed so far**, and 24 left (5 wrong behaviour, 19 message).
 - **1 stock, but different:** stock has the code, but the bug can't happen the same way.
 - **22 QuickMUD only:** an add-on, or code QuickMUD changed. Not fixed here.
 
@@ -39,7 +39,7 @@ unexamined, not fixed.
 | [#46](https://github.com/abraidotti/QuickMUD-Python/issues/46) | a description line starting with ~ takes a line off | behaviour | [#36](https://github.com/abraidotti/2.4b6-fixed/issues/36) | [`do_description`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_info.c#L2412) |  |
 | [#47](https://github.com/abraidotti/QuickMUD-Python/issues/47) | a word that isn't a number sets wimpy to 0 | behaviour | [#32](https://github.com/abraidotti/2.4b6-fixed/issues/32) | [`do_wimpy`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_info.c#L2629) |  |
 | [#50](https://github.com/abraidotti/QuickMUD-Python/issues/50) | auction with no text sends an empty auction | behaviour | [#38](https://github.com/abraidotti/2.4b6-fixed/issues/38) | [`do_auction`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L269) |  |
-| [#52](https://github.com/abraidotti/QuickMUD-Python/issues/52) | tell when deaf says the message didn't get through | message |  | [`do_tell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L811) |  |
+| [#52](https://github.com/abraidotti/QuickMUD-Python/issues/52) | tell when deaf says the message didn't get through | message | [#89](https://github.com/abraidotti/2.4b6-fixed/issues/89) | [`do_tell`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L811) |  |
 | [#53](https://github.com/abraidotti/QuickMUD-Python/issues/53) (1) | follow's refusal prints an extra empty line | message | [#87](https://github.com/abraidotti/2.4b6-fixed/issues/87) | [`do_follow`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1462) |  |
 | [#53](https://github.com/abraidotti/QuickMUD-Python/issues/53) (2) | split's message prints an extra empty line | message | [#87](https://github.com/abraidotti/2.4b6-fixed/issues/87) | [`do_split`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1787) |  |
 | [#54](https://github.com/abraidotti/QuickMUD-Python/issues/54) | pmote cuts names short and drops a partial name at the end | message |  | [`do_pmote`](https://github.com/abraidotti/2.4b6-fixed/blob/stock-2.4b6/src/act_comm.c#L1027) |  |
